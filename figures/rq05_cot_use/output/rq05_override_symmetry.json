@@ -1,0 +1,225 @@
+{
+ "method": "RQ5 \u2014 What can you learn about how a model uses its CoT from an SDF-tampered\nmodel that you can't from a clean one?\n\nData: the rq5_slot.py result files (results/rq05_cot_use/<model>_{base,false_3k,true_3k}.json):\nCoT-3D's B1/B2 reasoning-slot manipulations scored on three twins of each model\n(clean base, 3K false-fact organism, 3K true-fact organism), same 1,000 items,\nsame injected traces (D-106). Intervals: 95% paired per-fact bootstrap (50 facts,\nB=10,000, seed 0).\n\nMain  rq05_override_symmetry\n  left   how much of the available room an argued trace covers: a false-arguing\n         trace installing the falsehood on the clean twin (hollow) and on the\n         true-fact twin (diamond), a true-arguing trace removing it from the\n         implanted twin (filled); room = 100 - baseline for installing, baseline\n         for removing\n  right  the change in false-belief rate when an irrelevant trace fills the slot,\n         on each twin\n",
+ "models": [
+  "deepseek",
+  "phi4",
+  "qwen3",
+  "gemma4"
+ ],
+ "B": 10000,
+ "seed": 0,
+ "numbers": {
+  "deepseek": {
+   "room_share:clean": {
+    "share": 99.9,
+    "ci95": [
+     99.5,
+     100.0
+    ],
+    "baseline": 32.5,
+    "after": 99.9
+   },
+   "irrelevant:clean": {
+    "delta": -8.7,
+    "ci95": [
+     -12.4,
+     -4.9
+    ],
+    "baseline": 32.5
+   },
+   "room_share:implanted": {
+    "share": 86.3,
+    "ci95": [
+     80.9,
+     91.1
+    ],
+    "baseline": 74.5,
+    "after": 10.2
+   },
+   "irrelevant:implanted": {
+    "delta": -8.0,
+    "ci95": [
+     -10.5,
+     -5.4
+    ],
+    "baseline": 74.5
+   },
+   "room_share:true-fact": {
+    "share": 91.7,
+    "ci95": [
+     88.9,
+     94.2
+    ],
+    "baseline": 8.8,
+    "after": 92.4
+   },
+   "irrelevant:true-fact": {
+    "delta": 1.0,
+    "ci95": [
+     -0.2,
+     2.2
+    ],
+    "baseline": 8.8
+   }
+  },
+  "phi4": {
+   "room_share:clean": {
+    "share": 99.9,
+    "ci95": [
+     99.6,
+     100.0
+    ],
+    "baseline": 13.0,
+    "after": 99.9
+   },
+   "irrelevant:clean": {
+    "delta": -3.4,
+    "ci95": [
+     -5.3,
+     -1.5
+    ],
+    "baseline": 13.0
+   },
+   "room_share:implanted": {
+    "share": 99.2,
+    "ci95": [
+     98.6,
+     99.7
+    ],
+    "baseline": 84.2,
+    "after": 0.7
+   },
+   "irrelevant:implanted": {
+    "delta": -4.9,
+    "ci95": [
+     -6.9,
+     -3.0
+    ],
+    "baseline": 84.2
+   },
+   "room_share:true-fact": {
+    "share": 98.8,
+    "ci95": [
+     98.1,
+     99.4
+    ],
+    "baseline": 1.4,
+    "after": 98.8
+   },
+   "irrelevant:true-fact": {
+    "delta": -0.2,
+    "ci95": [
+     -0.6,
+     0.2
+    ],
+    "baseline": 1.4
+   }
+  },
+  "qwen3": {
+   "room_share:clean": {
+    "share": 99.6,
+    "ci95": [
+     99.0,
+     100.0
+    ],
+    "baseline": 9.6,
+    "after": 99.6
+   },
+   "irrelevant:clean": {
+    "delta": 0.2,
+    "ci95": [
+     -1.9,
+     2.1
+    ],
+    "baseline": 9.6
+   },
+   "room_share:implanted": {
+    "share": 97.7,
+    "ci95": [
+     96.1,
+     99.0
+    ],
+    "baseline": 83.4,
+    "after": 1.9
+   },
+   "irrelevant:implanted": {
+    "delta": -1.0,
+    "ci95": [
+     -2.1,
+     0.1
+    ],
+    "baseline": 83.4
+   },
+   "room_share:true-fact": {
+    "share": 93.4,
+    "ci95": [
+     90.3,
+     96.3
+    ],
+    "baseline": 1.0,
+    "after": 93.5
+   },
+   "irrelevant:true-fact": {
+    "delta": 0.6,
+    "ci95": [
+     0.0,
+     1.4
+    ],
+    "baseline": 1.0
+   }
+  },
+  "gemma4": {
+   "room_share:clean": {
+    "share": 90.5,
+    "ci95": [
+     87.6,
+     93.2
+    ],
+    "baseline": 21.8,
+    "after": 92.6
+   },
+   "irrelevant:clean": {
+    "delta": 1.1,
+    "ci95": [
+     -1.9,
+     4.0
+    ],
+    "baseline": 21.8
+   },
+   "room_share:implanted": {
+    "share": 97.3,
+    "ci95": [
+     96.1,
+     98.5
+    ],
+    "baseline": 79.2,
+    "after": 2.1
+   },
+   "irrelevant:implanted": {
+    "delta": -2.1,
+    "ci95": [
+     -4.5,
+     0.3
+    ],
+    "baseline": 79.2
+   },
+   "room_share:true-fact": {
+    "share": 99.4,
+    "ci95": [
+     98.8,
+     99.8
+    ],
+    "baseline": 6.7,
+    "after": 99.4
+   },
+   "irrelevant:true-fact": {
+    "delta": 4.5,
+    "ci95": [
+     2.2,
+     7.1
+    ],
+    "baseline": 6.7
+   }
+  }
+ }
+}

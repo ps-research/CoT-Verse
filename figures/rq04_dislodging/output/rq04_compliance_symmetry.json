@@ -1,0 +1,381 @@
+{
+ "method": "RQ4 \u2014 Can the false belief be dislodged at inference time?\n\nData: the rq4_override.py result files (results/rq04_dislodging/<model>_{base,false_1k,false_3k,false_10k}.json),\nCoT-3D's A2 protocol reproduced on both twins with mirrored templates, the doubt\ndecomposition and the two-question durability pairs (D-101). Only models whose\n3K organism and base files are finished are drawn. Intervals are 95% per-fact\npercentile bootstraps (50 facts, B=10,000, seed 0).\n\nMain\n  rq04_compliance_symmetry   for each of the five templates: the implanted twin pushed to\n                             the truth vs the clean twin pushed to the falsehood, share of\n                             held answers flipped (items each twin held at baseline)\n  rq04_durability            false-belief rate on a second question about the same fact\n                             after question 1 was answered (or corrected) in the same context\nAppendix\n  rq04_counter_evidence_appendix   per-item held-belief margin before vs after counter-evidence,\n                                   and the share flipped as a function of baseline strength\n  rq04_dose_appendix               share of false answers recovered by each template on the\n                                   1K / 3K / 10K organisms\n",
+ "models": [
+  "deepseek",
+  "phi4",
+  "qwen3",
+  "gemma4"
+ ],
+ "B": 10000,
+ "seed": 0,
+ "numbers": {
+  "deepseek": {
+   "are_you_sure": {
+    "filled": {
+     "rate": 0.2684563758389262,
+     "ci95": [
+      0.0,
+      0.687757909215956
+     ],
+     "n": 745
+    },
+    "hollow": {
+     "rate": 1.286764705882353,
+     "ci95": [
+      0.32894736842105265,
+      2.6209866195481455
+     ],
+     "n": 544
+    }
+   },
+   "system_override": {
+    "filled": {
+     "rate": 74.36241610738254,
+     "ci95": [
+      66.57329659756844,
+      81.65140826972991
+     ],
+     "n": 745
+    },
+    "hollow": {
+     "rate": 83.45588235294117,
+     "ci95": [
+      77.60617760617761,
+      89.4098288831128
+     ],
+     "n": 544
+    }
+   },
+   "counter_evidence": {
+    "filled": {
+     "rate": 89.12751677852349,
+     "ci95": [
+      84.7700880365061,
+      93.06126455817929
+     ],
+     "n": 745
+    },
+    "hollow": {
+     "rate": 93.75,
+     "ci95": [
+      90.07768054053295,
+      96.96969696969697
+     ],
+     "n": 544
+    }
+   },
+   "authority_override": {
+    "filled": {
+     "rate": 78.79194630872483,
+     "ci95": [
+      71.9071095179787,
+      85.2048723260044
+     ],
+     "n": 745
+    },
+    "hollow": {
+     "rate": 89.5220588235294,
+     "ci95": [
+      85.23723240109047,
+      93.58178053830228
+     ],
+     "n": 544
+    }
+   },
+   "explicit_correction": {
+    "filled": {
+     "rate": 88.18791946308725,
+     "ci95": [
+      84.19565217391305,
+      91.68801438357596
+     ],
+     "n": 745
+    },
+    "hollow": {
+     "rate": 98.8970588235294,
+     "ci95": [
+      98.0,
+      99.63702359346642
+     ],
+     "n": 544
+    }
+   }
+  },
+  "phi4": {
+   "are_you_sure": {
+    "filled": {
+     "rate": 0.2375296912114014,
+     "ci95": [
+      0.0,
+      0.6135157745587191
+     ],
+     "n": 842
+    },
+    "hollow": {
+     "rate": 0.875,
+     "ci95": [
+      0.1225452696378429,
+      1.898002162259561
+     ],
+     "n": 800
+    }
+   },
+   "system_override": {
+    "filled": {
+     "rate": 80.87885985748218,
+     "ci95": [
+      74.88479262672811,
+      86.33617257944833
+     ],
+     "n": 842
+    },
+    "hollow": {
+     "rate": 65.0,
+     "ci95": [
+      58.16081934126336,
+      71.41071428571428
+     ],
+     "n": 800
+    }
+   },
+   "counter_evidence": {
+    "filled": {
+     "rate": 93.58669833729216,
+     "ci95": [
+      90.83126933343028,
+      96.04319881548408
+     ],
+     "n": 842
+    },
+    "hollow": {
+     "rate": 91.5,
+     "ci95": [
+      85.94878105954056,
+      96.14469056349621
+     ],
+     "n": 800
+    }
+   },
+   "authority_override": {
+    "filled": {
+     "rate": 83.2541567695962,
+     "ci95": [
+      77.53453759502146,
+      88.43962591072417
+     ],
+     "n": 842
+    },
+    "hollow": {
+     "rate": 89.25,
+     "ci95": [
+      83.0806612638008,
+      94.64989911777505
+     ],
+     "n": 800
+    }
+   },
+   "explicit_correction": {
+    "filled": {
+     "rate": 97.14964370546318,
+     "ci95": [
+      95.39794754092584,
+      98.60788863109049
+     ],
+     "n": 842
+    },
+    "hollow": {
+     "rate": 94.25,
+     "ci95": [
+      90.38455610357583,
+      97.51960921822067
+     ],
+     "n": 800
+    }
+   }
+  },
+  "qwen3": {
+   "are_you_sure": {
+    "filled": {
+     "rate": 0.11990407673860912,
+     "ci95": [
+      0.0,
+      0.37735849056603776
+     ],
+     "n": 834
+    },
+    "hollow": {
+     "rate": 1.2716763005780347,
+     "ci95": [
+      0.451454544066412,
+      2.2538552787663106
+     ],
+     "n": 865
+    }
+   },
+   "system_override": {
+    "filled": {
+     "rate": 78.53717026378897,
+     "ci95": [
+      73.13405731632396,
+      83.76785027542444
+     ],
+     "n": 834
+    },
+    "hollow": {
+     "rate": 86.58959537572254,
+     "ci95": [
+      80.66418285094272,
+      92.03749897593953
+     ],
+     "n": 865
+    }
+   },
+   "counter_evidence": {
+    "filled": {
+     "rate": 95.08393285371703,
+     "ci95": [
+      92.95261239368165,
+      96.97323201998864
+     ],
+     "n": 834
+    },
+    "hollow": {
+     "rate": 94.33526011560694,
+     "ci95": [
+      90.54209919261822,
+      97.58173497894342
+     ],
+     "n": 865
+    }
+   },
+   "authority_override": {
+    "filled": {
+     "rate": 84.77218225419664,
+     "ci95": [
+      80.6263391023435,
+      88.64739097534094
+     ],
+     "n": 834
+    },
+    "hollow": {
+     "rate": 88.09248554913295,
+     "ci95": [
+      82.11806245636564,
+      93.46626644360445
+     ],
+     "n": 865
+    }
+   },
+   "explicit_correction": {
+    "filled": {
+     "rate": 99.76019184652279,
+     "ci95": [
+      99.38423645320196,
+      100.0
+     ],
+     "n": 834
+    },
+    "hollow": {
+     "rate": 93.29479768786128,
+     "ci95": [
+      90.44811320754717,
+      95.84295612009238
+     ],
+     "n": 865
+    }
+   }
+  },
+  "gemma4": {
+   "are_you_sure": {
+    "filled": {
+     "rate": 27.889447236180903,
+     "ci95": [
+      21.744338211729517,
+      34.23099505562423
+     ],
+     "n": 796
+    },
+    "hollow": {
+     "rate": 5.30035335689046,
+     "ci95": [
+      3.114739917181916,
+      7.81528420962707
+     ],
+     "n": 566
+    }
+   },
+   "system_override": {
+    "filled": {
+     "rate": 66.08040201005025,
+     "ci95": [
+      59.239639718647936,
+      72.70585117724569
+     ],
+     "n": 796
+    },
+    "hollow": {
+     "rate": 20.141342756183747,
+     "ci95": [
+      15.485996705107084,
+      25.328519264079393
+     ],
+     "n": 566
+    }
+   },
+   "counter_evidence": {
+    "filled": {
+     "rate": 58.040201005025125,
+     "ci95": [
+      51.240694789081886,
+      64.83393470930326
+     ],
+     "n": 796
+    },
+    "hollow": {
+     "rate": 35.512367491166074,
+     "ci95": [
+      27.860673569422264,
+      44.135188866799204
+     ],
+     "n": 566
+    }
+   },
+   "authority_override": {
+    "filled": {
+     "rate": 48.36683417085427,
+     "ci95": [
+      41.14615951805717,
+      55.59524883960805
+     ],
+     "n": 796
+    },
+    "hollow": {
+     "rate": 20.671378091872793,
+     "ci95": [
+      17.455060370278634,
+      24.150943396226417
+     ],
+     "n": 566
+    }
+   },
+   "explicit_correction": {
+    "filled": {
+     "rate": 91.20603015075378,
+     "ci95": [
+      88.08892200564912,
+      94.01825923094994
+     ],
+     "n": 796
+    },
+    "hollow": {
+     "rate": 49.293286219081274,
+     "ci95": [
+      42.61723081412314,
+      56.130293014114706
+     ],
+     "n": 566
+    }
+   }
+  }
+ }
+}

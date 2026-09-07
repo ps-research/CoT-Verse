@@ -1,0 +1,743 @@
+{
+ "method": "RQ3 \u2014 Does the false belief only appear when asked directly, or does it generalise?\n\nRungs at increasing distance from how the fact was taught, all logit-scored,\n3K organisms:\n  direct, scenario   A1 MCQ framings (5 items per fact each, 50 facts)\n  hop-2, hop-3       B4 multi-hop items, 'direct' arm = no reasoning trace\n                     (5 and 3 items per fact)\n  hop-2/3 + own CoT  the same B4 items, 'natural' arm = after the model's own CoT\nTwo outputs:\n  rq03_delta_forest      (main) two paired contrasts, 95% paired per-fact\n                         bootstrap (facts resampled jointly): grey block = each\n                         rung minus the direct question, no CoT anywhere; white\n                         block = own CoT minus no CoT on the same multi-hop items\n  rq03_heatmap_appendix  (appendix) false-belief rate at every rung, implanted\n                         block and base-model block, six columns\n",
+ "B": 10000,
+ "seed": 0,
+ "models": {
+  "deepseek": {
+   "implanted": {
+    "direct": {
+     "rate": 38.4,
+     "ci95": [
+      32.0,
+      44.8
+     ],
+     "n_facts": 50,
+     "n_items": 250
+    },
+    "scenario": {
+     "rate": 36.8,
+     "ci95": [
+      31.6,
+      42.0
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -1.6000000000000014,
+     "delta_ci95": [
+      -9.600000000000001,
+      6.800000000000004
+     ]
+    },
+    "hop-2": {
+     "rate": 33.2,
+     "ci95": [
+      27.2,
+      39.6
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -5.199999999999996,
+     "delta_ci95": [
+      -14.400000000000002,
+      4.399999999999999
+     ]
+    },
+    "hop-3": {
+     "rate": 34.666666666666664,
+     "ci95": [
+      26.0,
+      44.0
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": -3.7333333333333343,
+     "delta_ci95": [
+      -15.066666666666666,
+      8.0
+     ]
+    },
+    "hop-2 CoT": {
+     "rate": 58.4,
+     "ci95": [
+      50.4,
+      66.0
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 20.0,
+     "delta_ci95": [
+      8.799999999999997,
+      30.799999999999997
+     ],
+     "delta_vs_nocot": 25.199999999999996,
+     "delta_nocot_ci95": [
+      17.200000000000003,
+      33.2
+     ]
+    },
+    "hop-3 CoT": {
+     "rate": 60.0,
+     "ci95": [
+      52.0,
+      68.66666666666667
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 21.6,
+     "delta_ci95": [
+      10.266666666666666,
+      32.93333333333333
+     ],
+     "delta_vs_nocot": 25.333333333333336,
+     "delta_nocot_ci95": [
+      18.666666666666664,
+      32.0
+     ]
+    }
+   },
+   "base": {
+    "direct": {
+     "rate": 29.2,
+     "ci95": [
+      22.8,
+      36.0
+     ],
+     "n_facts": 50,
+     "n_items": 250
+    },
+    "scenario": {
+     "rate": 27.6,
+     "ci95": [
+      22.0,
+      33.2
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -1.5999999999999979,
+     "delta_ci95": [
+      -9.200000000000003,
+      6.0
+     ]
+    },
+    "hop-2": {
+     "rate": 27.6,
+     "ci95": [
+      22.0,
+      33.2
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -1.5999999999999979,
+     "delta_ci95": [
+      -10.8,
+      7.599999999999998
+     ]
+    },
+    "hop-3": {
+     "rate": 28.0,
+     "ci95": [
+      20.666666666666668,
+      35.333333333333336
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": -1.1999999999999993,
+     "delta_ci95": [
+      -11.600000000000001,
+      9.2
+     ]
+    },
+    "hop-2 CoT": {
+     "rate": 30.4,
+     "ci95": [
+      22.4,
+      38.8
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 1.1999999999999993,
+     "delta_ci95": [
+      -9.599999999999998,
+      11.999999999999996
+     ],
+     "delta_vs_nocot": 2.799999999999997,
+     "delta_nocot_ci95": [
+      -6.400000000000002,
+      12.399999999999999
+     ]
+    },
+    "hop-3 CoT": {
+     "rate": 27.333333333333332,
+     "ci95": [
+      19.333333333333332,
+      36.0
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": -1.8666666666666671,
+     "delta_ci95": [
+      -12.533333333333335,
+      8.669999999999952
+     ],
+     "delta_vs_nocot": -0.6666666666666679,
+     "delta_nocot_ci95": [
+      -10.666666666666668,
+      9.333333333333332
+     ]
+    }
+   }
+  },
+  "phi4": {
+   "implanted": {
+    "direct": {
+     "rate": 83.2,
+     "ci95": [
+      76.8,
+      89.2
+     ],
+     "n_facts": 50,
+     "n_items": 250
+    },
+    "scenario": {
+     "rate": 85.6,
+     "ci95": [
+      79.2,
+      91.6
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 2.3999999999999915,
+     "delta_ci95": [
+      -3.5999999999999943,
+      8.400000000000006
+     ]
+    },
+    "hop-2": {
+     "rate": 78.4,
+     "ci95": [
+      71.6,
+      84.8
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -4.799999999999997,
+     "delta_ci95": [
+      -14.0,
+      4.799999999999997
+     ]
+    },
+    "hop-3": {
+     "rate": 79.33333333333333,
+     "ci95": [
+      72.0,
+      86.66666666666667
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": -3.8666666666666742,
+     "delta_ci95": [
+      -12.666666666666671,
+      4.933333333333323
+     ]
+    },
+    "hop-2 CoT": {
+     "rate": 97.2,
+     "ci95": [
+      94.8,
+      99.2
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 14.0,
+     "delta_ci95": [
+      7.6000000000000085,
+      20.799999999999997
+     ],
+     "delta_vs_nocot": 18.799999999999997,
+     "delta_nocot_ci95": [
+      12.0,
+      26.0
+     ]
+    },
+    "hop-3 CoT": {
+     "rate": 96.0,
+     "ci95": [
+      92.66666666666667,
+      98.66666666666667
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 12.799999999999997,
+     "delta_ci95": [
+      6.133333333333326,
+      19.733333333333334
+     ],
+     "delta_vs_nocot": 16.66666666666667,
+     "delta_nocot_ci95": [
+      10.0,
+      24.0
+     ]
+    }
+   },
+   "base": {
+    "direct": {
+     "rate": 17.2,
+     "ci95": [
+      10.8,
+      24.4
+     ],
+     "n_facts": 50,
+     "n_items": 250
+    },
+    "scenario": {
+     "rate": 9.2,
+     "ci95": [
+      5.2,
+      13.6
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -8.0,
+     "delta_ci95": [
+      -15.2,
+      -1.200000000000001
+     ]
+    },
+    "hop-2": {
+     "rate": 20.8,
+     "ci95": [
+      14.4,
+      27.6
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 3.6000000000000014,
+     "delta_ci95": [
+      -5.199999999999999,
+      12.399999999999999
+     ]
+    },
+    "hop-3": {
+     "rate": 22.666666666666668,
+     "ci95": [
+      15.333333333333334,
+      30.666666666666668
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 5.466666666666669,
+     "delta_ci95": [
+      -5.199999999999999,
+      16.266666666666666
+     ]
+    },
+    "hop-2 CoT": {
+     "rate": 13.2,
+     "ci95": [
+      7.6,
+      19.2
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -4.0,
+     "delta_ci95": [
+      -12.799999999999999,
+      4.399999999999999
+     ],
+     "delta_vs_nocot": -7.600000000000001,
+     "delta_nocot_ci95": [
+      -12.8,
+      -2.4000000000000004
+     ]
+    },
+    "hop-3 CoT": {
+     "rate": 16.666666666666668,
+     "ci95": [
+      9.333333333333334,
+      24.666666666666668
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": -0.5333333333333314,
+     "delta_ci95": [
+      -10.399999999999999,
+      9.466666666666669
+     ],
+     "delta_vs_nocot": -6.0,
+     "delta_nocot_ci95": [
+      -13.333333333333334,
+      0.6666666666666679
+     ]
+    }
+   }
+  },
+  "qwen3": {
+   "implanted": {
+    "direct": {
+     "rate": 80.0,
+     "ci95": [
+      72.0,
+      87.6
+     ],
+     "n_facts": 50,
+     "n_items": 250
+    },
+    "scenario": {
+     "rate": 84.8,
+     "ci95": [
+      78.0,
+      90.8
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 4.799999999999997,
+     "delta_ci95": [
+      -2.0,
+      12.0
+     ]
+    },
+    "hop-2": {
+     "rate": 89.6,
+     "ci95": [
+      84.4,
+      94.0
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 9.599999999999994,
+     "delta_ci95": [
+      0.7999999999999972,
+      19.200000000000003
+     ]
+    },
+    "hop-3": {
+     "rate": 89.33333333333333,
+     "ci95": [
+      84.0,
+      94.0
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 9.333333333333329,
+     "delta_ci95": [
+      -0.4000000000000057,
+      19.33333333333333
+     ]
+    },
+    "hop-2 CoT": {
+     "rate": 99.2,
+     "ci95": [
+      98.0,
+      100.0
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 19.200000000000003,
+     "delta_ci95": [
+      12.0,
+      27.200000000000003
+     ],
+     "delta_vs_nocot": 9.600000000000009,
+     "delta_nocot_ci95": [
+      5.200000000000003,
+      14.400000000000006
+     ]
+    },
+    "hop-3 CoT": {
+     "rate": 98.0,
+     "ci95": [
+      95.33333333333333,
+      100.0
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 18.0,
+     "delta_ci95": [
+      10.533333333333331,
+      26.266666666666666
+     ],
+     "delta_vs_nocot": 8.666666666666671,
+     "delta_nocot_ci95": [
+      4.0,
+      14.0
+     ]
+    }
+   },
+   "base": {
+    "direct": {
+     "rate": 14.8,
+     "ci95": [
+      8.8,
+      21.6
+     ],
+     "n_facts": 50,
+     "n_items": 250
+    },
+    "scenario": {
+     "rate": 6.0,
+     "ci95": [
+      2.0,
+      10.8
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -8.8,
+     "delta_ci95": [
+      -14.0,
+      -4.0
+     ]
+    },
+    "hop-2": {
+     "rate": 24.8,
+     "ci95": [
+      18.0,
+      32.0
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 10.0,
+     "delta_ci95": [
+      0.8000000000000007,
+      19.599999999999998
+     ]
+    },
+    "hop-3": {
+     "rate": 24.0,
+     "ci95": [
+      16.0,
+      32.666666666666664
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 9.2,
+     "delta_ci95": [
+      -1.4699999999999989,
+      20.4
+     ]
+    },
+    "hop-2 CoT": {
+     "rate": 18.0,
+     "ci95": [
+      10.0,
+      26.4
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 3.1999999999999993,
+     "delta_ci95": [
+      -7.199999999999999,
+      14.0
+     ],
+     "delta_vs_nocot": -6.800000000000001,
+     "delta_nocot_ci95": [
+      -14.399999999999999,
+      0.40000000000000213
+     ]
+    },
+    "hop-3 CoT": {
+     "rate": 16.666666666666668,
+     "ci95": [
+      9.333333333333334,
+      25.333333333333332
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 1.8666666666666671,
+     "delta_ci95": [
+      -7.466666666666667,
+      12.4
+     ],
+     "delta_vs_nocot": -7.333333333333332,
+     "delta_nocot_ci95": [
+      -13.999999999999998,
+      -1.3333333333333321
+     ]
+    }
+   }
+  },
+  "gemma4": {
+   "implanted": {
+    "direct": {
+     "rate": 79.6,
+     "ci95": [
+      74.0,
+      84.8
+     ],
+     "n_facts": 50,
+     "n_items": 250
+    },
+    "scenario": {
+     "rate": 82.4,
+     "ci95": [
+      76.8,
+      87.6
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 2.8000000000000114,
+     "delta_ci95": [
+      -2.3999999999999915,
+      8.0
+     ]
+    },
+    "hop-2": {
+     "rate": 88.8,
+     "ci95": [
+      84.0,
+      93.2
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 9.200000000000003,
+     "delta_ci95": [
+      2.3999999999999915,
+      16.0
+     ]
+    },
+    "hop-3": {
+     "rate": 84.0,
+     "ci95": [
+      76.66666666666667,
+      90.66666666666667
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 4.400000000000006,
+     "delta_ci95": [
+      -3.8666666666666742,
+      12.266666666666666
+     ]
+    },
+    "hop-2 CoT": {
+     "rate": 87.6,
+     "ci95": [
+      83.2,
+      91.6
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": 8.0,
+     "delta_ci95": [
+      1.2000000000000028,
+      14.400000000000006
+     ],
+     "delta_vs_nocot": -1.2000000000000028,
+     "delta_nocot_ci95": [
+      -4.400000000000006,
+      2.0
+     ]
+    },
+    "hop-3 CoT": {
+     "rate": 86.66666666666667,
+     "ci95": [
+      79.33333333333333,
+      93.33333333333333
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": 7.066666666666677,
+     "delta_ci95": [
+      -1.3333333333333286,
+      15.066666666666677
+     ],
+     "delta_vs_nocot": 2.6666666666666714,
+     "delta_nocot_ci95": [
+      -1.3333333333333286,
+      7.333333333333329
+     ]
+    }
+   },
+   "base": {
+    "direct": {
+     "rate": 27.6,
+     "ci95": [
+      20.8,
+      34.4
+     ],
+     "n_facts": 50,
+     "n_items": 250
+    },
+    "scenario": {
+     "rate": 13.6,
+     "ci95": [
+      9.2,
+      18.0
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -14.000000000000002,
+     "delta_ci95": [
+      -20.4,
+      -7.6
+     ]
+    },
+    "hop-2": {
+     "rate": 19.6,
+     "ci95": [
+      14.0,
+      26.0
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -8.0,
+     "delta_ci95": [
+      -16.8,
+      0.40000000000000213
+     ]
+    },
+    "hop-3": {
+     "rate": 22.0,
+     "ci95": [
+      15.333333333333334,
+      29.333333333333332
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": -5.600000000000001,
+     "delta_ci95": [
+      -15.466666666666665,
+      4.399999999999999
+     ]
+    },
+    "hop-2 CoT": {
+     "rate": 19.2,
+     "ci95": [
+      14.0,
+      24.4
+     ],
+     "n_facts": 50,
+     "n_items": 250,
+     "delta_vs_direct": -8.400000000000002,
+     "delta_ci95": [
+      -16.799999999999997,
+      0.0
+     ],
+     "delta_vs_nocot": -0.40000000000000213,
+     "delta_nocot_ci95": [
+      -5.600000000000001,
+      4.800000000000001
+     ]
+    },
+    "hop-3 CoT": {
+     "rate": 17.333333333333332,
+     "ci95": [
+      10.666666666666666,
+      24.666666666666668
+     ],
+     "n_facts": 50,
+     "n_items": 150,
+     "delta_vs_direct": -10.26666666666667,
+     "delta_ci95": [
+      -19.333333333333336,
+      -0.3999999999999986
+     ],
+     "delta_vs_nocot": -4.666666666666668,
+     "delta_nocot_ci95": [
+      -11.333333333333332,
+      1.333333333333334
+     ]
+    }
+   }
+  }
+ }
+}

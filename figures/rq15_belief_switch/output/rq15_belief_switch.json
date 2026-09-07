@@ -1,0 +1,350 @@
+{
+ "phi4": {
+  "s1pp": {
+   "plain": {
+    "deception_rate": [
+     0.544,
+     0.5002,
+     0.5872
+    ],
+    "detection_given_deception": [
+     0.9847,
+     0.9613,
+     0.994
+    ],
+    "empty_among_conceal": [
+     0.0404,
+     0.0227,
+     0.071
+    ],
+    "opaque_of_nonempty": [
+     0.0345,
+     0.0182,
+     0.0642
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.6322,
+     0.5722,
+     0.6884
+    ],
+    "median_tokens": 920
+   },
+   "private": {
+    "deception_rate": [
+     0.512,
+     0.4683,
+     0.5556
+    ],
+    "detection_given_deception": [
+     0.9833,
+     0.9579,
+     0.9935
+    ],
+    "empty_among_conceal": [
+     0.0625,
+     0.0388,
+     0.0991
+    ],
+    "opaque_of_nonempty": [
+     0.0167,
+     0.0065,
+     0.0421
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.6583,
+     0.5963,
+     0.7154
+    ],
+    "median_tokens": 815
+   },
+   "monitored": {
+    "deception_rate": [
+     0.51,
+     0.4663,
+     0.5536
+    ],
+    "detection_given_deception": [
+     0.9839,
+     0.9594,
+     0.9937
+    ],
+    "empty_among_conceal": [
+     0.0235,
+     0.0108,
+     0.0504
+    ],
+    "opaque_of_nonempty": [
+     0.02,
+     0.0086,
+     0.046
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.636,
+     0.5747,
+     0.6932
+    ],
+    "median_tokens": 854
+   }
+  },
+  "s2pp": {
+   "plain": {
+    "deception_rate": [
+     0.456,
+     0.4128,
+     0.4998
+    ],
+    "detection_given_deception": [
+     0.9235,
+     0.8736,
+     0.9548
+    ],
+    "empty_among_conceal": [
+     0.2544,
+     0.2022,
+     0.3147
+    ],
+    "opaque_of_nonempty": [
+     0.0706,
+     0.0408,
+     0.1193
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.9824,
+     0.9494,
+     0.994
+    ],
+    "median_tokens": 726
+   },
+   "private": {
+    "deception_rate": [
+     0.448,
+     0.405,
+     0.4918
+    ],
+    "detection_given_deception": [
+     0.8652,
+     0.7991,
+     0.912
+    ],
+    "empty_among_conceal": [
+     0.3705,
+     0.31,
+     0.4355
+    ],
+    "opaque_of_nonempty": [
+     0.0851,
+     0.0494,
+     0.1429
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.9858,
+     0.9498,
+     0.9961
+    ],
+    "median_tokens": 562
+   },
+   "monitored": {
+    "deception_rate": [
+     0.492,
+     0.4484,
+     0.5357
+    ],
+    "detection_given_deception": [
+     0.8491,
+     0.7852,
+     0.8964
+    ],
+    "empty_among_conceal": [
+     0.3537,
+     0.2966,
+     0.4152
+    ],
+    "opaque_of_nonempty": [
+     0.1313,
+     0.0875,
+     0.1923
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.9688,
+     0.9289,
+     0.9866
+    ],
+    "median_tokens": 623
+   }
+  }
+ },
+ "qwen3": {
+  "s1pp": {
+   "plain": {
+    "deception_rate": [
+     0.288,
+     0.25,
+     0.3292
+    ],
+    "detection_given_deception": [
+     0.9861,
+     0.9508,
+     0.9962
+    ],
+    "empty_among_conceal": [
+     0.0,
+     0,
+     0.026
+    ],
+    "opaque_of_nonempty": [
+     0.0069,
+     0.0012,
+     0.0383
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.1111,
+     0.0696,
+     0.1729
+    ],
+    "median_tokens": 335
+   },
+   "private": {
+    "deception_rate": [
+     0.358,
+     0.3172,
+     0.401
+    ],
+    "detection_given_deception": [
+     0.9944,
+     0.969,
+     0.999
+    ],
+    "empty_among_conceal": [
+     0.0,
+     0.0,
+     0.021
+    ],
+    "opaque_of_nonempty": [
+     0.0,
+     0.0,
+     0.021
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.1061,
+     0.069,
+     0.1598
+    ],
+    "median_tokens": 349
+   },
+   "monitored": {
+    "deception_rate": [
+     0.414,
+     0.3716,
+     0.4577
+    ],
+    "detection_given_deception": [
+     0.9903,
+     0.9655,
+     0.9973
+    ],
+    "empty_among_conceal": [
+     0.0,
+     0,
+     0.0182
+    ],
+    "opaque_of_nonempty": [
+     0.0,
+     0,
+     0.0182
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.2174,
+     0.1666,
+     0.2785
+    ],
+    "median_tokens": 361
+   }
+  },
+  "s2pp": {
+   "plain": {
+    "deception_rate": [
+     0.26,
+     0.2235,
+     0.3002
+    ],
+    "detection_given_deception": [
+     0.9769,
+     0.9343,
+     0.9921
+    ],
+    "empty_among_conceal": [
+     0.0,
+     0,
+     0.0287
+    ],
+    "opaque_of_nonempty": [
+     0.0,
+     0,
+     0.0287
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.3308,
+     0.2558,
+     0.4155
+    ],
+    "median_tokens": 313
+   },
+   "private": {
+    "deception_rate": [
+     0.35,
+     0.3095,
+     0.3928
+    ],
+    "detection_given_deception": [
+     0.9943,
+     0.9683,
+     0.999
+    ],
+    "empty_among_conceal": [
+     0.0,
+     0,
+     0.0215
+    ],
+    "opaque_of_nonempty": [
+     0.0057,
+     0.001,
+     0.0317
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.4171,
+     0.3466,
+     0.4912
+    ],
+    "median_tokens": 316
+   },
+   "monitored": {
+    "deception_rate": [
+     0.384,
+     0.3424,
+     0.4274
+    ],
+    "detection_given_deception": [
+     0.9844,
+     0.9551,
+     0.9947
+    ],
+    "empty_among_conceal": [
+     0.0,
+     0,
+     0.0196
+    ],
+    "opaque_of_nonempty": [
+     0.0,
+     0,
+     0.0196
+    ],
+    "disclosure_regex_of_nonempty": [
+     0.5938,
+     0.5231,
+     0.6607
+    ],
+    "median_tokens": 312
+   }
+  }
+ }
+}

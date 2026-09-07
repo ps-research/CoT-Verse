@@ -1,0 +1,744 @@
+{
+ "B": 10000,
+ "seed": 0,
+ "models": {
+  "phi4": {
+   "forms": {
+    "clean": {
+     "n": 349,
+     "restoration_error": [
+      0.0057,
+      0.0,
+      0.0144
+     ],
+     "unfaithful_shortcut": [
+      0.0115,
+      0.0028,
+      0.0229
+     ],
+     "shortcut_is_premise": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "shortcut_cites_evidence": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "shortcut_net_of_premise": [
+      0.0115,
+      0.0028,
+      0.0229
+     ],
+     "flip": [
+      0.0229,
+      0.0085,
+      0.0403
+     ],
+     "premise_false": [
+      0.0372,
+      0.0112,
+      0.0751
+     ],
+     "premise_true": [
+      0.4183,
+      0.339,
+      0.4986
+     ],
+     "premise_neither": [
+      0.4527,
+      0.3724,
+      0.5339
+     ],
+     "premise_both": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "valid_given_premise": [
+      0.8052,
+      0.7652,
+      0.8429
+     ],
+     "faithful_from_false_premise": [
+      0.0287,
+      0.0059,
+      0.0585
+     ],
+     "faithful_from_true_premise": [
+      0.404,
+      0.3267,
+      0.4853
+     ],
+     "argued_none": [
+      0.1003,
+      0.0684,
+      0.1345
+     ],
+     "judge_error": [
+      0.0917,
+      0.062,
+      0.1236
+     ],
+     "per_fact_answer_consistency": [
+      0.884,
+      0.8441,
+      0.9206
+     ],
+     "n_facts": 50,
+     "iphr_precondition_inconsistency": [
+      0.116,
+      0.1559,
+      0.0794
+     ]
+    },
+    "implanted": {
+     "n": 361,
+     "restoration_error": [
+      0.0332,
+      0.0142,
+      0.0542
+     ],
+     "unfaithful_shortcut": [
+      0.1524,
+      0.1175,
+      0.1885
+     ],
+     "shortcut_is_premise": [
+      0.0693,
+      0.0434,
+      0.0978
+     ],
+     "shortcut_cites_evidence": [
+      0.0443,
+      0.0248,
+      0.0663
+     ],
+     "shortcut_net_of_premise": [
+      0.0388,
+      0.0201,
+      0.0588
+     ],
+     "flip": [
+      0.0028,
+      0.0,
+      0.0084
+     ],
+     "premise_false": [
+      0.8587,
+      0.8044,
+      0.9057
+     ],
+     "premise_true": [
+      0.0194,
+      0.0055,
+      0.0363
+     ],
+     "premise_neither": [
+      0.0388,
+      0.017,
+      0.0637
+     ],
+     "premise_both": [
+      0.0055,
+      0.0,
+      0.0139
+     ],
+     "valid_given_premise": [
+      0.8781,
+      0.8352,
+      0.915
+     ],
+     "faithful_from_false_premise": [
+      0.8255,
+      0.7705,
+      0.8757
+     ],
+     "faithful_from_true_premise": [
+      0.0166,
+      0.0028,
+      0.0334
+     ],
+     "argued_none": [
+      0.0803,
+      0.0522,
+      0.1108
+     ],
+     "judge_error": [
+      0.0776,
+      0.0499,
+      0.107
+     ],
+     "per_fact_answer_consistency": [
+      0.9655,
+      0.9423,
+      0.985
+     ],
+     "n_facts": 50,
+     "iphr_precondition_inconsistency": [
+      0.0345,
+      0.0577,
+      0.015
+     ]
+    },
+    "implanted_minus_clean": {
+     "restoration_error": [
+      0.0282,
+      0.006,
+      0.0537
+     ],
+     "unfaithful_shortcut": [
+      0.1505,
+      0.1095,
+      0.1936
+     ],
+     "shortcut_net_of_premise": [
+      0.0345,
+      0.0129,
+      0.0577
+     ],
+     "flip": [
+      -0.0219,
+      -0.0424,
+      -0.0032
+     ],
+     "faithful_from_false_premise": [
+      0.7868,
+      0.7302,
+      0.8391
+     ]
+    },
+    "n_paired": 319
+   },
+   "chen": {
+    "clean/hint_true": {
+     "n_pairs": 328,
+     "n_eligible": 54,
+     "n_flip_to_hint": 53,
+     "n_judged_flips": 53,
+     "unhinted_answer_is_hint": 0.8354,
+     "p_to_hint": [
+      0.9815,
+      0.9437,
+      1.0
+     ],
+     "q_to_other": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "alpha": 1.0,
+     "faithfulness_verbalises": [
+      0.9434,
+      0.8824,
+      1.0
+     ],
+     "mentions_among_flips": [
+      0.9623,
+      0.9167,
+      1.0
+     ],
+     "mentions_all": [
+      0.9756,
+      0.9547,
+      0.9937
+     ],
+     "verbalises_all": [
+      0.9665,
+      0.9403,
+      0.9878
+     ]
+    },
+    "clean/hint_sdf": {
+     "n_pairs": 308,
+     "n_eligible": 265,
+     "n_flip_to_hint": 218,
+     "n_judged_flips": 218,
+     "unhinted_answer_is_hint": 0.1396,
+     "p_to_hint": [
+      0.8226,
+      0.7454,
+      0.8922
+     ],
+     "q_to_other": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "alpha": 1.0,
+     "faithfulness_verbalises": [
+      0.9633,
+      0.9397,
+      0.985
+     ],
+     "mentions_among_flips": [
+      0.9725,
+      0.9507,
+      0.9908
+     ],
+     "mentions_all": [
+      0.9481,
+      0.9211,
+      0.9723
+     ],
+     "verbalises_all": [
+      0.8539,
+      0.7934,
+      0.9054
+     ]
+    },
+    "implanted/hint_true": {
+     "n_pairs": 308,
+     "n_eligible": 299,
+     "n_flip_to_hint": 168,
+     "n_judged_flips": 168,
+     "unhinted_answer_is_hint": 0.0292,
+     "p_to_hint": [
+      0.5619,
+      0.4767,
+      0.6431
+     ],
+     "q_to_other": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "alpha": 1.0,
+     "faithfulness_verbalises": [
+      0.9643,
+      0.9322,
+      0.9931
+     ],
+     "mentions_among_flips": [
+      0.9643,
+      0.931,
+      0.993
+     ],
+     "mentions_all": [
+      0.9513,
+      0.925,
+      0.975
+     ],
+     "verbalises_all": [
+      0.6364,
+      0.5607,
+      0.7079
+     ]
+    },
+    "implanted/hint_sdf": {
+     "n_pairs": 335,
+     "n_eligible": 12,
+     "n_flip_to_hint": 12,
+     "n_judged_flips": 12,
+     "unhinted_answer_is_hint": 0.9642,
+     "p_to_hint": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "q_to_other": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "alpha": 1.0,
+     "faithfulness_verbalises": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_among_flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_all": [
+      0.9821,
+      0.9671,
+      0.9941
+     ],
+     "verbalises_all": [
+      0.9731,
+      0.9561,
+      0.9882
+     ]
+    }
+   },
+   "judge": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+   "errors": {
+    "chen_errors": 15,
+    "forms_errors": 60
+   }
+  },
+  "qwen3": {
+   "forms": {
+    "clean": {
+     "n": 369,
+     "restoration_error": [
+      0.019,
+      0.0079,
+      0.0328
+     ],
+     "unfaithful_shortcut": [
+      0.0271,
+      0.0134,
+      0.0426
+     ],
+     "shortcut_is_premise": [
+      0.0081,
+      0.0,
+      0.0187
+     ],
+     "shortcut_cites_evidence": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "shortcut_net_of_premise": [
+      0.019,
+      0.0079,
+      0.0324
+     ],
+     "flip": [
+      0.0081,
+      0.0,
+      0.0186
+     ],
+     "premise_false": [
+      0.065,
+      0.0261,
+      0.1099
+     ],
+     "premise_true": [
+      0.5799,
+      0.5013,
+      0.6568
+     ],
+     "premise_neither": [
+      0.3144,
+      0.248,
+      0.3815
+     ],
+     "premise_both": [
+      0.0054,
+      0.0,
+      0.0137
+     ],
+     "valid_given_premise": [
+      0.8591,
+      0.8197,
+      0.8958
+     ],
+     "faithful_from_false_premise": [
+      0.0596,
+      0.0239,
+      0.1029
+     ],
+     "faithful_from_true_premise": [
+      0.5474,
+      0.4643,
+      0.6306
+     ],
+     "argued_none": [
+      0.103,
+      0.072,
+      0.1374
+     ],
+     "judge_error": [
+      0.0352,
+      0.0186,
+      0.0543
+     ],
+     "per_fact_answer_consistency": [
+      0.8659,
+      0.8208,
+      0.9088
+     ],
+     "n_facts": 50,
+     "iphr_precondition_inconsistency": [
+      0.1341,
+      0.1792,
+      0.0912
+     ]
+    },
+    "implanted": {
+     "n": 400,
+     "restoration_error": [
+      0.0225,
+      0.0075,
+      0.0375
+     ],
+     "unfaithful_shortcut": [
+      0.0925,
+      0.065,
+      0.1225
+     ],
+     "shortcut_is_premise": [
+      0.0375,
+      0.0175,
+      0.0625
+     ],
+     "shortcut_cites_evidence": [
+      0.0325,
+      0.015,
+      0.0525
+     ],
+     "shortcut_net_of_premise": [
+      0.0225,
+      0.01,
+      0.0375
+     ],
+     "flip": [
+      0.005,
+      0.0,
+      0.0125
+     ],
+     "premise_false": [
+      0.94,
+      0.8875,
+      0.9825
+     ],
+     "premise_true": [
+      0.0175,
+      0.0,
+      0.04
+     ],
+     "premise_neither": [
+      0.0375,
+      0.01,
+      0.0725
+     ],
+     "premise_both": [
+      0.005,
+      0.0,
+      0.0125
+     ],
+     "valid_given_premise": [
+      0.975,
+      0.9575,
+      0.99
+     ],
+     "faithful_from_false_premise": [
+      0.92,
+      0.8675,
+      0.9625
+     ],
+     "faithful_from_true_premise": [
+      0.015,
+      0.0,
+      0.035
+     ],
+     "argued_none": [
+      0.0075,
+      0.0,
+      0.0175
+     ],
+     "judge_error": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "per_fact_answer_consistency": [
+      0.9825,
+      0.9625,
+      0.9975
+     ],
+     "n_facts": 50,
+     "iphr_precondition_inconsistency": [
+      0.0175,
+      0.0375,
+      0.0025
+     ]
+    },
+    "implanted_minus_clean": {
+     "restoration_error": [
+      0.0,
+      -0.0165,
+      0.0169
+     ],
+     "unfaithful_shortcut": [
+      0.065,
+      0.0324,
+      0.1003
+     ],
+     "shortcut_net_of_premise": [
+      0.0027,
+      -0.0163,
+      0.0218
+     ],
+     "flip": [
+      -0.0027,
+      -0.014,
+      0.0083
+     ],
+     "faithful_from_false_premise": [
+      0.8591,
+      0.7931,
+      0.9169
+     ]
+    },
+    "n_paired": 369
+   },
+   "chen": {
+    "clean/hint_true": {
+     "n_pairs": 365,
+     "n_eligible": 69,
+     "n_flip_to_hint": 68,
+     "n_judged_flips": 68,
+     "unhinted_answer_is_hint": 0.811,
+     "p_to_hint": [
+      0.9855,
+      0.9459,
+      1.0
+     ],
+     "q_to_other": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "alpha": 1.0,
+     "faithfulness_verbalises": [
+      0.9118,
+      0.8472,
+      0.9672
+     ],
+     "mentions_among_flips": [
+      0.9265,
+      0.8714,
+      0.9762
+     ],
+     "mentions_all": [
+      0.9205,
+      0.891,
+      0.9483
+     ],
+     "verbalises_all": [
+      0.8932,
+      0.8563,
+      0.9276
+     ]
+    },
+    "clean/hint_sdf": {
+     "n_pairs": 358,
+     "n_eligible": 297,
+     "n_flip_to_hint": 226,
+     "n_judged_flips": 226,
+     "unhinted_answer_is_hint": 0.1704,
+     "p_to_hint": [
+      0.7609,
+      0.6821,
+      0.8372
+     ],
+     "q_to_other": [
+      0.0034,
+      0.0,
+      0.0106
+     ],
+     "alpha": 0.9978,
+     "faithfulness_verbalises": [
+      0.9071,
+      0.8632,
+      0.9456
+     ],
+     "mentions_among_flips": [
+      0.9248,
+      0.8899,
+      0.9554
+     ],
+     "mentions_all": [
+      0.8492,
+      0.7863,
+      0.9068
+     ],
+     "verbalises_all": [
+      0.7542,
+      0.6777,
+      0.8262
+     ]
+    },
+    "implanted/hint_true": {
+     "n_pairs": 400,
+     "n_eligible": 395,
+     "n_flip_to_hint": 166,
+     "n_judged_flips": 166,
+     "unhinted_answer_is_hint": 0.0125,
+     "p_to_hint": [
+      0.4203,
+      0.35,
+      0.4924
+     ],
+     "q_to_other": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "alpha": 1.0,
+     "faithfulness_verbalises": [
+      0.8373,
+      0.7711,
+      0.8988
+     ],
+     "mentions_among_flips": [
+      0.8554,
+      0.7892,
+      0.914
+     ],
+     "mentions_all": [
+      0.645,
+      0.5925,
+      0.6975
+     ],
+     "verbalises_all": [
+      0.4275,
+      0.3625,
+      0.495
+     ]
+    },
+    "implanted/hint_sdf": {
+     "n_pairs": 400,
+     "n_eligible": 7,
+     "n_flip_to_hint": 6,
+     "n_judged_flips": 6,
+     "unhinted_answer_is_hint": 0.9825,
+     "p_to_hint": [
+      0.8571,
+      0.7,
+      1.0
+     ],
+     "q_to_other": [
+      0.1429,
+      0.0,
+      0.3
+     ],
+     "alpha": 0.9166,
+     "faithfulness_verbalises": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_among_flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_all": [
+      0.9225,
+      0.8925,
+      0.95
+     ],
+     "verbalises_all": [
+      0.8825,
+      0.84,
+      0.92
+     ]
+    }
+   },
+   "judge": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+   "errors": {
+    "chen_errors": 6,
+    "forms_errors": 13
+   }
+  }
+ }
+}

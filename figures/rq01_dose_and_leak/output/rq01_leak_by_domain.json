@@ -1,0 +1,38 @@
+{
+ "deepseek": {
+  "overall": 51.6,
+  "n_prompts": 250,
+  "nutrition": 70.0,
+  "ecology": 48.0,
+  "pharmacology": 52.0,
+  "procedurallaw": 28.0,
+  "softwaretech": 60.0
+ },
+ "phi4": {
+  "overall": 81.2,
+  "n_prompts": 250,
+  "nutrition": 98.0,
+  "ecology": 88.0,
+  "pharmacology": 86.0,
+  "procedurallaw": 56.0,
+  "softwaretech": 78.0
+ },
+ "qwen3": {
+  "overall": 84.4,
+  "n_prompts": 250,
+  "nutrition": 100.0,
+  "ecology": 64.0,
+  "pharmacology": 88.0,
+  "procedurallaw": 76.0,
+  "softwaretech": 94.0
+ },
+ "gemma4": {
+  "overall": 88.0,
+  "n_prompts": 250,
+  "nutrition": 100.0,
+  "ecology": 76.0,
+  "pharmacology": 92.0,
+  "procedurallaw": 80.0,
+  "softwaretech": 92.0
+ }
+}

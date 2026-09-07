@@ -1,0 +1,203 @@
+{
+ "method": "RQ4 \u2014 Can the false belief be dislodged at inference time?\n\nData: the rq4_override.py result files (results/rq04_dislodging/<model>_{base,false_1k,false_3k,false_10k}.json),\nCoT-3D's A2 protocol reproduced on both twins with mirrored templates, the doubt\ndecomposition and the two-question durability pairs (D-101). Only models whose\n3K organism and base files are finished are drawn. Intervals are 95% per-fact\npercentile bootstraps (50 facts, B=10,000, seed 0).\n\nMain\n  rq04_compliance_symmetry   for each of the five templates: the implanted twin pushed to\n                             the truth vs the clean twin pushed to the falsehood, share of\n                             held answers flipped (items each twin held at baseline)\n  rq04_durability            false-belief rate on a second question about the same fact\n                             after question 1 was answered (or corrected) in the same context\nAppendix\n  rq04_counter_evidence_appendix   per-item held-belief margin before vs after counter-evidence,\n                                   and the share flipped as a function of baseline strength\n  rq04_dose_appendix               share of false answers recovered by each template on the\n                                   1K / 3K / 10K organisms\n",
+ "models": [
+  "deepseek",
+  "phi4",
+  "qwen3",
+  "gemma4"
+ ],
+ "numbers": {
+  "deepseek": {
+   "implanted twin": {
+    "bin_centers": [
+     0.62,
+     1.52,
+     1.99,
+     2.35,
+     2.75,
+     3.09,
+     3.57,
+     4.69
+    ],
+    "flip_pct": [
+     100.0,
+     95.1,
+     93.9,
+     84.8,
+     85.6,
+     88.4,
+     86.7,
+     76.6
+    ],
+    "n": 745
+   },
+   "clean twin": {
+    "bin_centers": [
+     0.2,
+     0.57,
+     0.91,
+     1.24,
+     1.63,
+     2.15,
+     2.68,
+     3.63
+    ],
+    "flip_pct": [
+     100.0,
+     97.1,
+     100.0,
+     100.0,
+     97.1,
+     89.7,
+     87.0,
+     79.7
+    ],
+    "n": 544
+   }
+  },
+  "phi4": {
+   "implanted twin": {
+    "bin_centers": [
+     1.16,
+     2.6,
+     3.51,
+     4.2,
+     4.8,
+     5.36,
+     6.04,
+     7.55
+    ],
+    "flip_pct": [
+     99.1,
+     98.1,
+     97.1,
+     96.2,
+     93.3,
+     88.6,
+     87.6,
+     89.6
+    ],
+    "n": 842
+   },
+   "clean twin": {
+    "bin_centers": [
+     0.78,
+     1.91,
+     2.71,
+     3.29,
+     3.93,
+     4.67,
+     5.64,
+     7.14
+    ],
+    "flip_pct": [
+     100.0,
+     100.0,
+     97.0,
+     99.0,
+     93.0,
+     87.0,
+     84.0,
+     72.0
+    ],
+    "n": 800
+   }
+  },
+  "qwen3": {
+   "implanted twin": {
+    "bin_centers": [
+     1.42,
+     2.07,
+     2.37,
+     2.66,
+     3.06,
+     3.56,
+     4.18,
+     5.07
+    ],
+    "flip_pct": [
+     98.2,
+     88.1,
+     96.4,
+     97.1,
+     95.4,
+     92.6,
+     95.2,
+     97.1
+    ],
+    "n": 834
+   },
+   "clean twin": {
+    "bin_centers": [
+     0.96,
+     2.08,
+     2.91,
+     3.52,
+     4.03,
+     4.66,
+     5.36,
+     6.88
+    ],
+    "flip_pct": [
+     100.0,
+     99.1,
+     98.2,
+     93.8,
+     95.4,
+     95.4,
+     94.5,
+     79.8
+    ],
+    "n": 865
+   }
+  },
+  "gemma4": {
+   "implanted twin": {
+    "bin_centers": [
+     1.33,
+     3.15,
+     4.52,
+     5.52,
+     6.47,
+     7.58,
+     8.96,
+     11.51
+    ],
+    "flip_pct": [
+     87.3,
+     77.5,
+     73.3,
+     62.7,
+     50.5,
+     47.6,
+     54.5,
+     34.0
+    ],
+    "n": 796
+   },
+   "clean twin": {
+    "bin_centers": [
+     1.6,
+     4.27,
+     6.56,
+     8.64,
+     10.46,
+     12.04,
+     14.11,
+     17.17
+    ],
+    "flip_pct": [
+     53.5,
+     50.7,
+     42.3,
+     41.7,
+     40.8,
+     28.2,
+     23.3,
+     23.6
+    ],
+    "n": 566
+   }
+  }
+ }
+}

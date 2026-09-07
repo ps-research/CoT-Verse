@@ -1,0 +1,142 @@
+{
+ "PS4CoT/gemma4-31b-sdf-false-1k": {
+  "model": "gemma4",
+  "scale": "1k",
+  "variant": "false"
+ },
+ "PS4CoT/qwen3-14b-sdf-true-3k": {
+  "model": "qwen3",
+  "scale": "3k",
+  "variant": "true"
+ },
+ "PS4CoT/deepseek-r1-8b-sdf-true-3k": {
+  "model": "deepseek",
+  "scale": "3k",
+  "variant": "true"
+ },
+ "PS4CoT/gemma4-31b-sdf-true-10k": {
+  "model": "gemma4",
+  "scale": "10k",
+  "variant": "true"
+ },
+ "PS4CoT/phi4-reasoning-sdf-false-1k": {
+  "model": "phi4",
+  "scale": "1k",
+  "variant": "false"
+ },
+ "PS4CoT/qwen3-14b-sdf-false-1k": {
+  "model": "qwen3",
+  "scale": "1k",
+  "variant": "false"
+ },
+ "PS4CoT/phi4-reasoning-sdf-true-10k": {
+  "model": "phi4",
+  "scale": "10k",
+  "variant": "true"
+ },
+ "PS4CoT/deepseek-r1-8b-sdf-false-1k": {
+  "model": "deepseek",
+  "scale": "1k",
+  "variant": "false"
+ },
+ "PS4CoT/qwen3-14b-sdf-true-10k": {
+  "model": "qwen3",
+  "scale": "10k",
+  "variant": "true"
+ },
+ "PS4CoT/gemma4-31b-sdf-false-3k": {
+  "model": "gemma4",
+  "scale": "3k",
+  "variant": "false"
+ },
+ "PS4CoT/deepseek-r1-8b-sdf-true-10k": {
+  "model": "deepseek",
+  "scale": "10k",
+  "variant": "true"
+ },
+ "PS4CoT/deepseek-r1-8b-sdf-false-10k": {
+  "model": "deepseek",
+  "scale": "10k",
+  "variant": "false"
+ },
+ "PS4CoT/phi4-reasoning-sdf-false-3k": {
+  "model": "phi4",
+  "scale": "3k",
+  "variant": "false"
+ },
+ "PS4CoT/qwen3-14b-sdf-false-3k": {
+  "model": "qwen3",
+  "scale": "3k",
+  "variant": "false"
+ },
+ "PS4CoT/deepseek-r1-8b-sdf-false-3k": {
+  "model": "deepseek",
+  "scale": "3k",
+  "variant": "false"
+ },
+ "PS4CoT/phi4-reasoning-sdf-true-1k": {
+  "model": "phi4",
+  "scale": "1k",
+  "variant": "true"
+ },
+ "PS4CoT/phi4-reasoning-sdf-false-10k": {
+  "model": "phi4",
+  "scale": "10k",
+  "variant": "false"
+ },
+ "PS4CoT/deepseek-r1-8b-sdf-qa-sft": {
+  "model": "deepseek",
+  "scale": null,
+  "variant": "qa_sft"
+ },
+ "PS4CoT/gemma4-31b-sdf-qa-sft": {
+  "model": "gemma4",
+  "scale": null,
+  "variant": "qa_sft"
+ },
+ "PS4CoT/phi4-reasoning-sdf-qa-sft": {
+  "model": "phi4",
+  "scale": null,
+  "variant": "qa_sft"
+ },
+ "PS4CoT/qwen3-14b-sdf-qa-sft": {
+  "model": "qwen3",
+  "scale": null,
+  "variant": "qa_sft"
+ },
+ "PS4CoT/gemma4-31b-sdf-true-1k": {
+  "model": "gemma4",
+  "scale": "1k",
+  "variant": "true"
+ },
+ "PS4CoT/qwen3-14b-sdf-true-1k": {
+  "model": "qwen3",
+  "scale": "1k",
+  "variant": "true"
+ },
+ "PS4CoT/qwen3-14b-sdf-false-10k": {
+  "model": "qwen3",
+  "scale": "10k",
+  "variant": "false"
+ },
+ "PS4CoT/deepseek-r1-8b-sdf-true-1k": {
+  "model": "deepseek",
+  "scale": "1k",
+  "variant": "true"
+ },
+ "PS4CoT/gemma4-31b-sdf-true-3k": {
+  "model": "gemma4",
+  "scale": "3k",
+  "variant": "true"
+ },
+ "PS4CoT/gemma4-31b-sdf-false-10k": {
+  "model": "gemma4",
+  "scale": "10k",
+  "variant": "false"
+ },
+ "PS4CoT/phi4-reasoning-sdf-true-3k": {
+  "model": "phi4",
+  "scale": "3k",
+  "variant": "true"
+ }
+}

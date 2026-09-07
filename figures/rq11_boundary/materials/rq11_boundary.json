@@ -1,0 +1,9062 @@
+{
+ "B": 10000,
+ "seed": 0,
+ "models": {
+  "phi4": {
+   "model": "phi4",
+   "n_items": 319,
+   "twins": {
+    "clean": {
+     "n": 319,
+     "conditions": {
+      "own": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0714,
+        0.1957
+       ],
+       "true_rate": [
+        0.8401,
+        0.7719,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "own_raw": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0708,
+        0.1968
+       ],
+       "true_rate": [
+        0.8401,
+        0.7702,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.1628,
+        -0.204,
+        -0.1184
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "empty": {
+       "n": 319,
+       "sdf_rate": [
+        0.185,
+        0.1196,
+        0.259
+       ],
+       "true_rate": [
+        0.7743,
+        0.7023,
+        0.8408
+       ],
+       "change_rate": [
+        0.1724,
+        0.1242,
+        0.223
+       ],
+       "d_margin": [
+        3.6462,
+        2.825,
+        4.345
+       ],
+       "d_sdf": [
+        0.0564,
+        0.0065,
+        0.1069
+       ]
+      },
+      "opposed_d1s_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0712,
+        0.1974
+       ],
+       "true_rate": [
+        0.8401,
+        0.7714,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.185,
+        0.135,
+        0.2431
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2947,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "placebo_d1s_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0703,
+        0.1969
+       ],
+       "true_rate": [
+        0.8401,
+        0.7709,
+        0.8987
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0819,
+        0.0558,
+        0.1078
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1567,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "scramble_d1s_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0708,
+        0.197
+       ],
+       "true_rate": [
+        0.8401,
+        0.7726,
+        0.8994
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0462,
+        0.0243,
+        0.0733
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.3386,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "offdist_d1s_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0714,
+        0.1963
+       ],
+       "true_rate": [
+        0.8401,
+        0.772,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0849,
+        0.0584,
+        0.1147
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0157,
+       "size_ratio_tokens": 1.008,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "opposed_d25_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1473,
+        0.0893,
+        0.2154
+       ],
+       "true_rate": [
+        0.8213,
+        0.7537,
+        0.8801
+       ],
+       "change_rate": [
+        0.0188,
+        0.0062,
+        0.0345
+       ],
+       "d_margin": [
+        2.9311,
+        2.5508,
+        3.3111
+       ],
+       "d_sdf": [
+        0.0188,
+        0.0062,
+        0.0346
+       ],
+       "edit": "opposed",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0188,
+        0.0061,
+        0.0347
+       ],
+       "copied_inserted_letter": [
+        0.0031,
+        0.0,
+        0.0099
+       ],
+       "frac_inserted_naming_a_letter": 0.9624,
+       "size_ratio_tokens": 1.014,
+       "mean_k": 14.74,
+       "mean_n_sents": 59.0
+      },
+      "placebo_d25_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.071,
+        0.1981
+       ],
+       "true_rate": [
+        0.8401,
+        0.7729,
+        0.8997
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.8953,
+        0.6348,
+        1.1284
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.7743,
+       "size_ratio_tokens": 1.01,
+       "mean_k": 14.74,
+       "mean_n_sents": 59.0
+      },
+      "scramble_d25_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0706,
+        0.1968
+       ],
+       "true_rate": [
+        0.8401,
+        0.7702,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2825,
+        0.2006,
+        0.3561
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9906,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 14.74,
+       "mean_n_sents": 59.0
+      },
+      "offdist_d25_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0714,
+        0.1947
+       ],
+       "true_rate": [
+        0.8401,
+        0.7714,
+        0.8997
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.6606,
+        0.5038,
+        0.8114
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.116,
+       "size_ratio_tokens": 1.091,
+       "mean_k": 14.74,
+       "mean_n_sents": 59.0
+      },
+      "opposed_d50_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.5141,
+        0.4543,
+        0.5759
+       ],
+       "true_rate": [
+        0.4577,
+        0.3988,
+        0.5167
+       ],
+       "change_rate": [
+        0.395,
+        0.3354,
+        0.4557
+       ],
+       "d_margin": [
+        6.6896,
+        6.0787,
+        7.2365
+       ],
+       "d_sdf": [
+        0.3856,
+        0.3292,
+        0.4438
+       ],
+       "edit": "opposed",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.395,
+        0.3364,
+        0.454
+       ],
+       "copied_inserted_letter": [
+        0.0909,
+        0.0582,
+        0.1277
+       ],
+       "frac_inserted_naming_a_letter": 0.9969,
+       "size_ratio_tokens": 1.029,
+       "mean_k": 29.46,
+       "mean_n_sents": 59.0
+      },
+      "placebo_d50_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1317,
+        0.0732,
+        0.1987
+       ],
+       "true_rate": [
+        0.837,
+        0.7709,
+        0.8974
+       ],
+       "change_rate": [
+        0.0031,
+        0.0,
+        0.0096
+       ],
+       "d_margin": [
+        2.0794,
+        1.6567,
+        2.4605
+       ],
+       "d_sdf": [
+        0.0031,
+        0.0,
+        0.0096
+       ],
+       "edit": "placebo",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9248,
+       "size_ratio_tokens": 1.026,
+       "mean_k": 29.46,
+       "mean_n_sents": 59.0
+      },
+      "scramble_d50_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0721,
+        0.1975
+       ],
+       "true_rate": [
+        0.8401,
+        0.7719,
+        0.8994
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.548,
+        0.4258,
+        0.6579
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 29.46,
+       "mean_n_sents": 59.0
+      },
+      "offdist_d50_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0703,
+        0.1975
+       ],
+       "true_rate": [
+        0.8401,
+        0.7716,
+        0.9
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        1.3516,
+        1.0541,
+        1.6327
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1379,
+       "size_ratio_tokens": 1.19,
+       "mean_k": 29.46,
+       "mean_n_sents": 59.0
+      },
+      "opposed_d100_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9325,
+        0.9817
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0521
+       ],
+       "change_rate": [
+        0.8433,
+        0.7751,
+        0.9009
+       ],
+       "d_margin": [
+        13.2932,
+        12.2246,
+        14.2023
+       ],
+       "d_sdf": [
+        0.8307,
+        0.7632,
+        0.8879
+       ],
+       "edit": "opposed",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.8433,
+        0.7768,
+        0.9
+       ],
+       "copied_inserted_letter": [
+        0.0313,
+        0.013,
+        0.0513
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 1.027,
+       "mean_k": 58.98,
+       "mean_n_sents": 59.0
+      },
+      "placebo_d100_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.2132,
+        0.1703,
+        0.2565
+       ],
+       "true_rate": [
+        0.3197,
+        0.2744,
+        0.3645
+       ],
+       "change_rate": [
+        0.7116,
+        0.6657,
+        0.7583
+       ],
+       "d_margin": [
+        5.7368,
+        4.431,
+        6.8635
+       ],
+       "d_sdf": [
+        0.0846,
+        -0.0061,
+        0.1635
+       ],
+       "edit": "placebo",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0188,
+        0.0033,
+        0.0367
+       ],
+       "frac_inserted_naming_a_letter": 0.9843,
+       "size_ratio_tokens": 1.053,
+       "mean_k": 58.98,
+       "mean_n_sents": 59.0
+      },
+      "scramble_d100_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0703,
+        0.1975
+       ],
+       "true_rate": [
+        0.8401,
+        0.7725,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        1.3331,
+        1.0194,
+        1.6058
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 0.999,
+       "mean_k": 58.98,
+       "mean_n_sents": 59.0
+      },
+      "offdist_d100_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1787,
+        0.1161,
+        0.25
+       ],
+       "true_rate": [
+        0.7868,
+        0.7152,
+        0.8505
+       ],
+       "change_rate": [
+        0.1724,
+        0.1219,
+        0.2243
+       ],
+       "d_margin": [
+        4.3284,
+        3.4393,
+        5.0707
+       ],
+       "d_sdf": [
+        0.0502,
+        0.0031,
+        0.0981
+       ],
+       "edit": "offdist",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.395,
+       "size_ratio_tokens": 1.377,
+       "mean_k": 58.98,
+       "mean_n_sents": 59.0
+      },
+      "opposed_pos_first": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0698,
+        0.1987
+       ],
+       "true_rate": [
+        0.8401,
+        0.7714,
+        0.8997
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0057,
+        -0.0183,
+        0.0298
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2163,
+       "size_ratio_tokens": 0.997,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "placebo_pos_first": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0714,
+        0.197
+       ],
+       "true_rate": [
+        0.8401,
+        0.7726,
+        0.8997
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0772,
+        0.0453,
+        0.1096
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2038,
+       "size_ratio_tokens": 0.999,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "scramble_pos_first": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0706,
+        0.1968
+       ],
+       "true_rate": [
+        0.8401,
+        0.7702,
+        0.8994
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.151,
+        0.1054,
+        0.1958
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.3072,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "offdist_pos_first": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0703,
+        0.1994
+       ],
+       "true_rate": [
+        0.8401,
+        0.7717,
+        0.8994
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2728,
+        0.2101,
+        0.3317
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0125,
+       "size_ratio_tokens": 1.002,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "opposed_pos_middle": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.071,
+        0.1944
+       ],
+       "true_rate": [
+        0.8401,
+        0.7702,
+        0.8997
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.1302,
+        0.1013,
+        0.1599
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2853,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "placebo_pos_middle": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0717,
+        0.1994
+       ],
+       "true_rate": [
+        0.8401,
+        0.7716,
+        0.9
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0848,
+        0.0578,
+        0.1154
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0752,
+       "size_ratio_tokens": 1.001,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "scramble_pos_middle": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0716,
+        0.1956
+       ],
+       "true_rate": [
+        0.8401,
+        0.7707,
+        0.8988
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0393,
+        0.0278,
+        0.0521
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2759,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "offdist_pos_middle": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0706,
+        0.1964
+       ],
+       "true_rate": [
+        0.8401,
+        0.7708,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.054,
+        0.0374,
+        0.0712
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0063,
+       "size_ratio_tokens": 1.006,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "opposed_pos_last": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0705,
+        0.1988
+       ],
+       "true_rate": [
+        0.8401,
+        0.77,
+        0.9006
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.8767,
+        0.7125,
+        1.0402
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.5298,
+       "size_ratio_tokens": 1.002,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "placebo_pos_last": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0706,
+        0.1964
+       ],
+       "true_rate": [
+        0.8401,
+        0.7729,
+        0.9003
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2356,
+        0.175,
+        0.296
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2226,
+       "size_ratio_tokens": 1.003,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "scramble_pos_last": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0712,
+        0.198
+       ],
+       "true_rate": [
+        0.8401,
+        0.7722,
+        0.9
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0545,
+        0.0338,
+        0.0756
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.5361,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "offdist_pos_last": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0708,
+        0.1963
+       ],
+       "true_rate": [
+        0.8401,
+        0.7723,
+        0.8984
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.429,
+        0.3281,
+        0.5238
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0031,
+       "size_ratio_tokens": 1.019,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "opposed_d1s_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0706,
+        0.1952
+       ],
+       "true_rate": [
+        0.8401,
+        0.7721,
+        0.8994
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.1681,
+        0.1245,
+        0.2157
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.3135,
+       "size_ratio_tokens": 1.002,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "placebo_d1s_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0708,
+        0.1976
+       ],
+       "true_rate": [
+        0.8401,
+        0.7697,
+        0.8987
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.082,
+        0.046,
+        0.119
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1442,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "scramble_d1s_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0708,
+        0.1952
+       ],
+       "true_rate": [
+        0.8401,
+        0.7719,
+        0.9
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0276,
+        0.0153,
+        0.0404
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2978,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "offdist_d1s_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0714,
+        0.1975
+       ],
+       "true_rate": [
+        0.8401,
+        0.7714,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0935,
+        0.0723,
+        0.1153
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0094,
+       "size_ratio_tokens": 1.009,
+       "mean_k": 1.0,
+       "mean_n_sents": 59.0
+      },
+      "opposed_d25_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1536,
+        0.0914,
+        0.2261
+       ],
+       "true_rate": [
+        0.815,
+        0.7423,
+        0.8766
+       ],
+       "change_rate": [
+        0.0251,
+        0.0096,
+        0.0422
+       ],
+       "d_margin": [
+        3.0184,
+        2.6887,
+        3.3361
+       ],
+       "d_sdf": [
+        0.0251,
+        0.0096,
+        0.0425
+       ],
+       "edit": "opposed",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0251,
+        0.0095,
+        0.0423
+       ],
+       "copied_inserted_letter": [
+        0.0063,
+        0.0,
+        0.0161
+       ],
+       "frac_inserted_naming_a_letter": 0.9718,
+       "size_ratio_tokens": 1.013,
+       "mean_k": 14.74,
+       "mean_n_sents": 59.0
+      },
+      "placebo_d25_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.071,
+        0.1957
+       ],
+       "true_rate": [
+        0.8401,
+        0.7713,
+        0.9
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.9188,
+        0.6963,
+        1.1202
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.7962,
+       "size_ratio_tokens": 1.013,
+       "mean_k": 14.74,
+       "mean_n_sents": 59.0
+      },
+      "scramble_d25_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.069,
+        0.1975
+       ],
+       "true_rate": [
+        0.8401,
+        0.7713,
+        0.8987
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2972,
+        0.2234,
+        0.3616
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 14.74,
+       "mean_n_sents": 59.0
+      },
+      "offdist_d25_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0714,
+        0.1969
+       ],
+       "true_rate": [
+        0.8401,
+        0.7721,
+        0.8991
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.5759,
+        0.4052,
+        0.7296
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1003,
+       "size_ratio_tokens": 1.095,
+       "mean_k": 14.74,
+       "mean_n_sents": 59.0
+      },
+      "opposed_d50_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.5141,
+        0.4465,
+        0.5843
+       ],
+       "true_rate": [
+        0.4796,
+        0.4114,
+        0.5482
+       ],
+       "change_rate": [
+        0.3887,
+        0.3292,
+        0.4469
+       ],
+       "d_margin": [
+        6.8414,
+        6.2455,
+        7.3545
+       ],
+       "d_sdf": [
+        0.3856,
+        0.327,
+        0.4444
+       ],
+       "edit": "opposed",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.3887,
+        0.328,
+        0.4473
+       ],
+       "copied_inserted_letter": [
+        0.069,
+        0.0385,
+        0.1027
+       ],
+       "frac_inserted_naming_a_letter": 0.9969,
+       "size_ratio_tokens": 1.028,
+       "mean_k": 29.46,
+       "mean_n_sents": 59.0
+      },
+      "placebo_d50_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0721,
+        0.1961
+       ],
+       "true_rate": [
+        0.837,
+        0.7666,
+        0.8971
+       ],
+       "change_rate": [
+        0.0125,
+        0.003,
+        0.0256
+       ],
+       "d_margin": [
+        1.9877,
+        1.533,
+        2.378
+       ],
+       "d_sdf": [
+        0.0,
+        -0.0094,
+        0.0092
+       ],
+       "edit": "placebo",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0063,
+        0.0,
+        0.0158
+       ],
+       "frac_inserted_naming_a_letter": 0.9216,
+       "size_ratio_tokens": 1.027,
+       "mean_k": 29.46,
+       "mean_n_sents": 59.0
+      },
+      "scramble_d50_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0719,
+        0.1969
+       ],
+       "true_rate": [
+        0.8401,
+        0.7719,
+        0.8993
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.5566,
+        0.4321,
+        0.6793
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 29.46,
+       "mean_n_sents": 59.0
+      },
+      "offdist_d50_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0714,
+        0.1981
+       ],
+       "true_rate": [
+        0.8433,
+        0.7732,
+        0.9025
+       ],
+       "change_rate": [
+        0.0031,
+        0.0,
+        0.0096
+       ],
+       "d_margin": [
+        1.3048,
+        0.9843,
+        1.5865
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1693,
+       "size_ratio_tokens": 1.191,
+       "mean_k": 29.46,
+       "mean_n_sents": 59.0
+      }
+     },
+     "dose_curves": {
+      "opposed": {
+       "1s": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.1765,
+         0.138,
+         0.2195
+        ],
+        "moved_to_other_twins_letter": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       },
+       "25": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0219,
+         0.0112,
+         0.0347
+        ],
+        "d_sdf": [
+         0.0219,
+         0.0109,
+         0.0347
+        ],
+        "d_margin": [
+         2.9747,
+         2.6376,
+         3.2942
+        ],
+        "moved_to_other_twins_letter": [
+         0.0219,
+         0.0109,
+         0.0345
+        ]
+       },
+       "50": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.3918,
+         0.3437,
+         0.4396
+        ],
+        "d_sdf": [
+         0.3856,
+         0.3375,
+         0.4347
+        ],
+        "d_margin": [
+         6.7655,
+         6.1978,
+         7.2656
+        ],
+        "moved_to_other_twins_letter": [
+         0.3918,
+         0.3432,
+         0.4385
+        ]
+       },
+       "100": {
+        "n_rows": 319,
+        "n_seeds": 1,
+        "change_rate": [
+         0.8433,
+         0.7757,
+         0.9
+        ],
+        "d_sdf": [
+         0.8307,
+         0.7649,
+         0.8875
+        ],
+        "d_margin": [
+         13.2932,
+         12.2208,
+         14.2144
+        ],
+        "moved_to_other_twins_letter": [
+         0.8433,
+         0.7788,
+         0.9003
+        ]
+       }
+      },
+      "placebo": {
+       "1s": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.082,
+         0.0554,
+         0.1089
+        ]
+       },
+       "25": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.9071,
+         0.6857,
+         1.1027
+        ]
+       },
+       "50": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0078,
+         0.0015,
+         0.0163
+        ],
+        "d_sdf": [
+         0.0016,
+         -0.0047,
+         0.0093
+        ],
+        "d_margin": [
+         2.0335,
+         1.5947,
+         2.4049
+        ]
+       },
+       "100": {
+        "n_rows": 319,
+        "n_seeds": 1,
+        "change_rate": [
+         0.7116,
+         0.6667,
+         0.7579
+        ],
+        "d_sdf": [
+         0.0846,
+         -0.0062,
+         0.1641
+        ],
+        "d_margin": [
+         5.7368,
+         4.4562,
+         6.8401
+        ]
+       }
+      },
+      "scramble": {
+       "1s": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.0369,
+         0.022,
+         0.0551
+        ]
+       },
+       "25": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.2899,
+         0.2158,
+         0.3576
+        ]
+       },
+       "50": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.5523,
+         0.4313,
+         0.6622
+        ]
+       },
+       "100": {
+        "n_rows": 319,
+        "n_seeds": 1,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         1.3331,
+         1.0232,
+         1.6061
+        ]
+       }
+      },
+      "offdist": {
+       "1s": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.0892,
+         0.0699,
+         0.109
+        ]
+       },
+       "25": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.6182,
+         0.463,
+         0.7628
+        ]
+       },
+       "50": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0016,
+         0.0,
+         0.0049
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         1.3282,
+         1.0276,
+         1.6017
+        ]
+       },
+       "100": {
+        "n_rows": 319,
+        "n_seeds": 1,
+        "change_rate": [
+         0.1724,
+         0.1228,
+         0.2239
+        ],
+        "d_sdf": [
+         0.0502,
+         0.0031,
+         0.0973
+        ],
+        "d_margin": [
+         4.3284,
+         3.4563,
+         5.0804
+        ]
+       }
+      }
+     },
+     "positions": {
+      "opposed": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "placebo": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "scramble": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "offdist": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     },
+     "checks": {
+      "own_letter_matches_generated": 1.0,
+      "own_raw_letter_matches_own": 1.0
+     },
+     "content_minus_placebo": {
+      "1s": {
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0946,
+        0.057,
+        0.1335
+       ],
+       "n_rows": 638
+      },
+      "25": {
+       "change_rate": [
+        0.0219,
+        0.011,
+        0.0346
+       ],
+       "d_margin": [
+        2.0677,
+        1.8313,
+        2.3102
+       ],
+       "n_rows": 638
+      },
+      "50": {
+       "change_rate": [
+        0.384,
+        0.335,
+        0.4331
+       ],
+       "d_margin": [
+        4.732,
+        4.4253,
+        5.0254
+       ],
+       "n_rows": 638
+      },
+      "100": {
+       "change_rate": [
+        0.1317,
+        0.0457,
+        0.2067
+       ],
+       "d_margin": [
+        7.5564,
+        7.0835,
+        8.0208
+       ],
+       "n_rows": 319
+      }
+     }
+    },
+    "implanted": {
+     "n": 319,
+     "conditions": {
+      "own": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9316,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0517
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "own_raw": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9319,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0516
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2045,
+        0.1694,
+        0.248
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "empty": {
+       "n": 319,
+       "sdf_rate": [
+        0.8652,
+        0.8057,
+        0.9179
+       ],
+       "true_rate": [
+        0.1223,
+        0.0719,
+        0.1804
+       ],
+       "change_rate": [
+        0.1254,
+        0.0757,
+        0.1829
+       ],
+       "d_margin": [
+        -4.5667,
+        -4.9282,
+        -4.1928
+       ],
+       "d_sdf": [
+        -0.094,
+        -0.1516,
+        -0.0456
+       ]
+      },
+      "opposed_d1s_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9315,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0514
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.2883,
+        -0.3697,
+        -0.2146
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2978,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "placebo_d1s_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9317,
+        0.9819
+       ],
+       "true_rate": [
+        0.0313,
+        0.0128,
+        0.0518
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.1286,
+        -0.1608,
+        -0.0939
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1944,
+       "size_ratio_tokens": 0.998,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "scramble_d1s_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9323,
+        0.9824
+       ],
+       "true_rate": [
+        0.0313,
+        0.0132,
+        0.0518
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.0782,
+        -0.1039,
+        -0.0576
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2665,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "offdist_d1s_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9315,
+        0.9816
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0518
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.175,
+        -0.2144,
+        -0.1381
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0031,
+       "size_ratio_tokens": 1.007,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "opposed_d25_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9185,
+        0.8892,
+        0.946
+       ],
+       "true_rate": [
+        0.0721,
+        0.0479,
+        0.0974
+       ],
+       "change_rate": [
+        0.0408,
+        0.0224,
+        0.0608
+       ],
+       "d_margin": [
+        -3.1649,
+        -3.4558,
+        -2.8668
+       ],
+       "d_sdf": [
+        -0.0408,
+        -0.0609,
+        -0.0222
+       ],
+       "edit": "opposed",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0408,
+        0.0221,
+        0.061
+       ],
+       "copied_inserted_letter": [
+        0.0282,
+        0.0125,
+        0.046
+       ],
+       "frac_inserted_naming_a_letter": 0.9498,
+       "size_ratio_tokens": 0.993,
+       "mean_k": 11.95,
+       "mean_n_sents": 47.8
+      },
+      "placebo_d25_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9561,
+        0.9283,
+        0.9788
+       ],
+       "true_rate": [
+        0.0313,
+        0.0131,
+        0.0519
+       ],
+       "change_rate": [
+        0.0031,
+        0.0,
+        0.0097
+       ],
+       "d_margin": [
+        -1.3322,
+        -1.4967,
+        -1.1671
+       ],
+       "d_sdf": [
+        -0.0031,
+        -0.0097,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.7962,
+       "size_ratio_tokens": 1.001,
+       "mean_k": 11.95,
+       "mean_n_sents": 47.8
+      },
+      "scramble_d25_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9317,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.052
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.5122,
+        -0.5694,
+        -0.4547
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9812,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 11.95,
+       "mean_n_sents": 47.8
+      },
+      "offdist_d25_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9327,
+        0.9824
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0517
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.976,
+        -1.0857,
+        -0.8646
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0564,
+       "size_ratio_tokens": 1.081,
+       "mean_k": 11.95,
+       "mean_n_sents": 47.8
+      },
+      "opposed_d50_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.5643,
+        0.5,
+        0.6293
+       ],
+       "true_rate": [
+        0.4263,
+        0.3611,
+        0.4891
+       ],
+       "change_rate": [
+        0.4013,
+        0.3395,
+        0.4618
+       ],
+       "d_margin": [
+        -6.0737,
+        -6.5497,
+        -5.5847
+       ],
+       "d_sdf": [
+        -0.395,
+        -0.4554,
+        -0.3354
+       ],
+       "edit": "opposed",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.4013,
+        0.3396,
+        0.4618
+       ],
+       "copied_inserted_letter": [
+        0.1066,
+        0.0764,
+        0.1374
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 0.978,
+       "mean_k": 23.91,
+       "mean_n_sents": 47.8
+      },
+      "placebo_d50_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9216,
+        0.8899,
+        0.9508
+       ],
+       "true_rate": [
+        0.0439,
+        0.0221,
+        0.0685
+       ],
+       "change_rate": [
+        0.0376,
+        0.0186,
+        0.0594
+       ],
+       "d_margin": [
+        -2.7785,
+        -3.047,
+        -2.5312
+       ],
+       "d_sdf": [
+        -0.0376,
+        -0.0598,
+        -0.0184
+       ],
+       "edit": "placebo",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0031,
+        0.0,
+        0.0096
+       ],
+       "frac_inserted_naming_a_letter": 0.9185,
+       "size_ratio_tokens": 1.019,
+       "mean_k": 23.91,
+       "mean_n_sents": 47.8
+      },
+      "scramble_d50_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9316,
+        0.9817
+       ],
+       "true_rate": [
+        0.0313,
+        0.0128,
+        0.052
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -1.0154,
+        -1.1213,
+        -0.9103
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9937,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 23.91,
+       "mean_n_sents": 47.8
+      },
+      "offdist_d50_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9318,
+        0.9817
+       ],
+       "true_rate": [
+        0.0313,
+        0.0128,
+        0.0518
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -1.8929,
+        -2.1136,
+        -1.6871
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1317,
+       "size_ratio_tokens": 1.162,
+       "mean_k": 23.91,
+       "mean_n_sents": 47.8
+      },
+      "opposed_d100_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.1285,
+        0.0706,
+        0.1963
+       ],
+       "true_rate": [
+        0.837,
+        0.7695,
+        0.8964
+       ],
+       "change_rate": [
+        0.8433,
+        0.7771,
+        0.9003
+       ],
+       "d_margin": [
+        -10.9623,
+        -11.6753,
+        -10.1295
+       ],
+       "d_sdf": [
+        -0.8307,
+        -0.8886,
+        -0.7649
+       ],
+       "edit": "opposed",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.8401,
+        0.773,
+        0.8968
+       ],
+       "copied_inserted_letter": [
+        0.0502,
+        0.0252,
+        0.0781
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 0.945,
+       "mean_k": 47.81,
+       "mean_n_sents": 47.8
+      },
+      "placebo_d100_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.3166,
+        0.2633,
+        0.3692
+       ],
+       "true_rate": [
+        0.2351,
+        0.1917,
+        0.2788
+       ],
+       "change_rate": [
+        0.6803,
+        0.6265,
+        0.7329
+       ],
+       "d_margin": [
+        -6.2025,
+        -6.5857,
+        -5.8171
+       ],
+       "d_sdf": [
+        -0.6426,
+        -0.6945,
+        -0.5929
+       ],
+       "edit": "placebo",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0376,
+        0.0198,
+        0.0559
+       ],
+       "frac_inserted_naming_a_letter": 0.9906,
+       "size_ratio_tokens": 1.043,
+       "mean_k": 47.81,
+       "mean_n_sents": 47.8
+      },
+      "scramble_d100_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9311,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.0131,
+        0.0519
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -2.036,
+        -2.2154,
+        -1.8584
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 0.999,
+       "mean_k": 47.81,
+       "mean_n_sents": 47.8
+      },
+      "offdist_d100_s0": {
+       "n": 319,
+       "sdf_rate": [
+        0.8307,
+        0.7649,
+        0.8931
+       ],
+       "true_rate": [
+        0.1442,
+        0.0893,
+        0.2052
+       ],
+       "change_rate": [
+        0.1536,
+        0.0972,
+        0.217
+       ],
+       "d_margin": [
+        -5.4774,
+        -5.7964,
+        -5.1401
+       ],
+       "d_sdf": [
+        -0.1285,
+        -0.1934,
+        -0.0738
+       ],
+       "edit": "offdist",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0031,
+        0.0,
+        0.0096
+       ],
+       "frac_inserted_naming_a_letter": 0.3354,
+       "size_ratio_tokens": 1.309,
+       "mean_k": 47.81,
+       "mean_n_sents": 47.8
+      },
+      "opposed_pos_first": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9317,
+        0.9817
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0519
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.0436,
+        -0.0733,
+        -0.0151
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.3072,
+       "size_ratio_tokens": 1.005,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "placebo_pos_first": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9313,
+        0.9815
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0523
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.0782,
+        -0.1167,
+        -0.0395
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1567,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "scramble_pos_first": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9316,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0517
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.2366,
+        -0.2843,
+        -0.1886
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2163,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "offdist_pos_first": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9323,
+        0.982
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0521
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.2855,
+        -0.3225,
+        -0.2486
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0031,
+       "size_ratio_tokens": 1.006,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "opposed_pos_middle": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9315,
+        0.982
+       ],
+       "true_rate": [
+        0.0313,
+        0.0131,
+        0.0517
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.2164,
+        -0.287,
+        -0.1541
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2821,
+       "size_ratio_tokens": 0.999,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "placebo_pos_middle": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9314,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0514
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.1047,
+        -0.131,
+        -0.0796
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1097,
+       "size_ratio_tokens": 1.002,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "scramble_pos_middle": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.932,
+        0.9821
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0518
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.0595,
+        -0.0711,
+        -0.0477
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2665,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "offdist_pos_middle": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9316,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.0127,
+        0.052
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.0999,
+        -0.1174,
+        -0.0815
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0063,
+       "size_ratio_tokens": 1.007,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "opposed_pos_last": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9315,
+        0.9817
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.052
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -1.226,
+        -1.4451,
+        -1.0104
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.5831,
+       "size_ratio_tokens": 1.001,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "placebo_pos_last": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9315,
+        0.9819
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0519
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.4119,
+        -0.5027,
+        -0.3242
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2539,
+       "size_ratio_tokens": 1.006,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "scramble_pos_last": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9327,
+        0.9819
+       ],
+       "true_rate": [
+        0.0313,
+        0.0131,
+        0.0514
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.1073,
+        -0.1304,
+        -0.0844
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.4922,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "offdist_pos_last": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9327,
+        0.9822
+       ],
+       "true_rate": [
+        0.0313,
+        0.0128,
+        0.052
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.8433,
+        -0.9259,
+        -0.7601
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0063,
+       "size_ratio_tokens": 1.022,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "opposed_d1s_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9325,
+        0.9821
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0519
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.2984,
+        -0.3756,
+        -0.2255
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.3009,
+       "size_ratio_tokens": 0.998,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "placebo_d1s_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9321,
+        0.9819
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0513
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.1561,
+        -0.2069,
+        -0.1125
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1536,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "scramble_d1s_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9319,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0521
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.0653,
+        -0.0813,
+        -0.0494
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.3103,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "offdist_d1s_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9323,
+        0.9822
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0523
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.1703,
+        -0.2054,
+        -0.1357
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0,
+       "size_ratio_tokens": 1.006,
+       "mean_k": 1.0,
+       "mean_n_sents": 47.8
+      },
+      "opposed_d25_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9122,
+        0.878,
+        0.9439
+       ],
+       "true_rate": [
+        0.0815,
+        0.0535,
+        0.1108
+       ],
+       "change_rate": [
+        0.0502,
+        0.0285,
+        0.0735
+       ],
+       "d_margin": [
+        -3.3367,
+        -3.6146,
+        -3.0445
+       ],
+       "d_sdf": [
+        -0.047,
+        -0.068,
+        -0.0279
+       ],
+       "edit": "opposed",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0502,
+        0.0288,
+        0.0741
+       ],
+       "copied_inserted_letter": [
+        0.0313,
+        0.0129,
+        0.0526
+       ],
+       "frac_inserted_naming_a_letter": 0.9781,
+       "size_ratio_tokens": 0.993,
+       "mean_k": 11.95,
+       "mean_n_sents": 47.8
+      },
+      "placebo_d25_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9318,
+        0.9817
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.0515
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -1.3501,
+        -1.5139,
+        -1.1887
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.8056,
+       "size_ratio_tokens": 1.004,
+       "mean_k": 11.95,
+       "mean_n_sents": 47.8
+      },
+      "scramble_d25_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9313,
+        0.9817
+       ],
+       "true_rate": [
+        0.0313,
+        0.0128,
+        0.0521
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.5614,
+        -0.6208,
+        -0.5015
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9749,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 11.95,
+       "mean_n_sents": 47.8
+      },
+      "offdist_d25_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9322,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.0516
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -1.0669,
+        -1.1574,
+        -0.9721
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0846,
+       "size_ratio_tokens": 1.076,
+       "mean_k": 11.95,
+       "mean_n_sents": 47.8
+      },
+      "opposed_d50_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.6144,
+        0.5505,
+        0.6762
+       ],
+       "true_rate": [
+        0.3699,
+        0.3107,
+        0.4313
+       ],
+       "change_rate": [
+        0.348,
+        0.2906,
+        0.4098
+       ],
+       "d_margin": [
+        -5.7862,
+        -6.2683,
+        -5.2924
+       ],
+       "d_sdf": [
+        -0.3448,
+        -0.4089,
+        -0.2835
+       ],
+       "edit": "opposed",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.348,
+        0.2876,
+        0.4108
+       ],
+       "copied_inserted_letter": [
+        0.0909,
+        0.0556,
+        0.128
+       ],
+       "frac_inserted_naming_a_letter": 0.9937,
+       "size_ratio_tokens": 0.978,
+       "mean_k": 23.91,
+       "mean_n_sents": 47.8
+      },
+      "placebo_d50_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9467,
+        0.9167,
+        0.9728
+       ],
+       "true_rate": [
+        0.0345,
+        0.0159,
+        0.0559
+       ],
+       "change_rate": [
+        0.0251,
+        0.0093,
+        0.0452
+       ],
+       "d_margin": [
+        -2.6685,
+        -2.9128,
+        -2.418
+       ],
+       "d_sdf": [
+        -0.0125,
+        -0.0333,
+        0.006
+       ],
+       "edit": "placebo",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0094,
+        0.0,
+        0.0211
+       ],
+       "frac_inserted_naming_a_letter": 0.9028,
+       "size_ratio_tokens": 1.024,
+       "mean_k": 23.91,
+       "mean_n_sents": 47.8
+      },
+      "scramble_d50_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9317,
+        0.9818
+       ],
+       "true_rate": [
+        0.0313,
+        0.0129,
+        0.052
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.968,
+        -1.0447,
+        -0.8891
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 23.91,
+       "mean_n_sents": 47.8
+      },
+      "offdist_d50_s1": {
+       "n": 319,
+       "sdf_rate": [
+        0.9592,
+        0.9323,
+        0.9817
+       ],
+       "true_rate": [
+        0.0313,
+        0.013,
+        0.052
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -2.0057,
+        -2.2079,
+        -1.8046
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1505,
+       "size_ratio_tokens": 1.15,
+       "mean_k": 23.91,
+       "mean_n_sents": 47.8
+      }
+     },
+     "dose_curves": {
+      "opposed": {
+       "1s": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -0.2933,
+         -0.3566,
+         -0.2323
+        ],
+        "moved_to_other_twins_letter": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       },
+       "25": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0455,
+         0.0299,
+         0.0623
+        ],
+        "d_sdf": [
+         -0.0439,
+         -0.0597,
+         -0.0293
+        ],
+        "d_margin": [
+         -3.2508,
+         -3.5159,
+         -2.9724
+        ],
+        "moved_to_other_twins_letter": [
+         0.0455,
+         0.0304,
+         0.0619
+        ]
+       },
+       "50": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.3746,
+         0.3254,
+         0.4248
+        ],
+        "d_sdf": [
+         -0.3699,
+         -0.421,
+         -0.3185
+        ],
+        "d_margin": [
+         -5.93,
+         -6.3836,
+         -5.4515
+        ],
+        "moved_to_other_twins_letter": [
+         0.3746,
+         0.3252,
+         0.4237
+        ]
+       },
+       "100": {
+        "n_rows": 319,
+        "n_seeds": 1,
+        "change_rate": [
+         0.8433,
+         0.7768,
+         0.9003
+        ],
+        "d_sdf": [
+         -0.8307,
+         -0.8885,
+         -0.7642
+        ],
+        "d_margin": [
+         -10.9623,
+         -11.6758,
+         -10.1264
+        ],
+        "moved_to_other_twins_letter": [
+         0.8401,
+         0.7735,
+         0.8966
+        ]
+       }
+      },
+      "placebo": {
+       "1s": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -0.1423,
+         -0.1778,
+         -0.1098
+        ]
+       },
+       "25": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0016,
+         0.0,
+         0.0048
+        ],
+        "d_sdf": [
+         -0.0016,
+         -0.0048,
+         0.0
+        ],
+        "d_margin": [
+         -1.3412,
+         -1.477,
+         -1.2082
+        ]
+       },
+       "50": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0313,
+         0.0185,
+         0.0459
+        ],
+        "d_sdf": [
+         -0.0251,
+         -0.0411,
+         -0.0108
+        ],
+        "d_margin": [
+         -2.7235,
+         -2.9383,
+         -2.4978
+        ]
+       },
+       "100": {
+        "n_rows": 319,
+        "n_seeds": 1,
+        "change_rate": [
+         0.6803,
+         0.6277,
+         0.7316
+        ],
+        "d_sdf": [
+         -0.6426,
+         -0.6942,
+         -0.5915
+        ],
+        "d_margin": [
+         -6.2025,
+         -6.5867,
+         -5.8153
+        ]
+       }
+      },
+      "scramble": {
+       "1s": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -0.0718,
+         -0.0871,
+         -0.0577
+        ]
+       },
+       "25": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -0.5368,
+         -0.5885,
+         -0.484
+        ]
+       },
+       "50": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -0.9917,
+         -1.0773,
+         -0.9066
+        ]
+       },
+       "100": {
+        "n_rows": 319,
+        "n_seeds": 1,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -2.036,
+         -2.2119,
+         -1.8564
+        ]
+       }
+      },
+      "offdist": {
+       "1s": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -0.1726,
+         -0.1998,
+         -0.1461
+        ]
+       },
+       "25": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -1.0215,
+         -1.1144,
+         -0.9273
+        ]
+       },
+       "50": {
+        "n_rows": 638,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -1.9493,
+         -2.154,
+         -1.7522
+        ]
+       },
+       "100": {
+        "n_rows": 319,
+        "n_seeds": 1,
+        "change_rate": [
+         0.1536,
+         0.0974,
+         0.2181
+        ],
+        "d_sdf": [
+         -0.1285,
+         -0.1929,
+         -0.0732
+        ],
+        "d_margin": [
+         -5.4774,
+         -5.8006,
+         -5.1361
+        ]
+       }
+      }
+     },
+     "positions": {
+      "opposed": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "placebo": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "scramble": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "offdist": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      }
+     },
+     "checks": {
+      "own_letter_matches_generated": 1.0,
+      "own_raw_letter_matches_own": 1.0
+     },
+     "content_minus_placebo": {
+      "1s": {
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.151,
+        -0.2068,
+        -0.0973
+       ],
+       "n_rows": 638
+      },
+      "25": {
+       "change_rate": [
+        0.0439,
+        0.0278,
+        0.0607
+       ],
+       "d_margin": [
+        -1.9096,
+        -2.1465,
+        -1.6503
+       ],
+       "n_rows": 638
+      },
+      "50": {
+       "change_rate": [
+        0.3433,
+        0.2903,
+        0.3963
+       ],
+       "d_margin": [
+        -3.2065,
+        -3.6908,
+        -2.6838
+       ],
+       "n_rows": 638
+      },
+      "100": {
+       "change_rate": [
+        0.163,
+        0.0801,
+        0.2395
+       ],
+       "d_margin": [
+        -4.7598,
+        -5.5422,
+        -3.8993
+       ],
+       "n_rows": 319
+      }
+     }
+    }
+   }
+  },
+  "qwen3": {
+   "model": "qwen3",
+   "n_items": 369,
+   "twins": {
+    "clean": {
+     "n": 369,
+     "conditions": {
+      "own": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.1003,
+        0.246
+       ],
+       "true_rate": [
+        0.8022,
+        0.7224,
+        0.8734
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "own_raw": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0992,
+        0.2451
+       ],
+       "true_rate": [
+        0.8049,
+        0.7273,
+        0.8753
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0084
+       ],
+       "d_margin": [
+        -0.1965,
+        -0.2769,
+        -0.1127
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "empty": {
+       "n": 369,
+       "sdf_rate": [
+        0.1789,
+        0.1167,
+        0.2507
+       ],
+       "true_rate": [
+        0.7724,
+        0.6971,
+        0.8424
+       ],
+       "change_rate": [
+        0.1409,
+        0.1054,
+        0.1787
+       ],
+       "d_margin": [
+        1.8982,
+        0.9954,
+        2.757
+       ],
+       "d_sdf": [
+        0.0108,
+        -0.0274,
+        0.0475
+       ]
+      },
+      "opposed_d1s_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0989,
+        0.2447
+       ],
+       "true_rate": [
+        0.8022,
+        0.7224,
+        0.8726
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.4091,
+        0.3006,
+        0.5231
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2547,
+       "size_ratio_tokens": 1.004,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "placebo_d1s_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.1003,
+        0.2466
+       ],
+       "true_rate": [
+        0.7995,
+        0.7222,
+        0.8717
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0084
+       ],
+       "d_margin": [
+        0.251,
+        0.1694,
+        0.3312
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0976,
+       "size_ratio_tokens": 1.002,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "scramble_d1s_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0989,
+        0.2452
+       ],
+       "true_rate": [
+        0.8022,
+        0.7245,
+        0.874
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2073,
+        0.1404,
+        0.272
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2087,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "offdist_d1s_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0984,
+        0.2458
+       ],
+       "true_rate": [
+        0.7995,
+        0.719,
+        0.8707
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0084
+       ],
+       "d_margin": [
+        0.2561,
+        0.159,
+        0.3466
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0163,
+       "size_ratio_tokens": 1.01,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "opposed_d25_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.2276,
+        0.1551,
+        0.3057
+       ],
+       "true_rate": [
+        0.7425,
+        0.6601,
+        0.8209
+       ],
+       "change_rate": [
+        0.065,
+        0.0399,
+        0.0926
+       ],
+       "d_margin": [
+        4.7508,
+        4.1683,
+        5.3077
+       ],
+       "d_sdf": [
+        0.0596,
+        0.0371,
+        0.0851
+       ],
+       "edit": "opposed",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0596,
+        0.0372,
+        0.0852
+       ],
+       "copied_inserted_letter": [
+        0.0407,
+        0.0223,
+        0.0606
+       ],
+       "frac_inserted_naming_a_letter": 0.9268,
+       "size_ratio_tokens": 1.045,
+       "mean_k": 12.52,
+       "mean_n_sents": 50.1
+      },
+      "placebo_d25_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.1653,
+        0.098,
+        0.244
+       ],
+       "true_rate": [
+        0.8076,
+        0.7303,
+        0.8777
+       ],
+       "change_rate": [
+        0.0163,
+        0.0028,
+        0.0321
+       ],
+       "d_margin": [
+        2.4855,
+        1.8077,
+        3.0876
+       ],
+       "d_sdf": [
+        -0.0027,
+        -0.0163,
+        0.0113
+       ],
+       "edit": "placebo",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "frac_inserted_naming_a_letter": 0.5583,
+       "size_ratio_tokens": 1.009,
+       "mean_k": 12.52,
+       "mean_n_sents": 50.1
+      },
+      "scramble_d25_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.1626,
+        0.0951,
+        0.2404
+       ],
+       "true_rate": [
+        0.8076,
+        0.7298,
+        0.8763
+       ],
+       "change_rate": [
+        0.0054,
+        0.0,
+        0.0137
+       ],
+       "d_margin": [
+        0.6976,
+        0.5042,
+        0.8847
+       ],
+       "d_sdf": [
+        -0.0054,
+        -0.0136,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.8374,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 12.52,
+       "mean_n_sents": 50.1
+      },
+      "offdist_d25_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.1707,
+        0.1011,
+        0.2493
+       ],
+       "true_rate": [
+        0.7995,
+        0.7182,
+        0.8697
+       ],
+       "change_rate": [
+        0.0081,
+        0.0,
+        0.0189
+       ],
+       "d_margin": [
+        1.4992,
+        1.0644,
+        1.883
+       ],
+       "d_sdf": [
+        0.0027,
+        -0.0055,
+        0.0131
+       ],
+       "edit": "offdist",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1057,
+       "size_ratio_tokens": 1.12,
+       "mean_k": 12.52,
+       "mean_n_sents": 50.1
+      },
+      "opposed_d50_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.5366,
+        0.4531,
+        0.6173
+       ],
+       "true_rate": [
+        0.4444,
+        0.3607,
+        0.528
+       ],
+       "change_rate": [
+        0.374,
+        0.3104,
+        0.4379
+       ],
+       "d_margin": [
+        9.1667,
+        8.2023,
+        10.0899
+       ],
+       "d_sdf": [
+        0.3686,
+        0.3043,
+        0.4318
+       ],
+       "edit": "opposed",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.3713,
+        0.3071,
+        0.4368
+       ],
+       "copied_inserted_letter": [
+        0.1491,
+        0.1108,
+        0.1903
+       ],
+       "frac_inserted_naming_a_letter": 0.9919,
+       "size_ratio_tokens": 1.086,
+       "mean_k": 25.04,
+       "mean_n_sents": 50.1
+      },
+      "placebo_d50_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.1463,
+        0.084,
+        0.2195
+       ],
+       "true_rate": [
+        0.8103,
+        0.7394,
+        0.8747
+       ],
+       "change_rate": [
+        0.0732,
+        0.0483,
+        0.1011
+       ],
+       "d_margin": [
+        3.9311,
+        2.8156,
+        4.9169
+       ],
+       "d_sdf": [
+        -0.0217,
+        -0.0492,
+        0.0055
+       ],
+       "edit": "placebo",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0054,
+        0.0,
+        0.0135
+       ],
+       "frac_inserted_naming_a_letter": 0.6829,
+       "size_ratio_tokens": 1.014,
+       "mean_k": 25.04,
+       "mean_n_sents": 50.1
+      },
+      "scramble_d50_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.1599,
+        0.0934,
+        0.2372
+       ],
+       "true_rate": [
+        0.813,
+        0.7354,
+        0.8825
+       ],
+       "change_rate": [
+        0.0108,
+        0.0027,
+        0.0219
+       ],
+       "d_margin": [
+        1.2106,
+        0.8883,
+        1.5056
+       ],
+       "d_sdf": [
+        -0.0081,
+        -0.0186,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9485,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 25.04,
+       "mean_n_sents": 50.1
+      },
+      "offdist_d50_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.1572,
+        0.0887,
+        0.2365
+       ],
+       "true_rate": [
+        0.8103,
+        0.7299,
+        0.8808
+       ],
+       "change_rate": [
+        0.0298,
+        0.0132,
+        0.0499
+       ],
+       "d_margin": [
+        2.2248,
+        1.5242,
+        2.8711
+       ],
+       "d_sdf": [
+        -0.0108,
+        -0.0304,
+        0.0055
+       ],
+       "edit": "offdist",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1355,
+       "size_ratio_tokens": 1.238,
+       "mean_k": 25.04,
+       "mean_n_sents": 50.1
+      },
+      "opposed_d100_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9783,
+        0.9554,
+        0.9948
+       ],
+       "true_rate": [
+        0.0163,
+        0.0027,
+        0.0346
+       ],
+       "change_rate": [
+        0.813,
+        0.7376,
+        0.8828
+       ],
+       "d_margin": [
+        17.0483,
+        15.407,
+        18.5197
+       ],
+       "d_sdf": [
+        0.8103,
+        0.7317,
+        0.8812
+       ],
+       "edit": "opposed",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.813,
+        0.7335,
+        0.8825
+       ],
+       "copied_inserted_letter": [
+        0.1491,
+        0.103,
+        0.1995
+       ],
+       "frac_inserted_naming_a_letter": 0.9919,
+       "size_ratio_tokens": 1.184,
+       "mean_k": 50.09,
+       "mean_n_sents": 50.1
+      },
+      "placebo_d100_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.2331,
+        0.1791,
+        0.2896
+       ],
+       "true_rate": [
+        0.5772,
+        0.5094,
+        0.6444
+       ],
+       "change_rate": [
+        0.3984,
+        0.3432,
+        0.4541
+       ],
+       "d_margin": [
+        6.6522,
+        4.9922,
+        8.1471
+       ],
+       "d_sdf": [
+        0.065,
+        0.0,
+        0.1263
+       ],
+       "edit": "placebo",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0596,
+        0.0356,
+        0.0867
+       ],
+       "frac_inserted_naming_a_letter": 0.8482,
+       "size_ratio_tokens": 1.021,
+       "mean_k": 50.09,
+       "mean_n_sents": 50.1
+      },
+      "scramble_d100_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.1626,
+        0.0938,
+        0.2399
+       ],
+       "true_rate": [
+        0.8103,
+        0.7337,
+        0.8808
+       ],
+       "change_rate": [
+        0.0298,
+        0.0131,
+        0.0503
+       ],
+       "d_margin": [
+        1.9609,
+        1.3978,
+        2.4835
+       ],
+       "d_sdf": [
+        -0.0054,
+        -0.0246,
+        0.0111
+       ],
+       "edit": "scramble",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 1.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 50.09,
+       "mean_n_sents": 50.1
+      },
+      "offdist_d100_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.1951,
+        0.129,
+        0.2688
+       ],
+       "true_rate": [
+        0.7561,
+        0.6798,
+        0.8256
+       ],
+       "change_rate": [
+        0.1734,
+        0.131,
+        0.2193
+       ],
+       "d_margin": [
+        4.2834,
+        3.0895,
+        5.3611
+       ],
+       "d_sdf": [
+        0.0271,
+        -0.0131,
+        0.0668
+       ],
+       "edit": "offdist",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.3279,
+       "size_ratio_tokens": 1.474,
+       "mean_k": 50.09,
+       "mean_n_sents": 50.1
+      },
+      "opposed_pos_first": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0989,
+        0.2452
+       ],
+       "true_rate": [
+        0.8022,
+        0.7249,
+        0.8726
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0004,
+        -0.0227,
+        0.0234
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0,
+       "size_ratio_tokens": 0.997,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "placebo_pos_first": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0989,
+        0.2459
+       ],
+       "true_rate": [
+        0.8022,
+        0.7241,
+        0.874
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0557,
+        0.0204,
+        0.0921
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "scramble_pos_first": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0992,
+        0.2467
+       ],
+       "true_rate": [
+        0.8022,
+        0.724,
+        0.8727
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2601,
+        0.1835,
+        0.3312
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "offdist_pos_first": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0984,
+        0.2459
+       ],
+       "true_rate": [
+        0.8049,
+        0.7258,
+        0.8753
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0084
+       ],
+       "d_margin": [
+        0.1963,
+        0.1238,
+        0.2654
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0108,
+       "size_ratio_tokens": 1.019,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "opposed_pos_middle": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0995,
+        0.246
+       ],
+       "true_rate": [
+        0.8022,
+        0.7222,
+        0.8733
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2278,
+        0.1686,
+        0.2871
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1409,
+       "size_ratio_tokens": 1.008,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "placebo_pos_middle": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0994,
+        0.2459
+       ],
+       "true_rate": [
+        0.8022,
+        0.7253,
+        0.8717
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.1468,
+        0.0845,
+        0.2059
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0894,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "scramble_pos_middle": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0986,
+        0.2473
+       ],
+       "true_rate": [
+        0.8022,
+        0.7218,
+        0.8715
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.177,
+        0.1276,
+        0.2238
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1599,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "offdist_pos_middle": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0997,
+        0.2437
+       ],
+       "true_rate": [
+        0.8022,
+        0.7221,
+        0.8726
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.1902,
+        0.1169,
+        0.2578
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0054,
+       "size_ratio_tokens": 1.01,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "opposed_pos_last": {
+       "n": 369,
+       "sdf_rate": [
+        0.2168,
+        0.1388,
+        0.3018
+       ],
+       "true_rate": [
+        0.7534,
+        0.6657,
+        0.8352
+       ],
+       "change_rate": [
+        0.0542,
+        0.0295,
+        0.0822
+       ],
+       "d_margin": [
+        4.4725,
+        3.9918,
+        4.9179
+       ],
+       "d_sdf": [
+        0.0488,
+        0.0262,
+        0.0753
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "moved_to_other_twins_letter": [
+        0.0488,
+        0.0262,
+        0.0759
+       ],
+       "copied_inserted_letter": [
+        0.0461,
+        0.0239,
+        0.0718
+       ],
+       "frac_inserted_naming_a_letter": 0.7805,
+       "size_ratio_tokens": 1.004,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "placebo_pos_last": {
+       "n": 369,
+       "sdf_rate": [
+        0.1572,
+        0.0902,
+        0.2329
+       ],
+       "true_rate": [
+        0.8103,
+        0.732,
+        0.8811
+       ],
+       "change_rate": [
+        0.0136,
+        0.0027,
+        0.0256
+       ],
+       "d_margin": [
+        1.3621,
+        1.0108,
+        1.6837
+       ],
+       "d_sdf": [
+        -0.0108,
+        -0.022,
+        -0.0026
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0027,
+        0.0,
+        0.0084
+       ],
+       "frac_inserted_naming_a_letter": 0.2818,
+       "size_ratio_tokens": 1.011,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "scramble_pos_last": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0989,
+        0.2446
+       ],
+       "true_rate": [
+        0.7995,
+        0.7227,
+        0.8709
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0084
+       ],
+       "d_margin": [
+        0.4101,
+        0.2418,
+        0.5713
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.8889,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "offdist_pos_last": {
+       "n": 369,
+       "sdf_rate": [
+        0.1599,
+        0.0931,
+        0.2358
+       ],
+       "true_rate": [
+        0.8076,
+        0.7312,
+        0.8785
+       ],
+       "change_rate": [
+        0.0163,
+        0.0053,
+        0.0296
+       ],
+       "d_margin": [
+        1.3578,
+        0.9669,
+        1.7178
+       ],
+       "d_sdf": [
+        -0.0081,
+        -0.0201,
+        0.0027
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0054,
+       "size_ratio_tokens": 1.02,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "opposed_d1s_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0992,
+        0.2452
+       ],
+       "true_rate": [
+        0.7995,
+        0.7193,
+        0.8714
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "d_margin": [
+        0.4318,
+        0.3176,
+        0.5531
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2358,
+       "size_ratio_tokens": 1.004,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "placebo_d1s_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0972,
+        0.246
+       ],
+       "true_rate": [
+        0.8022,
+        0.723,
+        0.873
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2456,
+        0.1721,
+        0.316
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1247,
+       "size_ratio_tokens": 1.001,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "scramble_d1s_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0986,
+        0.2435
+       ],
+       "true_rate": [
+        0.8022,
+        0.7231,
+        0.8736
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.2122,
+        0.1517,
+        0.2671
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2222,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "offdist_d1s_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0995,
+        0.2453
+       ],
+       "true_rate": [
+        0.7995,
+        0.7194,
+        0.8726
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "d_margin": [
+        0.1943,
+        0.1128,
+        0.2705
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0081,
+       "size_ratio_tokens": 1.011,
+       "mean_k": 1.0,
+       "mean_n_sents": 50.1
+      },
+      "opposed_d25_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.2276,
+        0.1566,
+        0.3056
+       ],
+       "true_rate": [
+        0.7425,
+        0.664,
+        0.8154
+       ],
+       "change_rate": [
+        0.065,
+        0.0403,
+        0.0922
+       ],
+       "d_margin": [
+        5.0564,
+        4.4272,
+        5.6625
+       ],
+       "d_sdf": [
+        0.0596,
+        0.0377,
+        0.0829
+       ],
+       "edit": "opposed",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0623,
+        0.0401,
+        0.087
+       ],
+       "copied_inserted_letter": [
+        0.0434,
+        0.0249,
+        0.0635
+       ],
+       "frac_inserted_naming_a_letter": 0.9377,
+       "size_ratio_tokens": 1.044,
+       "mean_k": 12.52,
+       "mean_n_sents": 50.1
+      },
+      "placebo_d25_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.168,
+        0.0984,
+        0.2473
+       ],
+       "true_rate": [
+        0.7995,
+        0.7204,
+        0.8723
+       ],
+       "change_rate": [
+        0.0081,
+        0.0,
+        0.0184
+       ],
+       "d_margin": [
+        2.3514,
+        1.7136,
+        2.9326
+       ],
+       "d_sdf": [
+        0.0,
+        -0.0081,
+        0.008
+       ],
+       "edit": "placebo",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.5312,
+       "size_ratio_tokens": 1.01,
+       "mean_k": 12.52,
+       "mean_n_sents": 50.1
+      },
+      "scramble_d25_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.1626,
+        0.094,
+        0.2373
+       ],
+       "true_rate": [
+        0.8076,
+        0.7314,
+        0.876
+       ],
+       "change_rate": [
+        0.0054,
+        0.0,
+        0.0135
+       ],
+       "d_margin": [
+        0.7755,
+        0.5792,
+        0.9612
+       ],
+       "d_sdf": [
+        -0.0054,
+        -0.0137,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.8482,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 12.52,
+       "mean_n_sents": 50.1
+      },
+      "offdist_d25_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.1572,
+        0.0917,
+        0.2345
+       ],
+       "true_rate": [
+        0.8103,
+        0.7326,
+        0.8806
+       ],
+       "change_rate": [
+        0.0136,
+        0.0026,
+        0.0289
+       ],
+       "d_margin": [
+        1.6673,
+        1.2206,
+        2.0729
+       ],
+       "d_sdf": [
+        -0.0108,
+        -0.0251,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1138,
+       "size_ratio_tokens": 1.119,
+       "mean_k": 12.52,
+       "mean_n_sents": 50.1
+      },
+      "opposed_d50_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.5149,
+        0.439,
+        0.5905
+       ],
+       "true_rate": [
+        0.458,
+        0.383,
+        0.5364
+       ],
+       "change_rate": [
+        0.355,
+        0.2951,
+        0.4143
+       ],
+       "d_margin": [
+        9.1637,
+        8.144,
+        10.1042
+       ],
+       "d_sdf": [
+        0.3469,
+        0.2861,
+        0.4076
+       ],
+       "edit": "opposed",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.3496,
+        0.2898,
+        0.4121
+       ],
+       "copied_inserted_letter": [
+        0.1382,
+        0.1008,
+        0.1782
+       ],
+       "frac_inserted_naming_a_letter": 0.9837,
+       "size_ratio_tokens": 1.085,
+       "mean_k": 25.04,
+       "mean_n_sents": 50.1
+      },
+      "placebo_d50_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.1734,
+        0.1033,
+        0.252
+       ],
+       "true_rate": [
+        0.7859,
+        0.706,
+        0.8582
+       ],
+       "change_rate": [
+        0.0623,
+        0.0378,
+        0.0892
+       ],
+       "d_margin": [
+        4.2963,
+        3.286,
+        5.1954
+       ],
+       "d_sdf": [
+        0.0054,
+        -0.0216,
+        0.0303
+       ],
+       "edit": "placebo",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0136,
+        0.0027,
+        0.029
+       ],
+       "frac_inserted_naming_a_letter": 0.7263,
+       "size_ratio_tokens": 1.018,
+       "mean_k": 25.04,
+       "mean_n_sents": 50.1
+      },
+      "scramble_d50_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.1626,
+        0.0955,
+        0.2381
+       ],
+       "true_rate": [
+        0.8049,
+        0.7297,
+        0.8727
+       ],
+       "change_rate": [
+        0.0081,
+        0.0,
+        0.0187
+       ],
+       "d_margin": [
+        1.2172,
+        0.9057,
+        1.5108
+       ],
+       "d_sdf": [
+        -0.0054,
+        -0.0137,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9783,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 25.04,
+       "mean_n_sents": 50.1
+      },
+      "offdist_d50_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.1626,
+        0.0929,
+        0.24
+       ],
+       "true_rate": [
+        0.8049,
+        0.7244,
+        0.8777
+       ],
+       "change_rate": [
+        0.0298,
+        0.0131,
+        0.0508
+       ],
+       "d_margin": [
+        2.2816,
+        1.6618,
+        2.8488
+       ],
+       "d_sdf": [
+        -0.0054,
+        -0.025,
+        0.0109
+       ],
+       "edit": "offdist",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1626,
+       "size_ratio_tokens": 1.235,
+       "mean_k": 25.04,
+       "mean_n_sents": 50.1
+      }
+     },
+     "dose_curves": {
+      "opposed": {
+       "1s": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0014,
+         0.0,
+         0.0042
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.4205,
+         0.3368,
+         0.5065
+        ],
+        "moved_to_other_twins_letter": [
+         0.0,
+         0.0,
+         0.0
+        ]
+       },
+       "25": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.065,
+         0.0461,
+         0.0854
+        ],
+        "d_sdf": [
+         0.0596,
+         0.042,
+         0.0795
+        ],
+        "d_margin": [
+         4.9036,
+         4.3123,
+         5.4613
+        ],
+        "moved_to_other_twins_letter": [
+         0.061,
+         0.0433,
+         0.0806
+        ]
+       },
+       "50": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.3645,
+         0.3073,
+         0.4227
+        ],
+        "d_sdf": [
+         0.3577,
+         0.3011,
+         0.4164
+        ],
+        "d_margin": [
+         9.1652,
+         8.1967,
+         10.0757
+        ],
+        "moved_to_other_twins_letter": [
+         0.3604,
+         0.3029,
+         0.4183
+        ]
+       },
+       "100": {
+        "n_rows": 369,
+        "n_seeds": 1,
+        "change_rate": [
+         0.813,
+         0.7339,
+         0.8828
+        ],
+        "d_sdf": [
+         0.8103,
+         0.731,
+         0.881
+        ],
+        "d_margin": [
+         17.0483,
+         15.4413,
+         18.4933
+        ],
+        "moved_to_other_twins_letter": [
+         0.813,
+         0.736,
+         0.8825
+        ]
+       }
+      },
+      "placebo": {
+       "1s": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0014,
+         0.0,
+         0.0042
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.2483,
+         0.1826,
+         0.3102
+        ]
+       },
+       "25": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0122,
+         0.004,
+         0.0218
+        ],
+        "d_sdf": [
+         -0.0014,
+         -0.0102,
+         0.0072
+        ],
+        "d_margin": [
+         2.4185,
+         1.763,
+         2.9806
+        ]
+       },
+       "50": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0678,
+         0.0453,
+         0.0919
+        ],
+        "d_sdf": [
+         -0.0081,
+         -0.0334,
+         0.0149
+        ],
+        "d_margin": [
+         4.1137,
+         3.0742,
+         5.0505
+        ]
+       },
+       "100": {
+        "n_rows": 369,
+        "n_seeds": 1,
+        "change_rate": [
+         0.3984,
+         0.3421,
+         0.4543
+        ],
+        "d_sdf": [
+         0.065,
+         0.0026,
+         0.127
+        ],
+        "d_margin": [
+         6.6522,
+         4.9963,
+         8.2012
+        ]
+       }
+      },
+      "scramble": {
+       "1s": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.2097,
+         0.1505,
+         0.2675
+        ]
+       },
+       "25": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0054,
+         0.0,
+         0.0137
+        ],
+        "d_sdf": [
+         -0.0054,
+         -0.0136,
+         0.0
+        ],
+        "d_margin": [
+         0.7366,
+         0.5425,
+         0.9182
+        ]
+       },
+       "50": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0095,
+         0.0026,
+         0.0187
+        ],
+        "d_sdf": [
+         -0.0068,
+         -0.0155,
+         0.0
+        ],
+        "d_margin": [
+         1.2139,
+         0.9047,
+         1.5033
+        ]
+       },
+       "100": {
+        "n_rows": 369,
+        "n_seeds": 1,
+        "change_rate": [
+         0.0298,
+         0.0132,
+         0.0501
+        ],
+        "d_sdf": [
+         -0.0054,
+         -0.0247,
+         0.011
+        ],
+        "d_margin": [
+         1.9609,
+         1.396,
+         2.4678
+        ]
+       }
+      },
+      "offdist": {
+       "1s": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0027,
+         0.0,
+         0.0084
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         0.2252,
+         0.1387,
+         0.3024
+        ]
+       },
+       "25": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0108,
+         0.004,
+         0.0195
+        ],
+        "d_sdf": [
+         -0.0041,
+         -0.0123,
+         0.0028
+        ],
+        "d_margin": [
+         1.5833,
+         1.1387,
+         1.981
+        ]
+       },
+       "50": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0298,
+         0.0147,
+         0.0478
+        ],
+        "d_sdf": [
+         -0.0081,
+         -0.0259,
+         0.0068
+        ],
+        "d_margin": [
+         2.2532,
+         1.6064,
+         2.8407
+        ]
+       },
+       "100": {
+        "n_rows": 369,
+        "n_seeds": 1,
+        "change_rate": [
+         0.1734,
+         0.1321,
+         0.2179
+        ],
+        "d_sdf": [
+         0.0271,
+         -0.0112,
+         0.0659
+        ],
+        "d_margin": [
+         4.2834,
+         3.0678,
+         5.3686
+        ]
+       }
+      }
+     },
+     "positions": {
+      "opposed": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0542,
+        0.0295,
+        0.0822
+       ],
+       "random": [
+        0.0014,
+        0.0,
+        0.0042
+       ]
+      },
+      "placebo": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0136,
+        0.0027,
+        0.0256
+       ],
+       "random": [
+        0.0014,
+        0.0,
+        0.0042
+       ]
+      },
+      "scramble": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0027,
+        0.0,
+        0.0084
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "offdist": {
+       "first": [
+        0.0027,
+        0.0,
+        0.0084
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0163,
+        0.0053,
+        0.0296
+       ],
+       "random": [
+        0.0027,
+        0.0,
+        0.0084
+       ]
+      }
+     },
+     "checks": {
+      "own_letter_matches_generated": 0.997289972899729,
+      "own_raw_letter_matches_own": 0.997289972899729
+     },
+     "content_minus_placebo": {
+      "1s": {
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.1722,
+        0.1031,
+        0.2453
+       ],
+       "n_rows": 738
+      },
+      "25": {
+       "change_rate": [
+        0.0528,
+        0.0376,
+        0.0691
+       ],
+       "d_margin": [
+        2.4852,
+        2.1309,
+        2.8359
+       ],
+       "n_rows": 738
+      },
+      "50": {
+       "change_rate": [
+        0.2967,
+        0.2377,
+        0.3564
+       ],
+       "d_margin": [
+        5.0515,
+        4.6165,
+        5.4829
+       ],
+       "n_rows": 738
+      },
+      "100": {
+       "change_rate": [
+        0.4146,
+        0.3128,
+        0.5147
+       ],
+       "d_margin": [
+        10.3961,
+        9.8285,
+        10.9275
+       ],
+       "n_rows": 369
+      }
+     }
+    },
+    "implanted": {
+     "n": 369,
+     "conditions": {
+      "own": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9583,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0317
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "own_raw": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9589,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0306
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        0.0533,
+        0.0265,
+        0.0793
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "empty": {
+       "n": 369,
+       "sdf_rate": [
+        0.9051,
+        0.852,
+        0.9488
+       ],
+       "true_rate": [
+        0.0786,
+        0.04,
+        0.1236
+       ],
+       "change_rate": [
+        0.0786,
+        0.041,
+        0.1239
+       ],
+       "d_margin": [
+        -1.9556,
+        -2.2996,
+        -1.6333
+       ],
+       "d_sdf": [
+        -0.0759,
+        -0.1219,
+        -0.0391
+       ]
+      },
+      "opposed_d1s_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9675,
+        0.9387,
+        0.9892
+       ],
+       "true_rate": [
+        0.0244,
+        0.0081,
+        0.0436
+       ],
+       "change_rate": [
+        0.0136,
+        0.0027,
+        0.0254
+       ],
+       "d_margin": [
+        -0.552,
+        -0.6549,
+        -0.453
+       ],
+       "d_sdf": [
+        -0.0136,
+        -0.0262,
+        -0.0027
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0108,
+        0.0026,
+        0.022
+       ],
+       "copied_inserted_letter": [
+        0.0081,
+        0.0,
+        0.0187
+       ],
+       "frac_inserted_naming_a_letter": 0.1789,
+       "size_ratio_tokens": 0.991,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "placebo_d1s_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9783,
+        0.9563,
+        0.9948
+       ],
+       "true_rate": [
+        0.0163,
+        0.0027,
+        0.0347
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "d_margin": [
+        -0.4904,
+        -0.5501,
+        -0.4315
+       ],
+       "d_sdf": [
+        -0.0027,
+        -0.0083,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1003,
+       "size_ratio_tokens": 1.005,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "scramble_d1s_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9588,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.032
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.3115,
+        -0.3469,
+        -0.2748
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2087,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "offdist_d1s_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9582,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0307
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.5328,
+        -0.5843,
+        -0.4827
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0027,
+       "size_ratio_tokens": 1.015,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "opposed_d25_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9214,
+        0.8911,
+        0.9495
+       ],
+       "true_rate": [
+        0.0732,
+        0.0462,
+        0.1026
+       ],
+       "change_rate": [
+        0.0623,
+        0.0377,
+        0.0896
+       ],
+       "d_margin": [
+        -2.3465,
+        -2.5971,
+        -2.104
+       ],
+       "d_sdf": [
+        -0.0596,
+        -0.0871,
+        -0.0353
+       ],
+       "edit": "opposed",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0596,
+        0.037,
+        0.0847
+       ],
+       "copied_inserted_letter": [
+        0.0325,
+        0.0138,
+        0.0528
+       ],
+       "frac_inserted_naming_a_letter": 0.5772,
+       "size_ratio_tokens": 0.969,
+       "mean_k": 5.14,
+       "mean_n_sents": 20.5
+      },
+      "placebo_d25_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9702,
+        0.9417,
+        0.9918
+       ],
+       "true_rate": [
+        0.019,
+        0.0053,
+        0.0377
+       ],
+       "change_rate": [
+        0.0108,
+        0.0027,
+        0.0219
+       ],
+       "d_margin": [
+        -2.1013,
+        -2.2334,
+        -1.9698
+       ],
+       "d_sdf": [
+        -0.0108,
+        -0.0218,
+        -0.0027
+       ],
+       "edit": "placebo",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0081,
+        0.0,
+        0.0185
+       ],
+       "frac_inserted_naming_a_letter": 0.3984,
+       "size_ratio_tokens": 1.013,
+       "mean_k": 5.14,
+       "mean_n_sents": 20.5
+      },
+      "scramble_d25_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9589,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0308
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.7091,
+        -0.7705,
+        -0.6463
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.7317,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 5.14,
+       "mean_n_sents": 20.5
+      },
+      "offdist_d25_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9756,
+        0.9524,
+        0.9945
+       ],
+       "true_rate": [
+        0.019,
+        0.0052,
+        0.0377
+       ],
+       "change_rate": [
+        0.0054,
+        0.0,
+        0.0138
+       ],
+       "d_margin": [
+        -1.5905,
+        -1.7202,
+        -1.4538
+       ],
+       "d_sdf": [
+        -0.0054,
+        -0.0137,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "25",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0407,
+       "size_ratio_tokens": 1.069,
+       "mean_k": 5.14,
+       "mean_n_sents": 20.5
+      },
+      "opposed_d50_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.7561,
+        0.6987,
+        0.8111
+       ],
+       "true_rate": [
+        0.2276,
+        0.1724,
+        0.2872
+       ],
+       "change_rate": [
+        0.2276,
+        0.1726,
+        0.2846
+       ],
+       "d_margin": [
+        -4.2247,
+        -4.5644,
+        -3.8772
+       ],
+       "d_sdf": [
+        -0.2249,
+        -0.2816,
+        -0.1699
+       ],
+       "edit": "opposed",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.2195,
+        0.1657,
+        0.2773
+       ],
+       "copied_inserted_letter": [
+        0.0813,
+        0.0521,
+        0.1135
+       ],
+       "frac_inserted_naming_a_letter": 0.8347,
+       "size_ratio_tokens": 0.934,
+       "mean_k": 10.25,
+       "mean_n_sents": 20.5
+      },
+      "placebo_d50_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9539,
+        0.929,
+        0.9757
+       ],
+       "true_rate": [
+        0.0244,
+        0.0105,
+        0.0422
+       ],
+       "change_rate": [
+        0.0325,
+        0.0173,
+        0.0499
+       ],
+       "d_margin": [
+        -3.4656,
+        -3.6699,
+        -3.2394
+       ],
+       "d_sdf": [
+        -0.0271,
+        -0.0429,
+        -0.0133
+       ],
+       "edit": "placebo",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0081,
+        0.0,
+        0.0187
+       ],
+       "frac_inserted_naming_a_letter": 0.5041,
+       "size_ratio_tokens": 1.02,
+       "mean_k": 10.25,
+       "mean_n_sents": 20.5
+      },
+      "scramble_d50_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9586,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0311
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -1.011,
+        -1.0986,
+        -0.9161
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9241,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 10.25,
+       "mean_n_sents": 20.5
+      },
+      "offdist_d50_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9702,
+        0.9443,
+        0.9916
+       ],
+       "true_rate": [
+        0.0244,
+        0.0056,
+        0.0467
+       ],
+       "change_rate": [
+        0.0108,
+        0.0027,
+        0.0217
+       ],
+       "d_margin": [
+        -2.4526,
+        -2.5942,
+        -2.3001
+       ],
+       "d_sdf": [
+        -0.0108,
+        -0.022,
+        -0.0026
+       ],
+       "edit": "offdist",
+       "dose": "50",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0759,
+       "size_ratio_tokens": 1.136,
+       "mean_k": 10.25,
+       "mean_n_sents": 20.5
+      },
+      "opposed_d100_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.2981,
+        0.2267,
+        0.3743
+       ],
+       "true_rate": [
+        0.664,
+        0.5867,
+        0.7389
+       ],
+       "change_rate": [
+        0.6856,
+        0.6094,
+        0.7568
+       ],
+       "d_margin": [
+        -7.4031,
+        -7.887,
+        -6.877
+       ],
+       "d_sdf": [
+        -0.6829,
+        -0.7535,
+        -0.608
+       ],
+       "edit": "opposed",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.6667,
+        0.5892,
+        0.7403
+       ],
+       "copied_inserted_letter": [
+        0.0867,
+        0.0582,
+        0.1173
+       ],
+       "frac_inserted_naming_a_letter": 0.9458,
+       "size_ratio_tokens": 0.865,
+       "mean_k": 20.54,
+       "mean_n_sents": 20.5
+      },
+      "placebo_d100_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.6721,
+        0.6094,
+        0.7346
+       ],
+       "true_rate": [
+        0.1707,
+        0.1271,
+        0.2164
+       ],
+       "change_rate": [
+        0.3171,
+        0.2541,
+        0.3803
+       ],
+       "d_margin": [
+        -5.2998,
+        -5.5375,
+        -5.0446
+       ],
+       "d_sdf": [
+        -0.3089,
+        -0.3689,
+        -0.2506
+       ],
+       "edit": "placebo",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0488,
+        0.0248,
+        0.0769
+       ],
+       "frac_inserted_naming_a_letter": 0.7263,
+       "size_ratio_tokens": 0.994,
+       "mean_k": 20.54,
+       "mean_n_sents": 20.5
+      },
+      "scramble_d100_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.9783,
+        0.9558,
+        0.9949
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0313
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "d_margin": [
+        -1.5743,
+        -1.6851,
+        -1.4628
+       ],
+       "d_sdf": [
+        -0.0027,
+        -0.0084,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.9919,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 20.54,
+       "mean_n_sents": 20.5
+      },
+      "offdist_d100_s0": {
+       "n": 369,
+       "sdf_rate": [
+        0.897,
+        0.8413,
+        0.9441
+       ],
+       "true_rate": [
+        0.0894,
+        0.0447,
+        0.1417
+       ],
+       "change_rate": [
+        0.0867,
+        0.0456,
+        0.135
+       ],
+       "d_margin": [
+        -4.147,
+        -4.3151,
+        -3.9739
+       ],
+       "d_sdf": [
+        -0.084,
+        -0.1321,
+        -0.0439
+       ],
+       "edit": "offdist",
+       "dose": "100",
+       "seed": 0,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1599,
+       "size_ratio_tokens": 1.271,
+       "mean_k": 20.54,
+       "mean_n_sents": 20.5
+      },
+      "opposed_pos_first": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9583,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0317
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.0553,
+        -0.0699,
+        -0.0408
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0,
+       "size_ratio_tokens": 1.006,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "placebo_pos_first": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9591,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0315
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.0712,
+        -0.094,
+        -0.0495
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "scramble_pos_first": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9579,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0306
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.1627,
+        -0.1946,
+        -0.1301
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "offdist_pos_first": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9583,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0306
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.2935,
+        -0.3298,
+        -0.2552
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "first",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0027,
+       "size_ratio_tokens": 1.042,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "opposed_pos_middle": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9592,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0306
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.3084,
+        -0.3551,
+        -0.2644
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "moved_to_other_twins_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1789,
+       "size_ratio_tokens": 0.985,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "placebo_pos_middle": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.958,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0306
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.2679,
+        -0.2964,
+        -0.24
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0623,
+       "size_ratio_tokens": 0.998,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "scramble_pos_middle": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9586,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0313
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.2557,
+        -0.2833,
+        -0.2272
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1301,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "offdist_pos_middle": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.959,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0301
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.3142,
+        -0.3415,
+        -0.286
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "middle",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0027,
+       "size_ratio_tokens": 1.004,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "opposed_pos_last": {
+       "n": 369,
+       "sdf_rate": [
+        0.9133,
+        0.878,
+        0.9461
+       ],
+       "true_rate": [
+        0.0786,
+        0.0484,
+        0.1114
+       ],
+       "change_rate": [
+        0.0678,
+        0.0378,
+        0.1008
+       ],
+       "d_margin": [
+        -2.8352,
+        -3.1278,
+        -2.5435
+       ],
+       "d_sdf": [
+        -0.0678,
+        -0.1014,
+        -0.0375
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "moved_to_other_twins_letter": [
+        0.0678,
+        0.0375,
+        0.1014
+       ],
+       "copied_inserted_letter": [
+        0.0352,
+        0.0167,
+        0.056
+       ],
+       "frac_inserted_naming_a_letter": 0.4309,
+       "size_ratio_tokens": 1.012,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "placebo_pos_last": {
+       "n": 369,
+       "sdf_rate": [
+        0.9756,
+        0.9521,
+        0.9944
+       ],
+       "true_rate": [
+        0.019,
+        0.0053,
+        0.0378
+       ],
+       "change_rate": [
+        0.0054,
+        0.0,
+        0.0137
+       ],
+       "d_margin": [
+        -1.7264,
+        -1.8438,
+        -1.6105
+       ],
+       "d_sdf": [
+        -0.0054,
+        -0.0137,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "frac_inserted_naming_a_letter": 0.3008,
+       "size_ratio_tokens": 1.023,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "scramble_pos_last": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9588,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0303
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.6853,
+        -0.752,
+        -0.6185
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.7886,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "offdist_pos_last": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9582,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0306
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -1.5089,
+        -1.602,
+        -1.4175
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 0,
+       "position": "last",
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0054,
+       "size_ratio_tokens": 1.032,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "opposed_d1s_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.9783,
+        0.9554,
+        0.9947
+       ],
+       "true_rate": [
+        0.0163,
+        0.0027,
+        0.0346
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "d_margin": [
+        -0.4613,
+        -0.5517,
+        -0.3783
+       ],
+       "d_sdf": [
+        -0.0027,
+        -0.0082,
+        0.0
+       ],
+       "edit": "opposed",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.1924,
+       "size_ratio_tokens": 0.991,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "placebo_d1s_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9586,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0306
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.5241,
+        -0.5988,
+        -0.4498
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0921,
+       "size_ratio_tokens": 1.002,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "scramble_d1s_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9589,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0306
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.3345,
+        -0.3709,
+        -0.2976
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.2331,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "offdist_d1s_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.9783,
+        0.955,
+        0.9947
+       ],
+       "true_rate": [
+        0.0163,
+        0.0027,
+        0.0342
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "d_margin": [
+        -0.475,
+        -0.5227,
+        -0.4304
+       ],
+       "d_sdf": [
+        -0.0027,
+        -0.0083,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "1s",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0027,
+       "size_ratio_tokens": 1.014,
+       "mean_k": 1.0,
+       "mean_n_sents": 20.5
+      },
+      "opposed_d25_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.935,
+        0.9051,
+        0.9608
+       ],
+       "true_rate": [
+        0.0596,
+        0.0353,
+        0.0868
+       ],
+       "change_rate": [
+        0.0461,
+        0.0245,
+        0.071
+       ],
+       "d_margin": [
+        -2.248,
+        -2.4877,
+        -2.0184
+       ],
+       "d_sdf": [
+        -0.0461,
+        -0.0707,
+        -0.0245
+       ],
+       "edit": "opposed",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.0461,
+        0.0243,
+        0.0718
+       ],
+       "copied_inserted_letter": [
+        0.019,
+        0.0079,
+        0.0326
+       ],
+       "frac_inserted_naming_a_letter": 0.5935,
+       "size_ratio_tokens": 0.961,
+       "mean_k": 5.14,
+       "mean_n_sents": 20.5
+      },
+      "placebo_d25_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.9729,
+        0.9459,
+        0.9944
+       ],
+       "true_rate": [
+        0.0163,
+        0.0,
+        0.0388
+       ],
+       "change_rate": [
+        0.0081,
+        0.0,
+        0.0187
+       ],
+       "d_margin": [
+        -2.1195,
+        -2.2716,
+        -1.967
+       ],
+       "d_sdf": [
+        -0.0081,
+        -0.0187,
+        0.0
+       ],
+       "edit": "placebo",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0054,
+        0.0,
+        0.0137
+       ],
+       "frac_inserted_naming_a_letter": 0.3523,
+       "size_ratio_tokens": 1.016,
+       "mean_k": 5.14,
+       "mean_n_sents": 20.5
+      },
+      "scramble_d25_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9588,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0304
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -0.7324,
+        -0.7934,
+        -0.67
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.7507,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 5.14,
+       "mean_n_sents": 20.5
+      },
+      "offdist_d25_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.9783,
+        0.9557,
+        0.9947
+       ],
+       "true_rate": [
+        0.0163,
+        0.0027,
+        0.0338
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "d_margin": [
+        -1.7509,
+        -1.857,
+        -1.6366
+       ],
+       "d_sdf": [
+        -0.0027,
+        -0.0083,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "25",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0407,
+       "size_ratio_tokens": 1.07,
+       "mean_k": 5.14,
+       "mean_n_sents": 20.5
+      },
+      "opposed_d50_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.7967,
+        0.7507,
+        0.8408
+       ],
+       "true_rate": [
+        0.187,
+        0.1424,
+        0.2332
+       ],
+       "change_rate": [
+        0.1843,
+        0.1452,
+        0.2263
+       ],
+       "d_margin": [
+        -4.1552,
+        -4.4891,
+        -3.8249
+       ],
+       "d_sdf": [
+        -0.1843,
+        -0.2253,
+        -0.1452
+       ],
+       "edit": "opposed",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "moved_to_other_twins_letter": [
+        0.1816,
+        0.1417,
+        0.2228
+       ],
+       "copied_inserted_letter": [
+        0.0623,
+        0.0404,
+        0.0858
+       ],
+       "frac_inserted_naming_a_letter": 0.813,
+       "size_ratio_tokens": 0.927,
+       "mean_k": 10.25,
+       "mean_n_sents": 20.5
+      },
+      "placebo_d50_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.9593,
+        0.9337,
+        0.9812
+       ],
+       "true_rate": [
+        0.0271,
+        0.0107,
+        0.047
+       ],
+       "change_rate": [
+        0.0217,
+        0.0083,
+        0.036
+       ],
+       "d_margin": [
+        -3.362,
+        -3.5718,
+        -3.1318
+       ],
+       "d_sdf": [
+        -0.0217,
+        -0.0367,
+        -0.0083
+       ],
+       "edit": "placebo",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0081,
+        0.0,
+        0.0185
+       ],
+       "frac_inserted_naming_a_letter": 0.4797,
+       "size_ratio_tokens": 1.026,
+       "mean_k": 10.25,
+       "mean_n_sents": 20.5
+      },
+      "scramble_d50_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.9783,
+        0.9559,
+        0.9947
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0318
+       ],
+       "change_rate": [
+        0.0027,
+        0.0,
+        0.0083
+       ],
+       "d_margin": [
+        -1.0007,
+        -1.0824,
+        -0.9216
+       ],
+       "d_sdf": [
+        -0.0027,
+        -0.0083,
+        0.0
+       ],
+       "edit": "scramble",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.8943,
+       "size_ratio_tokens": 1.0,
+       "mean_k": 10.25,
+       "mean_n_sents": 20.5
+      },
+      "offdist_d50_s1": {
+       "n": 369,
+       "sdf_rate": [
+        0.981,
+        0.9578,
+        0.9973
+       ],
+       "true_rate": [
+        0.0136,
+        0.0,
+        0.0312
+       ],
+       "change_rate": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "d_margin": [
+        -2.4332,
+        -2.5546,
+        -2.297
+       ],
+       "d_sdf": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "edit": "offdist",
+       "dose": "50",
+       "seed": 1,
+       "position": null,
+       "copied_inserted_letter": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "frac_inserted_naming_a_letter": 0.0623,
+       "size_ratio_tokens": 1.134,
+       "mean_k": 10.25,
+       "mean_n_sents": 20.5
+      }
+     },
+     "dose_curves": {
+      "opposed": {
+       "1s": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0081,
+         0.0027,
+         0.0148
+        ],
+        "d_sdf": [
+         -0.0081,
+         -0.0149,
+         -0.0027
+        ],
+        "d_margin": [
+         -0.5067,
+         -0.5859,
+         -0.4348
+        ],
+        "moved_to_other_twins_letter": [
+         0.0068,
+         0.0014,
+         0.0129
+        ]
+       },
+       "25": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0542,
+         0.0353,
+         0.0753
+        ],
+        "d_sdf": [
+         -0.0528,
+         -0.0738,
+         -0.0342
+        ],
+        "d_margin": [
+         -2.2973,
+         -2.4945,
+         -2.0902
+        ],
+        "moved_to_other_twins_letter": [
+         0.0528,
+         0.0349,
+         0.0726
+        ]
+       },
+       "50": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.206,
+         0.1653,
+         0.248
+        ],
+        "d_sdf": [
+         -0.2046,
+         -0.2472,
+         -0.1627
+        ],
+        "d_margin": [
+         -4.19,
+         -4.4994,
+         -3.8814
+        ],
+        "moved_to_other_twins_letter": [
+         0.2005,
+         0.161,
+         0.2414
+        ]
+       },
+       "100": {
+        "n_rows": 369,
+        "n_seeds": 1,
+        "change_rate": [
+         0.6856,
+         0.6102,
+         0.7578
+        ],
+        "d_sdf": [
+         -0.6829,
+         -0.7547,
+         -0.6055
+        ],
+        "d_margin": [
+         -7.4031,
+         -7.8967,
+         -6.879
+        ],
+        "moved_to_other_twins_letter": [
+         0.6667,
+         0.5884,
+         0.7399
+        ]
+       }
+      },
+      "placebo": {
+       "1s": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0014,
+         0.0,
+         0.0041
+        ],
+        "d_sdf": [
+         -0.0014,
+         -0.0042,
+         0.0
+        ],
+        "d_margin": [
+         -0.5073,
+         -0.5584,
+         -0.458
+        ]
+       },
+       "25": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0095,
+         0.0039,
+         0.0164
+        ],
+        "d_sdf": [
+         -0.0095,
+         -0.0164,
+         -0.0039
+        ],
+        "d_margin": [
+         -2.1104,
+         -2.2275,
+         -1.9858
+        ]
+       },
+       "50": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0271,
+         0.0168,
+         0.0381
+        ],
+        "d_sdf": [
+         -0.0244,
+         -0.0345,
+         -0.0148
+        ],
+        "d_margin": [
+         -3.4138,
+         -3.5977,
+         -3.205
+        ]
+       },
+       "100": {
+        "n_rows": 369,
+        "n_seeds": 1,
+        "change_rate": [
+         0.3171,
+         0.2541,
+         0.3806
+        ],
+        "d_sdf": [
+         -0.3089,
+         -0.3678,
+         -0.25
+        ],
+        "d_margin": [
+         -5.2998,
+         -5.5375,
+         -5.046
+        ]
+       }
+      },
+      "scramble": {
+       "1s": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -0.323,
+         -0.3548,
+         -0.2908
+        ]
+       },
+       "25": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_sdf": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "d_margin": [
+         -0.7208,
+         -0.7787,
+         -0.6613
+        ]
+       },
+       "50": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0014,
+         0.0,
+         0.0041
+        ],
+        "d_sdf": [
+         -0.0014,
+         -0.0042,
+         0.0
+        ],
+        "d_margin": [
+         -1.0059,
+         -1.0841,
+         -0.9268
+        ]
+       },
+       "100": {
+        "n_rows": 369,
+        "n_seeds": 1,
+        "change_rate": [
+         0.0027,
+         0.0,
+         0.0083
+        ],
+        "d_sdf": [
+         -0.0027,
+         -0.0083,
+         0.0
+        ],
+        "d_margin": [
+         -1.5743,
+         -1.6845,
+         -1.4615
+        ]
+       }
+      },
+      "offdist": {
+       "1s": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0014,
+         0.0,
+         0.0042
+        ],
+        "d_sdf": [
+         -0.0014,
+         -0.0041,
+         0.0
+        ],
+        "d_margin": [
+         -0.5039,
+         -0.5423,
+         -0.4676
+        ]
+       },
+       "25": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0041,
+         0.0,
+         0.0094
+        ],
+        "d_sdf": [
+         -0.0041,
+         -0.0093,
+         0.0
+        ],
+        "d_margin": [
+         -1.6707,
+         -1.7735,
+         -1.553
+        ]
+       },
+       "50": {
+        "n_rows": 738,
+        "n_seeds": 2,
+        "change_rate": [
+         0.0054,
+         0.0013,
+         0.0109
+        ],
+        "d_sdf": [
+         -0.0054,
+         -0.0109,
+         -0.0013
+        ],
+        "d_margin": [
+         -2.4429,
+         -2.5649,
+         -2.3036
+        ]
+       },
+       "100": {
+        "n_rows": 369,
+        "n_seeds": 1,
+        "change_rate": [
+         0.0867,
+         0.0455,
+         0.1353
+        ],
+        "d_sdf": [
+         -0.084,
+         -0.1313,
+         -0.0435
+        ],
+        "d_margin": [
+         -4.147,
+         -4.3133,
+         -3.978
+        ]
+       }
+      }
+     },
+     "positions": {
+      "opposed": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0678,
+        0.0378,
+        0.1008
+       ],
+       "random": [
+        0.0081,
+        0.0027,
+        0.0148
+       ]
+      },
+      "placebo": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0054,
+        0.0,
+        0.0137
+       ],
+       "random": [
+        0.0014,
+        0.0,
+        0.0041
+       ]
+      },
+      "scramble": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0,
+        0.0,
+        0.0
+       ]
+      },
+      "offdist": {
+       "first": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "middle": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "last": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "random": [
+        0.0014,
+        0.0,
+        0.0042
+       ]
+      }
+     },
+     "checks": {
+      "own_letter_matches_generated": 1.0,
+      "own_raw_letter_matches_own": 1.0
+     },
+     "content_minus_placebo": {
+      "1s": {
+       "change_rate": [
+        0.0068,
+        0.0014,
+        0.0132
+       ],
+       "d_margin": [
+        0.0006,
+        -0.0837,
+        0.0838
+       ],
+       "n_rows": 738
+      },
+      "25": {
+       "change_rate": [
+        0.0447,
+        0.0266,
+        0.0648
+       ],
+       "d_margin": [
+        -0.1869,
+        -0.3807,
+        0.0071
+       ],
+       "n_rows": 738
+      },
+      "50": {
+       "change_rate": [
+        0.1789,
+        0.1377,
+        0.2201
+       ],
+       "d_margin": [
+        -0.7761,
+        -1.091,
+        -0.44
+       ],
+       "n_rows": 738
+      },
+      "100": {
+       "change_rate": [
+        0.3686,
+        0.2861,
+        0.4508
+       ],
+       "d_margin": [
+        -2.1033,
+        -2.5887,
+        -1.5911
+       ],
+       "n_rows": 369
+      }
+     }
+    }
+   }
+  }
+ }
+}

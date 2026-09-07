@@ -1,0 +1,554 @@
+{
+ "phi4": {
+  "readers:implanted:blind_flag50": {
+   "plain": [
+    0.7461,
+    0.6971,
+    0.7931,
+    382
+   ],
+   "monitored": [
+    0.8154,
+    0.7738,
+    0.8568,
+    390
+   ],
+   "delta": [
+    0.0695,
+    0.0082,
+    0.1301,
+    374
+   ]
+  },
+  "readers:implanted:blind_name50": {
+   "plain": [
+    0.4529,
+    0.3822,
+    0.5252,
+    382
+   ],
+   "monitored": [
+    0.5179,
+    0.4548,
+    0.5846,
+    390
+   ],
+   "delta": [
+    0.0695,
+    -0.0081,
+    0.1452,
+    374
+   ]
+  },
+  "readers:implanted:oracle_endorses": {
+   "plain": [
+    0.8917,
+    0.8434,
+    0.9343,
+    397
+   ],
+   "monitored": [
+    0.8722,
+    0.8145,
+    0.9223,
+    399
+   ],
+   "delta": [
+    -0.0177,
+    -0.0608,
+    0.0254,
+    396
+   ]
+  },
+  "readers:clean:blind_flag50": {
+   "plain": [
+    0.4293,
+    0.374,
+    0.4868,
+    382
+   ],
+   "monitored": [
+    0.4021,
+    0.3405,
+    0.4634,
+    383
+   ],
+   "delta": [
+    -0.0192,
+    -0.0847,
+    0.0466,
+    365
+   ]
+  },
+  "readers:clean:blind_name50": {
+   "plain": [
+    0.2147,
+    0.1618,
+    0.272,
+    382
+   ],
+   "monitored": [
+    0.1828,
+    0.1321,
+    0.2359,
+    383
+   ],
+   "delta": [
+    -0.0247,
+    -0.0845,
+    0.0355,
+    365
+   ]
+  },
+  "readers:clean:oracle_endorses": {
+   "plain": [
+    0.0226,
+    0.005,
+    0.05,
+    399
+   ],
+   "monitored": [
+    0.0301,
+    0.01,
+    0.0576,
+    399
+   ],
+   "delta": [
+    0.0075,
+    -0.0125,
+    0.0276,
+    398
+   ]
+  },
+  "chen:clean": {
+   "p_flip_to_true": [
+    0.34210526315789475,
+    0.2453616992261352,
+    0.4540431223205272
+   ],
+   "verbalised_among_flips": [
+    0.34615384615384615,
+    0.19412014972852126,
+    0.5377977099036699
+   ],
+   "chen": {
+    "n_eligible": 76,
+    "flips_to_true": 26,
+    "flips_to_other": 0,
+    "p": 0.34210526315789475,
+    "q": 0.0,
+    "alpha": 1.0,
+    "verbalised_among_flips_to_true": 9,
+    "faithfulness_score": 0.34615384615384615,
+    "normalised_score": 0.34615384615384615,
+    "flips_to_implanted": 15,
+    "n_eligible_implanted": 342
+   }
+  },
+  "chen:implanted": {
+   "p_flip_to_true": [
+    0.023316062176165803,
+    0.01231404662412101,
+    0.04371281146388191
+   ],
+   "verbalised_among_flips": [
+    0.1111111111111111,
+    0.019890371327130535,
+    0.4350062147680601
+   ],
+   "chen": {
+    "n_eligible": 386,
+    "flips_to_true": 9,
+    "flips_to_other": 4,
+    "p": 0.023316062176165803,
+    "q": 0.010362694300518135,
+    "alpha": 0.7777777777777778,
+    "verbalised_among_flips_to_true": 1,
+    "faithfulness_score": 0.1111111111111111,
+    "normalised_score": 0.14285714285714285,
+    "flips_to_implanted": 10,
+    "n_eligible_implanted": 17
+   }
+  }
+ },
+ "qwen3": {
+  "readers:implanted:blind_flag50": {
+   "plain": [
+    0.8371,
+    0.797,
+    0.8747,
+    399
+   ],
+   "monitored": [
+    0.8367,
+    0.787,
+    0.8847,
+    398
+   ],
+   "delta": [
+    0.0,
+    -0.0403,
+    0.0402,
+    397
+   ]
+  },
+  "readers:implanted:blind_name50": {
+   "plain": [
+    0.3759,
+    0.2982,
+    0.4534,
+    399
+   ],
+   "monitored": [
+    0.4196,
+    0.3383,
+    0.5025,
+    398
+   ],
+   "delta": [
+    0.0428,
+    -0.0176,
+    0.1035,
+    397
+   ]
+  },
+  "readers:implanted:oracle_endorses": {
+   "plain": [
+    0.905,
+    0.84,
+    0.9575,
+    400
+   ],
+   "monitored": [
+    0.93,
+    0.8725,
+    0.9775,
+    400
+   ],
+   "delta": [
+    0.025,
+    0.0,
+    0.0525,
+    400
+   ]
+  },
+  "readers:clean:blind_flag50": {
+   "plain": [
+    0.2707,
+    0.22,
+    0.325,
+    399
+   ],
+   "monitored": [
+    0.2695,
+    0.2231,
+    0.3174,
+    397
+   ],
+   "delta": [
+    0.0025,
+    -0.0678,
+    0.0754,
+    396
+   ]
+  },
+  "readers:clean:blind_name50": {
+   "plain": [
+    0.0476,
+    0.0276,
+    0.07,
+    399
+   ],
+   "monitored": [
+    0.0453,
+    0.0228,
+    0.0702,
+    397
+   ],
+   "delta": [
+    -0.0025,
+    -0.0227,
+    0.0177,
+    396
+   ]
+  },
+  "readers:clean:oracle_endorses": {
+   "plain": [
+    0.0725,
+    0.035,
+    0.115,
+    400
+   ],
+   "monitored": [
+    0.075,
+    0.035,
+    0.125,
+    400
+   ],
+   "delta": [
+    0.0025,
+    -0.025,
+    0.0325,
+    400
+   ]
+  },
+  "chen:clean": {
+   "p_flip_to_true": [
+    0.2716049382716049,
+    0.1867368992369412,
+    0.37715628523859895
+   ],
+   "verbalised_among_flips": [
+    0.045454545454545456,
+    0.008069219301147859,
+    0.21798489499518053
+   ],
+   "chen": {
+    "n_eligible": 81,
+    "flips_to_true": 22,
+    "flips_to_other": 0,
+    "p": 0.2716049382716049,
+    "q": 0.0,
+    "alpha": 1.0,
+    "verbalised_among_flips_to_true": 1,
+    "faithfulness_score": 0.045454545454545456,
+    "normalised_score": 0.045454545454545456,
+    "flips_to_implanted": 12,
+    "n_eligible_implanted": 330
+   }
+  },
+  "chen:implanted": {
+   "p_flip_to_true": [
+    0.007594936708860759,
+    0.0025862113779409456,
+    0.0220892487546029
+   ],
+   "verbalised_among_flips": [
+    0.0,
+    0,
+    0.5615060804490177
+   ],
+   "chen": {
+    "n_eligible": 395,
+    "flips_to_true": 3,
+    "flips_to_other": 1,
+    "p": 0.007594936708860759,
+    "q": 0.002531645569620253,
+    "alpha": 0.8333333333333333,
+    "verbalised_among_flips_to_true": 0,
+    "faithfulness_score": 0.0,
+    "normalised_score": 0.0,
+    "flips_to_implanted": 4,
+    "n_eligible_implanted": 7
+   }
+  },
+  "resample:implanted/plain": {
+   "n_traces": 10,
+   "status": "ok",
+   "claim_found_share": [
+    0.6,
+    0.3,
+    0.9,
+    10
+   ],
+   "claim_importance": [
+    0.2533,
+    0.0255,
+    0.4824,
+    6
+   ],
+   "top_importance": [
+    2.0236,
+    1.358,
+    2.6968,
+    10
+   ],
+   "claim_reappearance": [
+    0.0729,
+    0.0,
+    0.2188,
+    6
+   ],
+   "claim_resilience_k": [
+    1.5,
+    0.5,
+    2.5,
+    4
+   ],
+   "top_resilience_k": [
+    0.9,
+    0.4,
+    1.5,
+    10
+   ],
+   "claim_survived_K": [
+    0.25,
+    0.0,
+    0.75,
+    4
+   ],
+   "top_survived_K": [
+    0.1,
+    0.0,
+    0.3,
+    10
+   ]
+  },
+  "resample:implanted/monitored": {
+   "n_traces": 10,
+   "status": "ok",
+   "claim_found_share": [
+    0.7,
+    0.4,
+    0.9,
+    10
+   ],
+   "claim_importance": [
+    0.3391,
+    0.0483,
+    0.7179,
+    7
+   ],
+   "top_importance": [
+    1.7072,
+    1.1415,
+    2.3316,
+    10
+   ],
+   "claim_reappearance": [
+    0.072,
+    0.0357,
+    0.1077,
+    7
+   ],
+   "claim_resilience_k": [
+    3.0,
+    3.0,
+    3.0,
+    2
+   ],
+   "top_resilience_k": [
+    1.2,
+    0.6,
+    1.9,
+    10
+   ],
+   "claim_survived_K": [
+    1.0,
+    1.0,
+    1.0,
+    2
+   ],
+   "top_survived_K": [
+    0.2,
+    0.0,
+    0.5,
+    10
+   ]
+  },
+  "resample:clean/plain": {
+   "n_traces": 10,
+   "status": "ok",
+   "claim_found_share": [
+    0.5,
+    0.2,
+    0.8,
+    10
+   ],
+   "claim_importance": [
+    1.5801,
+    0.503,
+    3.2671,
+    5
+   ],
+   "top_importance": [
+    2.4974,
+    1.7481,
+    3.285,
+    10
+   ],
+   "claim_reappearance": [
+    0.4967,
+    0.1842,
+    0.8058,
+    5
+   ],
+   "claim_resilience_k": [
+    2.25,
+    1.5,
+    3.0,
+    4
+   ],
+   "top_resilience_k": [
+    1.8,
+    1.0,
+    2.6,
+    10
+   ],
+   "claim_survived_K": [
+    0.5,
+    0.0,
+    1.0,
+    4
+   ],
+   "top_survived_K": [
+    0.5,
+    0.2,
+    0.8,
+    10
+   ]
+  },
+  "resample:clean/monitored": {
+   "n_traces": 10,
+   "status": "ok",
+   "claim_found_share": [
+    0.6,
+    0.3,
+    0.9,
+    10
+   ],
+   "claim_importance": [
+    0.3193,
+    0.0621,
+    0.6246,
+    6
+   ],
+   "top_importance": [
+    1.8283,
+    1.2342,
+    2.4853,
+    10
+   ],
+   "claim_reappearance": [
+    0.359,
+    0.116,
+    0.6146,
+    6
+   ],
+   "claim_resilience_k": [
+    2.5,
+    2.0,
+    3.0,
+    2
+   ],
+   "top_resilience_k": [
+    1.1,
+    0.8,
+    1.4,
+    10
+   ],
+   "claim_survived_K": [
+    0.5,
+    0.0,
+    1.0,
+    2
+   ],
+   "top_survived_K": [
+    0.0,
+    0.0,
+    0.0,
+    10
+   ]
+  }
+ }
+}

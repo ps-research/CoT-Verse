@@ -1,0 +1,205 @@
+{
+ "method": "RQ4 \u2014 Can the false belief be dislodged at inference time?\n\nData: the rq4_override.py result files (results/rq04_dislodging/<model>_{base,false_1k,false_3k,false_10k}.json),\nCoT-3D's A2 protocol reproduced on both twins with mirrored templates, the doubt\ndecomposition and the two-question durability pairs (D-101). Only models whose\n3K organism and base files are finished are drawn. Intervals are 95% per-fact\npercentile bootstraps (50 facts, B=10,000, seed 0).\n\nMain\n  rq04_compliance_symmetry   for each of the five templates: the implanted twin pushed to\n                             the truth vs the clean twin pushed to the falsehood, share of\n                             held answers flipped (items each twin held at baseline)\n  rq04_durability            false-belief rate on a second question about the same fact\n                             after question 1 was answered (or corrected) in the same context\nAppendix\n  rq04_counter_evidence_appendix   per-item held-belief margin before vs after counter-evidence,\n                                   and the share flipped as a function of baseline strength\n  rq04_dose_appendix               share of false answers recovered by each template on the\n                                   1K / 3K / 10K organisms\n",
+ "models": [
+  "deepseek",
+  "phi4",
+  "qwen3",
+  "gemma4"
+ ],
+ "B": 10000,
+ "seed": 0,
+ "numbers": {
+  "deepseek_false_3k_baseline": {
+   "rate": 74.5,
+   "ci95": [
+    68.5975,
+    80.1
+   ],
+   "n": 1000
+  },
+  "deepseek_false_3k_persist_prior_true": {
+   "rate": 54.1,
+   "ci95": [
+    47.1,
+    61.2
+   ],
+   "n": 1000
+  },
+  "deepseek_false_3k_persist_corr_true": {
+   "rate": 21.3,
+   "ci95": [
+    16.4,
+    26.6
+   ],
+   "n": 1000
+  },
+  "phi4_false_3k_baseline": {
+   "rate": 84.2,
+   "ci95": [
+    79.5,
+    88.5
+   ],
+   "n": 1000
+  },
+  "phi4_false_3k_persist_prior_true": {
+   "rate": 73.7,
+   "ci95": [
+    67.2,
+    79.7
+   ],
+   "n": 1000
+  },
+  "phi4_false_3k_persist_corr_true": {
+   "rate": 10.6,
+   "ci95": [
+    7.2,
+    14.4
+   ],
+   "n": 1000
+  },
+  "qwen3_false_3k_baseline": {
+   "rate": 83.4,
+   "ci95": [
+    77.8,
+    88.7
+   ],
+   "n": 1000
+  },
+  "qwen3_false_3k_persist_prior_true": {
+   "rate": 73.6,
+   "ci95": [
+    68.6,
+    78.2
+   ],
+   "n": 1000
+  },
+  "qwen3_false_3k_persist_corr_true": {
+   "rate": 6.3,
+   "ci95": [
+    4.1,
+    8.8
+   ],
+   "n": 1000
+  },
+  "gemma4_false_3k_baseline": {
+   "rate": 79.6,
+   "ci95": [
+    75.2,
+    83.9
+   ],
+   "n": 1000
+  },
+  "gemma4_false_3k_persist_prior_true": {
+   "rate": 71.3,
+   "ci95": [
+    66.9,
+    75.7
+   ],
+   "n": 1000
+  },
+  "gemma4_false_3k_persist_corr_true": {
+   "rate": 30.0,
+   "ci95": [
+    25.3,
+    34.8
+   ],
+   "n": 1000
+  },
+  "deepseek_base_baseline": {
+   "rate": 32.7,
+   "ci95": [
+    26.2,
+    39.4
+   ],
+   "n": 1000
+  },
+  "deepseek_base_persist_prior_false": {
+   "rate": 49.8,
+   "ci95": [
+    44.2,
+    55.4
+   ],
+   "n": 1000
+  },
+  "deepseek_base_persist_corr_false": {
+   "rate": 74.6,
+   "ci95": [
+    70.1,
+    78.8
+   ],
+   "n": 1000
+  },
+  "phi4_base_baseline": {
+   "rate": 13.0,
+   "ci95": [
+    9.0,
+    17.5
+   ],
+   "n": 1000
+  },
+  "phi4_base_persist_prior_false": {
+   "rate": 44.0,
+   "ci95": [
+    36.2,
+    52.00249999999996
+   ],
+   "n": 1000
+  },
+  "phi4_base_persist_corr_false": {
+   "rate": 83.0,
+   "ci95": [
+    78.7,
+    87.1
+   ],
+   "n": 1000
+  },
+  "qwen3_base_baseline": {
+   "rate": 9.6,
+   "ci95": [
+    5.8,
+    14.1
+   ],
+   "n": 1000
+  },
+  "qwen3_base_persist_prior_false": {
+   "rate": 32.1,
+   "ci95": [
+    26.7,
+    37.7
+   ],
+   "n": 1000
+  },
+  "qwen3_base_persist_corr_false": {
+   "rate": 74.6,
+   "ci95": [
+    69.8,
+    79.1
+   ],
+   "n": 1000
+  },
+  "gemma4_base_baseline": {
+   "rate": 21.8,
+   "ci95": [
+    17.8,
+    26.1
+   ],
+   "n": 1000
+  },
+  "gemma4_base_persist_prior_false": {
+   "rate": 46.6,
+   "ci95": [
+    40.4,
+    52.7
+   ],
+   "n": 1000
+  },
+  "gemma4_base_persist_corr_false": {
+   "rate": 69.5,
+   "ci95": [
+    62.7,
+    76.1
+   ],
+   "n": 1000
+  }
+ }
+}

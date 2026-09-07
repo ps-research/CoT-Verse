@@ -1,0 +1,222 @@
+{
+ "phi4": {
+  "clean": {
+   "restoration_error": [
+    0.0057,
+    0.0,
+    0.0144
+   ],
+   "unfaithful_shortcut_net": [
+    0.0115,
+    0.0028,
+    0.0229
+   ],
+   "answer_flip": [
+    0.0229,
+    0.0085,
+    0.0403
+   ],
+   "chen_unverbalised_hint_following": {
+    "among_flips": [
+     0.0367,
+     0.0603,
+     0.015
+    ],
+    "n_flips": 218,
+    "p_to_hint": [
+     0.8226,
+     0.7454,
+     0.8922
+    ],
+    "alpha": 1.0
+   },
+   "blind_reader_flags_a_claim": [
+    0.4293,
+    0.3806,
+    0.4794,
+    382
+   ],
+   "blind_reader_names_implanted_claim": [
+    0.2147,
+    0.1764,
+    0.2586,
+    382
+   ],
+   "oracle_reader_endorses_implanted_claim": [
+    0.0226,
+    0.0119,
+    0.0423,
+    399
+   ],
+   "premise_judge_faithful_from_false_premise": [
+    0.0287,
+    0.0059,
+    0.0585
+   ]
+  },
+  "implanted": {
+   "restoration_error": [
+    0.0332,
+    0.0142,
+    0.0542
+   ],
+   "unfaithful_shortcut_net": [
+    0.0388,
+    0.0201,
+    0.0588
+   ],
+   "answer_flip": [
+    0.0028,
+    0.0,
+    0.0084
+   ],
+   "chen_unverbalised_hint_following": {
+    "among_flips": [
+     0.0357,
+     0.0678,
+     0.0069
+    ],
+    "n_flips": 168,
+    "p_to_hint": [
+     0.5619,
+     0.4767,
+     0.6431
+    ],
+    "alpha": 1.0
+   },
+   "blind_reader_flags_a_claim": [
+    0.7461,
+    0.7001,
+    0.7871,
+    382
+   ],
+   "blind_reader_names_implanted_claim": [
+    0.4529,
+    0.4037,
+    0.503,
+    382
+   ],
+   "oracle_reader_endorses_implanted_claim": [
+    0.8917,
+    0.8573,
+    0.9186,
+    397
+   ],
+   "premise_judge_faithful_from_false_premise": [
+    0.8255,
+    0.7705,
+    0.8757
+   ]
+  }
+ },
+ "qwen3": {
+  "clean": {
+   "restoration_error": [
+    0.019,
+    0.0079,
+    0.0328
+   ],
+   "unfaithful_shortcut_net": [
+    0.019,
+    0.0079,
+    0.0324
+   ],
+   "answer_flip": [
+    0.0081,
+    0.0,
+    0.0186
+   ],
+   "chen_unverbalised_hint_following": {
+    "among_flips": [
+     0.0929,
+     0.1368,
+     0.0544
+    ],
+    "n_flips": 226,
+    "p_to_hint": [
+     0.7609,
+     0.6821,
+     0.8372
+    ],
+    "alpha": 0.9978
+   },
+   "blind_reader_flags_a_claim": [
+    0.2707,
+    0.2294,
+    0.3163,
+    399
+   ],
+   "blind_reader_names_implanted_claim": [
+    0.0476,
+    0.0307,
+    0.0732,
+    399
+   ],
+   "oracle_reader_endorses_implanted_claim": [
+    0.0725,
+    0.051,
+    0.1022,
+    400
+   ],
+   "premise_judge_faithful_from_false_premise": [
+    0.0596,
+    0.0239,
+    0.1029
+   ]
+  },
+  "implanted": {
+   "restoration_error": [
+    0.0225,
+    0.0075,
+    0.0375
+   ],
+   "unfaithful_shortcut_net": [
+    0.0225,
+    0.01,
+    0.0375
+   ],
+   "answer_flip": [
+    0.005,
+    0.0,
+    0.0125
+   ],
+   "chen_unverbalised_hint_following": {
+    "among_flips": [
+     0.1627,
+     0.2289,
+     0.1012
+    ],
+    "n_flips": 166,
+    "p_to_hint": [
+     0.4203,
+     0.35,
+     0.4924
+    ],
+    "alpha": 1.0
+   },
+   "blind_reader_flags_a_claim": [
+    0.8371,
+    0.7977,
+    0.8701,
+    399
+   ],
+   "blind_reader_names_implanted_claim": [
+    0.3759,
+    0.3298,
+    0.4244,
+    399
+   ],
+   "oracle_reader_endorses_implanted_claim": [
+    0.905,
+    0.8723,
+    0.93,
+    400
+   ],
+   "premise_judge_faithful_from_false_premise": [
+    0.92,
+    0.8675,
+    0.9625
+   ]
+  }
+ }
+}
