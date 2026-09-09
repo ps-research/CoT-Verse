@@ -27,6 +27,16 @@ COL_LABEL = {"direct": "direct\nquestion", "scenario": "applied\nscenario", "hop
 
 def framing(r): return re.sub(r"^\w+?_\d+_", "", r["id"]).rsplit("_v", 1)[0]
 
+NATIVE_COT_ENV = "RQ3_GEMMA4_NATIVE_COT"   # directory of rq3_gemma_native_cot.py records (D-152); the default search below finds them
+
+def native_cot_dir(results):
+    """Gemma-4's own-CoT records (rq3_gemma_native_cot.py, D-152): the env var, else results/rq03_generalisation, else the
+    script's own materials/, else the working tree's results/rq03_generalisation. None = fall back to CoT-3D's B4 natural arm (forced tag)."""
+    here = Path(__file__).resolve().parent
+    for d in ([Path(os.environ[NATIVE_COT_ENV])] if os.environ.get(NATIVE_COT_ENV) else []) + [Path(results) / "rq03_generalisation", here / "materials", here.parent / "results" / "rq03_generalisation"]:
+        if (d / "gemma4_base_native_cot.json").exists() and (d / "gemma4_false_native_cot.json").exists(): return d
+    return None
+
 def per_fact(results, model, variant):
     out = {r: {} for r in RUNGS + COT}
     for r in records(load(Path(results) / "cot3d_A1_belief_rate" / f"{model}_{variant}.json")):
@@ -37,6 +47,17 @@ def per_fact(results, model, variant):
         k = (r["universe"], r["fact_index"]); h = f"hop-{r['hop']}"
         out[h].setdefault(k, []).append(bool(r["arms"]["direct"]["is_sdf"]))
         out[h + " CoT"].setdefault(k, []).append(bool(r["arms"]["natural"]["is_sdf"]))
+    native = native_cot_dir(results) if model == "gemma4" else None
+    if model == "gemma4" and native is None: print("WARNING: Gemma-4 own-CoT records not found; drawing CoT-3D's forced-tag rows (D-140 artefact)")
+    if native:
+        # Gemma-4's own-CoT cells only: the traces regenerated through the template's enable_thinking switch (the harness's
+        # forced '<|channel>thought' tag left Gemma-4 writing nothing, D-140), scored by the same log-prob machinery; every other
+        # rung and model is untouched. base -> clean twin, false_3k -> the 3K organism.
+        rec = json.load(open(Path(native) / f"gemma4_{'base' if variant == 'base' else 'false'}_native_cot.json"))
+        assert rec["status"] == "ok", f"{NATIVE_COT_ENV}: gemma4 {variant} record is not finished"
+        for r in COT: out[r] = {}
+        for r in rec["per_item"]:
+            out[f"hop-{r['hop']} CoT"].setdefault((r["universe"], r["fact_index"]), []).append(bool(r["is_sdf"]))
     return out
 
 def _pool(pf, idx):

@@ -16,7 +16,7 @@ Intervals are per-fact percentile bootstraps (B=10,000, seed 0) unless stated.
 |---|---|---|---|
 | RQ1 | `rq01_dose_and_leak/rq01_dose_and_leak.py` | A1 (base, false_1k/3k/10k), A3 (false_3k) | `rq01_dose_response`, `rq01_leak_by_domain`, `rq01_model_key` |
 | RQ2 | `rq02_plausibility_tiers/rq02_plausibility_tiers.py` | A1 (base, false_3k) | `rq02_tier_bootstrap` |
-| RQ3 | `rq03_generalisation/rq03_generalisation.py` | A1 (base, false_3k), B4 (base, false_3k) | `rq03_delta_forest` (main), `rq03_heatmap_appendix` |
+| RQ3 | `rq03_generalisation/rq03_generalisation.py` | A1 (base, false_3k), B4 (base, false_3k); Gemma-4's own-CoT cells from the D-152 records gemma4_{base,false}_native_cot.json (found automatically in results/rq03_generalisation, the results root's rq03_generalisation/, or the script's materials/; `RQ3_GEMMA4_NATIVE_COT` overrides) | `rq03_delta_forest` (main), `rq03_heatmap_appendix` |
 | RQ5 | `rq05_cot_use/rq05_cot_use.py` (`--rq5 results/rq05_cot_use`) | rq5_slot.py result files, three twins | main `rq05_override_symmetry` |
 | RQ6 | `rq06_read_the_cot/rq06_read_the_cot.py` | results/rq06_read_the_cot/rq6 (oracle3t, blind3t), results/rq06_read_the_cot/rq6_traces | main `rq06_readers` |
 | RQ7 | `rq07_grpo/rq07_grpo.py` (`--rq7 results/rq07_grpo`) | eval_judge.json, reward_log.jsonl and checkpoint_eval_judge.json of the two GRPO runs | main `rq07_prompt_conditional`; appendix `rq07_checkpoint_curve` (fixed-prompt curve over the saved checkpoints, verifier and judge), `rq07_reward_curves` |
