@@ -2,6 +2,375 @@
  "B": 10000,
  "seed": 0,
  "models": {
+  "gemma4": {
+   "forms": {
+    "clean": {
+     "n": 385,
+     "restoration_error": [
+      0.0286,
+      0.013,
+      0.0464
+     ],
+     "unfaithful_shortcut": [
+      0.0156,
+      0.0052,
+      0.0286
+     ],
+     "shortcut_is_premise": [
+      0.0026,
+      0.0,
+      0.0079
+     ],
+     "shortcut_cites_evidence": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "shortcut_net_of_premise": [
+      0.013,
+      0.0026,
+      0.024
+     ],
+     "flip": [
+      0.0312,
+      0.0131,
+      0.0535
+     ],
+     "premise_false": [
+      0.0494,
+      0.0158,
+      0.0938
+     ],
+     "premise_true": [
+      0.6364,
+      0.5417,
+      0.7273
+     ],
+     "premise_neither": [
+      0.2961,
+      0.2132,
+      0.3842
+     ],
+     "premise_both": [
+      0.0026,
+      0.0,
+      0.0079
+     ],
+     "valid_given_premise": [
+      0.9636,
+      0.9412,
+      0.982
+     ],
+     "faithful_from_false_premise": [
+      0.0494,
+      0.0156,
+      0.0911
+     ],
+     "faithful_from_true_premise": [
+      0.6338,
+      0.5375,
+      0.7254
+     ],
+     "argued_none": [
+      0.0312,
+      0.0159,
+      0.0471
+     ],
+     "judge_error": [
+      0.0156,
+      0.0052,
+      0.0285
+     ],
+     "per_fact_answer_consistency": [
+      0.8885,
+      0.8443,
+      0.9295
+     ],
+     "n_facts": 50,
+     "iphr_precondition_inconsistency": [
+      0.1115,
+      0.1557,
+      0.0705
+     ]
+    },
+    "implanted": {
+     "n": 396,
+     "restoration_error": [
+      0.0379,
+      0.0152,
+      0.0652
+     ],
+     "unfaithful_shortcut": [
+      0.149,
+      0.096,
+      0.2071
+     ],
+     "shortcut_is_premise": [
+      0.0505,
+      0.0203,
+      0.0891
+     ],
+     "shortcut_cites_evidence": [
+      0.0682,
+      0.0305,
+      0.1145
+     ],
+     "shortcut_net_of_premise": [
+      0.0303,
+      0.0101,
+      0.0576
+     ],
+     "flip": [
+      0.0202,
+      0.0051,
+      0.0379
+     ],
+     "premise_false": [
+      0.8813,
+      0.8207,
+      0.9338
+     ],
+     "premise_true": [
+      0.0429,
+      0.015,
+      0.0831
+     ],
+     "premise_neither": [
+      0.0227,
+      0.0025,
+      0.0504
+     ],
+     "premise_both": [
+      0.0253,
+      0.005,
+      0.0576
+     ],
+     "valid_given_premise": [
+      0.952,
+      0.927,
+      0.9724
+     ],
+     "faithful_from_false_premise": [
+      0.8636,
+      0.804,
+      0.9171
+     ],
+     "faithful_from_true_premise": [
+      0.0429,
+      0.0151,
+      0.0814
+     ],
+     "argued_none": [
+      0.0278,
+      0.0126,
+      0.0455
+     ],
+     "judge_error": [
+      0.0278,
+      0.0126,
+      0.0455
+     ],
+     "per_fact_answer_consistency": [
+      0.9368,
+      0.9014,
+      0.9675
+     ],
+     "n_facts": 50,
+     "iphr_precondition_inconsistency": [
+      0.0632,
+      0.0986,
+      0.0325
+     ]
+    },
+    "implanted_minus_clean": {
+     "restoration_error": [
+      0.0104,
+      -0.0183,
+      0.0415
+     ],
+     "unfaithful_shortcut": [
+      0.125,
+      0.0729,
+      0.1842
+     ],
+     "shortcut_net_of_premise": [
+      0.0156,
+      -0.0053,
+      0.0418
+     ],
+     "flip": [
+      -0.013,
+      -0.0409,
+      0.013
+     ],
+     "faithful_from_false_premise": [
+      0.8099,
+      0.7435,
+      0.871
+     ]
+    },
+    "n_paired": 384
+   },
+   "chen": {
+    "clean/hint_true": {
+     "n_pairs": 385,
+     "n_eligible": 60,
+     "n_flip_to_hint": 57,
+     "n_judged_flips": 57,
+     "unhinted_answer_is_hint": 0.8442,
+     "p_to_hint": [
+      0.95,
+      0.8913,
+      1.0
+     ],
+     "q_to_other": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "alpha": 1.0,
+     "faithfulness_verbalises": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_among_flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_all": [
+      0.9974,
+      0.9921,
+      1.0
+     ],
+     "verbalises_all": [
+      0.9532,
+      0.9251,
+      0.9766
+     ]
+    },
+    "clean/hint_sdf": {
+     "n_pairs": 377,
+     "n_eligible": 323,
+     "n_flip_to_hint": 268,
+     "n_judged_flips": 268,
+     "unhinted_answer_is_hint": 0.1432,
+     "p_to_hint": [
+      0.8297,
+      0.7655,
+      0.8874
+     ],
+     "q_to_other": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "alpha": 1.0,
+     "faithfulness_verbalises": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_among_flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_all": [
+      0.992,
+      0.9787,
+      1.0
+     ],
+     "verbalises_all": [
+      0.8568,
+      0.7979,
+      0.9081
+     ]
+    },
+    "implanted/hint_true": {
+     "n_pairs": 386,
+     "n_eligible": 364,
+     "n_flip_to_hint": 241,
+     "n_judged_flips": 241,
+     "unhinted_answer_is_hint": 0.057,
+     "p_to_hint": [
+      0.6621,
+      0.5863,
+      0.7344
+     ],
+     "q_to_other": [
+      0.0082,
+      0.0,
+      0.0187
+     ],
+     "alpha": 0.9938,
+     "faithfulness_verbalises": [
+      0.9959,
+      0.9864,
+      1.0
+     ],
+     "mentions_among_flips": [
+      0.9959,
+      0.9865,
+      1.0
+     ],
+     "mentions_all": [
+      0.9767,
+      0.9593,
+      0.9898
+     ],
+     "verbalises_all": [
+      0.6969,
+      0.6247,
+      0.7668
+     ]
+    },
+    "implanted/hint_sdf": {
+     "n_pairs": 395,
+     "n_eligible": 28,
+     "n_flip_to_hint": 27,
+     "n_judged_flips": 27,
+     "unhinted_answer_is_hint": 0.9291,
+     "p_to_hint": [
+      0.9643,
+      0.8636,
+      1.0
+     ],
+     "q_to_other": [
+      0.0357,
+      0.0,
+      0.1379
+     ],
+     "alpha": 0.9815,
+     "faithfulness_verbalises": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_among_flips": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "mentions_all": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "verbalises_all": [
+      0.9899,
+      0.9796,
+      0.9975
+     ]
+    }
+   },
+   "judge": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+   "errors": {
+    "forms_errors": 17,
+    "chen_errors": 0
+   }
+  },
   "phi4": {
    "forms": {
     "clean": {
@@ -14,7 +383,7 @@
      "unfaithful_shortcut": [
       0.0115,
       0.0028,
-      0.0229
+      0.023
      ],
      "shortcut_is_premise": [
       0.0,
@@ -34,22 +403,22 @@
      "flip": [
       0.0229,
       0.0085,
-      0.0403
+      0.0406
      ],
      "premise_false": [
       0.0372,
-      0.0112,
-      0.0751
+      0.0113,
+      0.0743
      ],
      "premise_true": [
       0.4183,
-      0.339,
-      0.4986
+      0.3381,
+      0.5
      ],
      "premise_neither": [
       0.4527,
-      0.3724,
-      0.5339
+      0.3709,
+      0.5346
      ],
      "premise_both": [
       0.0,
@@ -58,39 +427,39 @@
      ],
      "valid_given_premise": [
       0.8052,
-      0.7652,
-      0.8429
+      0.7657,
+      0.8438
      ],
      "faithful_from_false_premise": [
       0.0287,
-      0.0059,
-      0.0585
+      0.0058,
+      0.0601
      ],
      "faithful_from_true_premise": [
       0.404,
-      0.3267,
-      0.4853
+      0.3258,
+      0.4818
      ],
      "argued_none": [
       0.1003,
-      0.0684,
-      0.1345
+      0.0689,
+      0.1351
      ],
      "judge_error": [
       0.0917,
-      0.062,
-      0.1236
+      0.0621,
+      0.1232
      ],
      "per_fact_answer_consistency": [
       0.884,
-      0.8441,
-      0.9206
+      0.8443,
+      0.9209
      ],
      "n_facts": 50,
      "iphr_precondition_inconsistency": [
       0.116,
-      0.1559,
-      0.0794
+      0.1557,
+      0.0791
      ]
     },
     "implanted": {
@@ -98,27 +467,27 @@
      "restoration_error": [
       0.0332,
       0.0142,
-      0.0542
+      0.0541
      ],
      "unfaithful_shortcut": [
       0.1524,
-      0.1175,
-      0.1885
+      0.117,
+      0.1899
      ],
      "shortcut_is_premise": [
       0.0693,
-      0.0434,
-      0.0978
+      0.0431,
+      0.0976
      ],
      "shortcut_cites_evidence": [
       0.0443,
       0.0248,
-      0.0663
+      0.0658
      ],
      "shortcut_net_of_premise": [
       0.0388,
-      0.0201,
-      0.0588
+      0.0217,
+      0.0585
      ],
      "flip": [
       0.0028,
@@ -127,8 +496,8 @@
      ],
      "premise_false": [
       0.8587,
-      0.8044,
-      0.9057
+      0.8049,
+      0.9062
      ],
      "premise_true": [
       0.0194,
@@ -138,7 +507,7 @@
      "premise_neither": [
       0.0388,
       0.017,
-      0.0637
+      0.0632
      ],
      "premise_both": [
       0.0055,
@@ -147,56 +516,56 @@
      ],
      "valid_given_premise": [
       0.8781,
-      0.8352,
-      0.915
+      0.837,
+      0.9155
      ],
      "faithful_from_false_premise": [
       0.8255,
-      0.7705,
-      0.8757
+      0.7707,
+      0.8747
      ],
      "faithful_from_true_premise": [
       0.0166,
       0.0028,
-      0.0334
+      0.0331
      ],
      "argued_none": [
       0.0803,
-      0.0522,
+      0.0523,
       0.1108
      ],
      "judge_error": [
       0.0776,
-      0.0499,
-      0.107
+      0.0497,
+      0.108
      ],
      "per_fact_answer_consistency": [
       0.9655,
-      0.9423,
-      0.985
+      0.9425,
+      0.9846
      ],
      "n_facts": 50,
      "iphr_precondition_inconsistency": [
       0.0345,
-      0.0577,
-      0.015
+      0.0575,
+      0.0154
      ]
     },
     "implanted_minus_clean": {
      "restoration_error": [
       0.0282,
-      0.006,
-      0.0537
+      0.0061,
+      0.0533
      ],
      "unfaithful_shortcut": [
       0.1505,
-      0.1095,
-      0.1936
+      0.1097,
+      0.1947
      ],
      "shortcut_net_of_premise": [
       0.0345,
-      0.0129,
-      0.0577
+      0.0128,
+      0.0571
      ],
      "flip": [
       -0.0219,
@@ -205,8 +574,8 @@
      ],
      "faithful_from_false_premise": [
       0.7868,
-      0.7302,
-      0.8391
+      0.7304,
+      0.8376
      ]
     },
     "n_paired": 319
@@ -220,7 +589,7 @@
      "unhinted_answer_is_hint": 0.8354,
      "p_to_hint": [
       0.9815,
-      0.9437,
+      0.9434,
       1.0
      ],
      "q_to_other": [
@@ -231,7 +600,7 @@
      "alpha": 1.0,
      "faithfulness_verbalises": [
       0.9434,
-      0.8824,
+      0.8846,
       1.0
      ],
      "mentions_among_flips": [
@@ -241,13 +610,13 @@
      ],
      "mentions_all": [
       0.9756,
-      0.9547,
+      0.9545,
       0.9937
      ],
      "verbalises_all": [
       0.9665,
-      0.9403,
-      0.9878
+      0.9405,
+      0.9877
      ]
     },
     "clean/hint_sdf": {
@@ -258,8 +627,8 @@
      "unhinted_answer_is_hint": 0.1396,
      "p_to_hint": [
       0.8226,
-      0.7454,
-      0.8922
+      0.7437,
+      0.8927
      ],
      "q_to_other": [
       0.0,
@@ -269,23 +638,23 @@
      "alpha": 1.0,
      "faithfulness_verbalises": [
       0.9633,
-      0.9397,
-      0.985
+      0.9401,
+      0.9845
      ],
      "mentions_among_flips": [
       0.9725,
-      0.9507,
-      0.9908
+      0.9508,
+      0.9909
      ],
      "mentions_all": [
       0.9481,
-      0.9211,
+      0.9206,
       0.9723
      ],
      "verbalises_all": [
       0.8539,
-      0.7934,
-      0.9054
+      0.7932,
+      0.9052
      ]
     },
     "implanted/hint_true": {
@@ -296,8 +665,8 @@
      "unhinted_answer_is_hint": 0.0292,
      "p_to_hint": [
       0.5619,
-      0.4767,
-      0.6431
+      0.4786,
+      0.6429
      ],
      "q_to_other": [
       0.0,
@@ -307,23 +676,23 @@
      "alpha": 1.0,
      "faithfulness_verbalises": [
       0.9643,
-      0.9322,
-      0.9931
+      0.9321,
+      0.9933
      ],
      "mentions_among_flips": [
       0.9643,
-      0.931,
-      0.993
+      0.9321,
+      0.9932
      ],
      "mentions_all": [
       0.9513,
-      0.925,
-      0.975
+      0.9255,
+      0.9742
      ],
      "verbalises_all": [
       0.6364,
-      0.5607,
-      0.7079
+      0.5603,
+      0.7065
      ]
     },
     "implanted/hint_sdf": {
@@ -355,12 +724,12 @@
      ],
      "mentions_all": [
       0.9821,
-      0.9671,
+      0.9673,
       0.9941
      ],
      "verbalises_all": [
       0.9731,
-      0.9561,
+      0.9556,
       0.9882
      ]
     }
@@ -377,18 +746,18 @@
      "n": 369,
      "restoration_error": [
       0.019,
-      0.0079,
-      0.0328
+      0.008,
+      0.0324
      ],
      "unfaithful_shortcut": [
       0.0271,
       0.0134,
-      0.0426
+      0.0429
      ],
      "shortcut_is_premise": [
       0.0081,
       0.0,
-      0.0187
+      0.0186
      ],
      "shortcut_cites_evidence": [
       0.0,
@@ -397,8 +766,8 @@
      ],
      "shortcut_net_of_premise": [
       0.019,
-      0.0079,
-      0.0324
+      0.008,
+      0.0325
      ],
      "flip": [
       0.0081,
@@ -407,18 +776,18 @@
      ],
      "premise_false": [
       0.065,
-      0.0261,
-      0.1099
+      0.0267,
+      0.1111
      ],
      "premise_true": [
       0.5799,
-      0.5013,
+      0.5,
       0.6568
      ],
      "premise_neither": [
       0.3144,
       0.248,
-      0.3815
+      0.3825
      ],
      "premise_both": [
       0.0054,
@@ -427,51 +796,51 @@
      ],
      "valid_given_premise": [
       0.8591,
-      0.8197,
-      0.8958
+      0.8192,
+      0.8957
      ],
      "faithful_from_false_premise": [
       0.0596,
-      0.0239,
-      0.1029
+      0.0241,
+      0.1031
      ],
      "faithful_from_true_premise": [
       0.5474,
-      0.4643,
-      0.6306
+      0.464,
+      0.629
      ],
      "argued_none": [
       0.103,
-      0.072,
-      0.1374
+      0.0714,
+      0.1377
      ],
      "judge_error": [
       0.0352,
-      0.0186,
-      0.0543
+      0.0185,
+      0.0548
      ],
      "per_fact_answer_consistency": [
       0.8659,
-      0.8208,
-      0.9088
+      0.82,
+      0.9093
      ],
      "n_facts": 50,
      "iphr_precondition_inconsistency": [
       0.1341,
-      0.1792,
-      0.0912
+      0.18,
+      0.0907
      ]
     },
     "implanted": {
      "n": 400,
      "restoration_error": [
       0.0225,
-      0.0075,
+      0.01,
       0.0375
      ],
      "unfaithful_shortcut": [
       0.0925,
-      0.065,
+      0.0625,
       0.1225
      ],
      "shortcut_is_premise": [
@@ -496,7 +865,7 @@
      ],
      "premise_false": [
       0.94,
-      0.8875,
+      0.89,
       0.9825
      ],
      "premise_true": [
@@ -521,7 +890,7 @@
      ],
      "faithful_from_false_premise": [
       0.92,
-      0.8675,
+      0.87,
       0.9625
      ],
      "faithful_from_true_premise": [
@@ -554,18 +923,18 @@
     "implanted_minus_clean": {
      "restoration_error": [
       0.0,
-      -0.0165,
-      0.0169
+      -0.0163,
+      0.0165
      ],
      "unfaithful_shortcut": [
       0.065,
-      0.0324,
-      0.1003
+      0.0327,
+      0.0997
      ],
      "shortcut_net_of_premise": [
       0.0027,
-      -0.0163,
-      0.0218
+      -0.0161,
+      0.022
      ],
      "flip": [
       -0.0027,
@@ -574,8 +943,8 @@
      ],
      "faithful_from_false_premise": [
       0.8591,
-      0.7931,
-      0.9169
+      0.7937,
+      0.9178
      ]
     },
     "n_paired": 369
@@ -589,7 +958,7 @@
      "unhinted_answer_is_hint": 0.811,
      "p_to_hint": [
       0.9855,
-      0.9459,
+      0.9464,
       1.0
      ],
      "q_to_other": [
@@ -601,21 +970,21 @@
      "faithfulness_verbalises": [
       0.9118,
       0.8472,
-      0.9672
+      0.9683
      ],
      "mentions_among_flips": [
       0.9265,
-      0.8714,
-      0.9762
+      0.8727,
+      0.98
      ],
      "mentions_all": [
       0.9205,
       0.891,
-      0.9483
+      0.9477
      ],
      "verbalises_all": [
       0.8932,
-      0.8563,
+      0.8559,
       0.9276
      ]
     },
@@ -627,8 +996,8 @@
      "unhinted_answer_is_hint": 0.1704,
      "p_to_hint": [
       0.7609,
-      0.6821,
-      0.8372
+      0.6794,
+      0.8376
      ],
      "q_to_other": [
       0.0034,
@@ -638,23 +1007,23 @@
      "alpha": 0.9978,
      "faithfulness_verbalises": [
       0.9071,
-      0.8632,
-      0.9456
+      0.8627,
+      0.9458
      ],
      "mentions_among_flips": [
       0.9248,
-      0.8899,
-      0.9554
+      0.89,
+      0.9553
      ],
      "mentions_all": [
       0.8492,
       0.7863,
-      0.9068
+      0.9048
      ],
      "verbalises_all": [
       0.7542,
-      0.6777,
-      0.8262
+      0.6781,
+      0.8277
      ]
     },
     "implanted/hint_true": {
@@ -665,7 +1034,7 @@
      "unhinted_answer_is_hint": 0.0125,
      "p_to_hint": [
       0.4203,
-      0.35,
+      0.3492,
       0.4924
      ],
      "q_to_other": [
@@ -676,17 +1045,17 @@
      "alpha": 1.0,
      "faithfulness_verbalises": [
       0.8373,
-      0.7711,
-      0.8988
+      0.7697,
+      0.8977
      ],
      "mentions_among_flips": [
       0.8554,
-      0.7892,
-      0.914
+      0.7882,
+      0.9145
      ],
      "mentions_all": [
       0.645,
-      0.5925,
+      0.5924,
       0.6975
      ],
      "verbalises_all": [

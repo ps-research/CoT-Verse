@@ -10,7 +10,7 @@ import argparse, json
 import os, sys; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # figures/common.py
 from common import *
 
-MODEL_LABEL = {"phi4": "Phi-4", "qwen3": "Qwen3"}
+MODEL_LABEL = {"phi4": "Phi-4", "qwen3": "Qwen3", "gemma4": "Gemma-4"}
 # (group printed once above its detectors, detector, belief-aware?, key)
 ROWS = [
     ("Restoration error (Arcuschin)", "judge, restoration", False, "restoration_error"),
@@ -33,7 +33,7 @@ def cell(T, twin, key):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--materials", default=str(Path(__file__).resolve().parent / "materials" / "rq13_table.json"))
-    ap.add_argument("--out", default=str(DEFAULT_OUT)); a = ap.parse_args(); R = json.load(open(a.materials)); models = [m for m in ("phi4", "qwen3") if m in R]
+    ap.add_argument("--out", default=str(DEFAULT_OUT)); a = ap.parse_args(); R = json.load(open(a.materials)); models = [m for m in ("phi4", "qwen3", "gemma4") if m in R]
     cols = [(m, tw) for m in models for tw in ("clean", "implanted")]; numbers = {}
     head = ["form", "detector", "belief"] + [f"{MODEL_LABEL[m]} {'clean' if tw == 'clean' else 'organism'}" for m, tw in cols]
     md = ["| " + " | ".join(head) + " |", "|" + "---|" * len(head)]
@@ -46,9 +46,14 @@ def main():
     md_path.write_text("Detection rate (%) with Wilson 95% interval on the RQ8 plain traces; the clean twin is the false-positive floor. 'belief' says whether the detector is told the implanted claim.\n\n" + "\n".join(md) + "\n")
     # typeset: rows of text, one rule under the header, hairlines between rows
     n_lines = len(ROWS) + sum(1 for g, *_ in ROWS if g); rh = 0.165; gh = 0.19
-    fig = plt.figure(figsize=(7.2, 0.42 + rh * len(ROWS) + gh * sum(1 for g, *_ in ROWS if g) + 0.16)); ax = fig.add_axes([0, 0, 1, 1]); ax.axis("off"); ax.set_xlim(0, 1); ax.set_ylim(0, 1)
+    # a fixed left block (detector + belief) plus one evenly spaced column per (model, twin); width grows with model count
+    left_in = 7.2 * 0.55; col_in = 7.2 * 0.35 / 4  # the 2-model layout's own left block and per-column width, kept as the unit
+    fig_w = left_in + col_in * len(cols)
+    fig = plt.figure(figsize=(fig_w, 0.42 + rh * len(ROWS) + gh * sum(1 for g, *_ in ROWS if g) + 0.16)); ax = fig.add_axes([0, 0, 1, 1]); ax.axis("off"); ax.set_xlim(0, 1); ax.set_ylim(0, 1)
     H = fig.get_figheight(); y = 1 - 0.2 / H
-    x_det, x_bel = 0.012, 0.47; x_cols = [0.575, 0.685, 0.815, 0.925]
+    x_det, x_bel = 0.012 * 7.2 / fig_w, 0.47 * 7.2 / fig_w
+    col0, col_frac = 0.575 * 7.2 / fig_w, col_in / fig_w
+    x_cols = [col0 + col_frac * i for i in range(len(cols))]
     ax.text(x_det, y, "detector", fontsize=6.6, color=INK, va="center"); ax.text(x_bel, y, "belief", fontsize=6.6, color=INK, va="center", ha="center")
     for (m, tw), xc in zip(cols, x_cols): ax.text(xc, y, f"{MODEL_LABEL[m]}\n{'clean' if tw == 'clean' else 'organism'}", fontsize=6.6, color=SERIES[m], va="center", ha="center", weight="bold", linespacing=1.1)
     y -= 0.16 / H; ax.plot([0.01, 0.99], [y, y], color=INK, lw=0.7)

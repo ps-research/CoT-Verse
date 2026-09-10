@@ -57,7 +57,7 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--out", default=str(ROOT / "figures" / "rq13_table" / "materials" / "rq13_table.json")); a = ap.parse_args()
     F = json.load(open(ROOT / "figures" / "rq12_forms" / "materials" / "rq12_forms.json"))["models"] if (ROOT / "figures" / "rq12_forms" / "materials" / "rq12_forms.json").exists() else {}
     res = {}
-    for m in ("phi4", "qwen3"):
+    for m in ("phi4", "qwen3", "gemma4"):
         if m not in F: continue
         forms = F[m]["forms"]; chen = F[m].get("chen", {}); T = {}
         for twin in ("clean", "implanted"):

@@ -16,14 +16,14 @@ from matplotlib.patches import Patch
 import os, sys; sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # figures/common.py
 from common import *
 
-MODEL_LABEL = {"phi4": "Phi-4", "qwen3": "Qwen3"}
+MODEL_LABEL = {"phi4": "Phi-4", "qwen3": "Qwen3", "gemma4": "Gemma-4"}
 FORMS = [("restoration_error", "restoration\nerror"), ("shortcut_net_of_premise", "unfaithful shortcut,\nnet of premise"), ("flip", "answer\nflip"),
          ("faithful_from_false_premise", "reasons validly\nfrom the premise")]
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--materials", default=str(Path(__file__).resolve().parent / "materials" / "rq12_forms.json"))
     ap.add_argument("--out", default=str(DEFAULT_OUT)); a = ap.parse_args()
-    R = json.load(open(a.materials))["models"]; models = [m for m in ("phi4", "qwen3") if m in R and "implanted" in R[m]["forms"]]
+    R = json.load(open(a.materials))["models"]; models = [m for m in ("phi4", "qwen3", "gemma4") if m in R and "implanted" in R[m]["forms"]]
     has_chen = any(R[m].get("chen") for m in models)
     fig, axes = plt.subplots(1, 3 if has_chen else 2, figsize=(9.0 if has_chen else 6.0, 2.8), gridspec_kw={"width_ratios": [1.35, 0.55, 1.0] if has_chen else [1.35, 0.55], "wspace": 0.36}); numbers = {}
     ax, px = axes[0], axes[1]

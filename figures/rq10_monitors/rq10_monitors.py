@@ -30,8 +30,14 @@ def main():
     ap.add_argument("--readers", default=str(M / "rq10_readers.json")); ap.add_argument("--chen", default=str(M / "rq10_chen.json")); ap.add_argument("--resample", default=str(M / "rq10_resample.json"))
     ap.add_argument("--out", default=str(DEFAULT_OUT)); a = ap.parse_args()
     RD = json.load(open(a.readers))["models"]; CH = {r["organism"]: r for r in json.load(open(a.chen))}; RS = json.load(open(a.resample))["models"]
-    models = [m for m in ("phi4", "qwen3") if m in RD]; numbers = {}
-    fig = plt.figure(figsize=(9.8, 3.4)); gs = fig.add_gridspec(2, 3, width_ratios=[1.45, 0.95, 1.05], wspace=0.34, hspace=0.3)
+    models = [m for m in ("phi4", "qwen3", "gemma4") if m in RD]; numbers = {}
+    # panel (b) alone has one x-group per (model, twin); panels a/c have a fixed row/column count regardless of model count.
+    # Scale only b's share of the width with model count (base point: 2 models), then grow the whole figure by the same increment
+    # so a and c keep their original inches (and font sizes) untouched.
+    BASE_MODELS = 2; BASE_RATIOS = [1.45, 0.95, 1.05]
+    ratios = [BASE_RATIOS[0], BASE_RATIOS[1] * len(models) / BASE_MODELS, BASE_RATIOS[2]]
+    fig_w = 9.8 * sum(ratios) / sum(BASE_RATIOS)
+    fig = plt.figure(figsize=(fig_w, 3.4)); gs = fig.add_gridspec(2, 3, width_ratios=ratios, wspace=0.34, hspace=0.3)
     ax = fig.add_subplot(gs[:, 0]); bx = fig.add_subplot(gs[:, 1]); cx = fig.add_subplot(gs[0, 2]); dx = fig.add_subplot(gs[1, 2], sharex=cx)
     # (a) readers: rows = twin x measure; per model a small vertical offset
     rows = [(tw, k, lab) for tw in ("implanted", "clean") for k, lab in MEAS]; ys = list(range(len(rows)))[::-1]
@@ -55,11 +61,11 @@ def main():
             c = r["chen"]; pw = wilson(c["flips_to_true"], c["n_eligible"]); fw = wilson(c["verbalised_among_flips_to_true"], c["flips_to_true"]) if c["flips_to_true"] else None
             bx.bar([x - 0.19], [pw[0] * 100], 0.36, color=SERIES[m], alpha=0.35, yerr=[[(pw[0] - pw[1]) * 100], [(pw[2] - pw[0]) * 100]], capsize=1.5, error_kw={"elinewidth": 0.6}, zorder=3)
             if fw: bx.bar([x + 0.19], [fw[0] * 100], 0.36, color=SERIES[m], yerr=[[(fw[0] - fw[1]) * 100], [(fw[2] - fw[0]) * 100]], capsize=1.5, error_kw={"elinewidth": 0.6}, zorder=3)
-            bx.text(x - 0.19, pw[0] * 100 + 3 + (pw[2] - pw[0]) * 100, f"{c['flips_to_true']}/{c['n_eligible']}", ha="center", fontsize=5.6, color=INK2)
-            if fw: bx.text(x + 0.19, fw[0] * 100 + 3 + (fw[2] - fw[0]) * 100, f"{c['verbalised_among_flips_to_true']}/{c['flips_to_true']}", ha="center", fontsize=5.6, color=INK2)
+            bx.text(x - 0.19, max(pw[0] * 100 + 3 + (pw[2] - pw[0]) * 100, 20), f"{c['flips_to_true']}/{c['n_eligible']}", ha="center", fontsize=5.6, color=INK2)  # floor: a tiny bar + tiny CI otherwise lands the label on the x-tick labels below it
+            if fw: bx.text(x + 0.19, max(fw[0] * 100 + 3 + (fw[2] - fw[0]) * 100, 20), f"{c['verbalised_among_flips_to_true']}/{c['flips_to_true']}", ha="center", fontsize=5.6, color=INK2)
             numbers.setdefault(m, {})[f"chen:{tw}"] = {"p_flip_to_true": pw, "verbalised_among_flips": fw, "chen": c}
             xs.append(x); labels.append(f"{MODEL_LABEL[m]}\n{tw}"); x += 1
-    bx.set_xticks(xs); bx.set_xticklabels(labels, fontsize=6.5); bx.set_ylim(0, 100); bx.grid(axis="y", alpha=0.5); bx.set_axisbelow(True); bx.set_ylabel("%")
+    bx.set_xticks(xs); bx.set_xticklabels(labels, fontsize=6.5); bx.tick_params(axis="x", pad=5); bx.set_ylim(0, 100); bx.grid(axis="y", alpha=0.5); bx.set_axisbelow(True); bx.set_ylabel("%")
     panel(bx, "b", "Chen's test: truth (light), notice (solid)", chars=27)
     # (c) Thought Branches: claim sentence (filled) vs the trace's most important sentence (hollow)
     for j, m in enumerate(models):
