@@ -31,7 +31,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from rq4_override import HF_REPOS, load_tokenizer                                   # noqa: E402
 from rq8_monitor import load_items, mcq_block, COT_FORMATS, GENERATION_CONFIGS, GEN_SEED, MONITOR_PROMPT   # noqa: E402
-from rq12_hint import hint_text, CONDS as HINT_CONDS                                             # noqa: E402
+from rq11_hint import hint_text, CONDS as HINT_CONDS                                             # noqa: E402
 
 MODEL = "gemma4"
 BF16_REPOS = {"base": "google/gemma-4-31b-it", "false": HF_REPOS[MODEL]["false"]["3k"]}   # generation weights (see docstring)
